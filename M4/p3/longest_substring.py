@@ -16,7 +16,7 @@ If you have time, come back to this problem after you've had a break and cleared
 
 def main():
 	"""kk"""
-	str_ = raw_input()
+	str_ = input()
 	check_ = 0
 	mi_ = 0
 	co_
