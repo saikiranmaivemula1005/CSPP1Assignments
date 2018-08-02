@@ -2,10 +2,10 @@
 #Write a program that counts up the number of vowels contained in the string s. Valid vowels are: 'a', 'e', 'i', 'o', and 'u'. For example, if s = 'azcbobobegghakl', your program should print:
 #Number of vowels: 5
 def main():
-	str_ = input()
+    str_ = input()
 	# the input string is in s
 	# remove pass and start your code here
-	cou_ = 0
+    cou_ = 0
     for letter_ in (str_): 
         if letter_ == 'a' or 'i' or 'e' or 'o' or 'u':
              cou_ += 1
