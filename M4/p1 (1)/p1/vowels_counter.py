@@ -10,7 +10,7 @@ def main():
     str_ = input()
     cou_ = 0
     for letter_ in str_:
-        if letter_ == 'a' or 'i' or 'e' or 'o' or 'u':
+        if letter_ == 'a' or 'i' or 'e' or 'o' or 'u' or 'A' or 'E' or 'I' or 'O' or 'U':
             cou_ += 1
     print(cou_)
 if __name__ == "__main__":
