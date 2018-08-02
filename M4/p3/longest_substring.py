@@ -3,7 +3,7 @@ def main():
     """Count the occurence of the substring in a string"""
     str_ = str(input())
     max_str = ''
-    for i in enumerate(0, len(str_)):
+    for i, in enumerate(0, len(str_)):
         sub_str = str_[i]
         while i + 1 < len(str_) and str_[i] <= str_[i+1]:
             i += 1
