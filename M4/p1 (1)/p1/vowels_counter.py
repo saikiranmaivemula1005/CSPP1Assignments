@@ -6,10 +6,10 @@ def main():
 	# the input string is in s
 	# remove pass and start your code here
 	cou_ = 0
-	for letter_ in (str_): 
-	     if letter_ == 'a' or 'i' or 'e' or 'o' or 'u':
-	         cou_ += 1
-	print(cou_)  
+    for letter_ in (str_): 
+        if letter_ == 'a' or 'i' or 'e' or 'o' or 'u':
+             cou_ += 1
+    print(cou_)  
                    
 if __name__== "__main__":
 	main()
