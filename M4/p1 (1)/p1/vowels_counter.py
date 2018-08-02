@@ -6,8 +6,8 @@ def main():
 	# the input string is in s
 	# remove pass and start your code here
 	c=0
-	for letter in (S): 
-	     if letter == 'a' or 'i' or 'e' or 'o' or 'u':
+	for Letter in (S): 
+	     if Letter == 'a' or 'i' or 'e' or 'o' or 'u':
 	         C += 1
 	print(C)  
                    
