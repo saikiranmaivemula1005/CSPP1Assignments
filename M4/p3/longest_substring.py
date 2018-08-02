@@ -16,14 +16,14 @@ If you have time, come back to this problem after you've had a break and cleared
 
 def main():
 	"""kk"""
-	s = raw_input()
+	str_ = raw_input()
 	check_ = 0
 	mi_ = 0
 	co_
 	# the input string is in s
 	# remove pass and start your code here
 	while i < 1:
-		if s[i] < s[i+1]:
+		if str_[i] < str_[i+1]:
 			check_ = check_+1
 		else:
 			check_ = 0
@@ -32,6 +32,6 @@ def main():
 			mi_ = i
 		else:
 			i = i+1
-	print(substring(s, mi_+1-co_, co_+1))
+	print(substring(str_, mi_+1-co_, co_+1))
 if __name__== "__main__":
 	main()
