@@ -5,7 +5,7 @@ def main():
 	S = input()
 	# the input string is in s
 	# remove pass and start your code here
-	c=0
+	C=0
 	for Letter in (S): 
 	     if Letter == 'a' or 'i' or 'e' or 'o' or 'u':
 	         C += 1
