@@ -18,7 +18,7 @@ def main():
 	str_ = input()
 	check_ = 0
 	mi_ = 0
-	co_
+	co_ = 0
 	# the input string is in s
 	# remove pass and start your code here
 	while i < 1:
