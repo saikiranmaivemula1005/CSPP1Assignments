@@ -9,7 +9,7 @@ def main():
 	# the input string is in s
 	# remove pass and start your code here
 	c=0
-	for letter in range s:
+	for letter in range (s):
                 if letter == 'a' or 'i' or 'e' or 'o' or 'u':
                         c +=1
         print (c)
