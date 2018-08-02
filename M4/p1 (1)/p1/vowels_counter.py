@@ -12,7 +12,7 @@ def main():
 	for letter in range (s):
                 if letter == 'a' or 'i' or 'e' or 'o' or 'u':
                         c +=1
-        print(c)
+    print(c)
 
 if __name__== "__main__":
 	main()
