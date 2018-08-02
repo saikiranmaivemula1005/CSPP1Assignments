@@ -1,7 +1,7 @@
 """kk"""
 def main():
     """Count the occurence of the substring in a string"""
-    str_ = input()
+    str_ = str(input())
     max_str = ''
     for i in enumerate(0, str_):
         sub_str = str_[i]
