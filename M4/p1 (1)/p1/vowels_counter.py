@@ -6,7 +6,7 @@ def main():
 	# the input string is in s
 	# remove pass and start your code here
 	C_ = 0
-	for Lette_r in (S): 
+	for Lette_r in (S_): 
 	     if Lette_r == 'a' or 'i' or 'e' or 'o' or 'u':
 	         C_ += 1
 	print(C_)  
