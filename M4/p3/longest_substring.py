@@ -11,7 +11,7 @@ For example, if s = 'abcbcd', then your program should print
 Longest substring in alphabetical order is: abc
 
 Note: This problem may be challenging. We encourage you to work smart.
-'''
+'''k''
 def main():
 	"""kk"""
 	str_ = input()
