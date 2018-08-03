@@ -2,7 +2,7 @@
 # Write a python program to find if the given number is a perfect cube or not 
 # using guess and check algorithm
 def main():
-	"""kk"""
+    """kk"""
 X = int(input()) 
 ANS_ = 0 
 while ANS_**3 < abs(X):
