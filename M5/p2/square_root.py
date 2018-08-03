@@ -1,17 +1,14 @@
-"""kk"""
-# Write a python program to find the square root of the given number
-# using Bi-section method
-X_ = int(input())
-EPSILON_ = 0.01
+"""kkk"""# Write a python program to find the square root of the number
+# using Newton-Rapson method
+def main():
+    """kk"""
+STEP_ = 0.01
+Y_ = int(input())
+GUESS_ = Y_/2.0
 NOG_ = 0
-LOW_ = 0.0
-HIGH_ = X_
-ANS_ = (HIGH_ + LOW_)/2.0
-while abs(ANS_**2 - X_) >= EPSILON_:
+while abs(GUESS_*GUESS_ - Y_) >= STEP_:
     NOG_ += 1
-    if ANS_**2 < X_:
-        LOW_ = ANS_
-    else:
-        HIGH_ = ANS_
-    ANS_ = (HIGH_ + LOW_)/2.0
-print(str(ANS_))
+    GUESS_ = GUESS_ - (((GUESS_**2) - Y_)/(2*GUESS_))
+print(str(GUESS_))
+if __name__ == "__main__":
+    main()
