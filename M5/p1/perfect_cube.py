@@ -5,7 +5,7 @@
 
 def main():
 	"""kk"""
-x = int(input('Enter an integer: ')) 
+x = int(input()) 
 ans = 0 
 while ans**3 < abs(x):
     ans = ans + 1 
