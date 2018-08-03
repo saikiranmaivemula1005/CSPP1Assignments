@@ -9,7 +9,6 @@ NOG_ = 0
 while abs(GUESS_*GUESS_ - Y_) >= STEP_:
     NOG_ += 1
     GUESS_ = GUESS_ - (((GUESS_**2) - Y_)/(2*GUESS_))
-print('numGuesses = ' + str(NOG_))
-print('Square root of ' + str(Y_) + ' is about ' + str(GUESS_))
+print(str(GUESS_))
 if __name__ == "__main__":
     main()
