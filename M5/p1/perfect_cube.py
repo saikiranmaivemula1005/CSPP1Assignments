@@ -5,16 +5,16 @@
 
 def main():
 	"""kk"""
-x = int(input()) 
-ans = 0 
-while ans**3 < abs(x):
-    ans = ans + 1 
-if ans**3 != abs(x):
-    print(str(x) + ' is not a perfect cube') 
+X = int(input()) 
+ANS_ = 0 
+while ANS_**3 < abs(X):
+    ANS_ = ANS_ + 1 
+if ANS_**3 != abs(X):
+    print(str(X) + ' is not a perfect cube') 
 else: 
-    if x < 0: 
-        ans = - ans
-    print(str(x) + ' is ' + 'a perfect cube')
+    if X < 0: 
+        ANS_ = - ANS_
+    print(str(X) + ' is ' + 'a perfect cube')
   
 if __name__== "__main__":
     main()
