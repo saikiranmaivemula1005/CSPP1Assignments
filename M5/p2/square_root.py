@@ -10,9 +10,15 @@
 # output: 6.999999999999991
 
 def main():
-	s = input()
-	x = math.sqrt(s)
-	print(x)
-
+guess = 0.0
+increment = 0.01
+num_guesses = 0
+while abs(guess**2 - cube) >= epsilon and guess <= cube:
+    guess += increment
+    num_guesses += 1
+print('num_guesses =', num_guesses)
+if abs(guess**2 - cube) >= epsilon:
+else:
+    print(guess)
 if __name__== "__main__":
 	main()
