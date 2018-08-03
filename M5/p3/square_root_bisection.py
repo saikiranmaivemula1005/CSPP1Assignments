@@ -1,5 +1,5 @@
 """kk"""
-# Write a python program to find the square root of the given number 
+# Write a python program to find the square root of the given number
 # using Bi-section method
 X_ = int(input())
 EPSILON_ = 0.01
