@@ -2,8 +2,8 @@
 # using Bi-section method
 
 def main():
-	s = raw_input()
-	#your code here
+	s = input()
+	
 
 if __name__== "__main__":
 	main()
