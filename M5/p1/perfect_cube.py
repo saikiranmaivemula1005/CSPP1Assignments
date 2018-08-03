@@ -16,5 +16,5 @@ else:
         ANS_ = - ANS_
     print(str(X) + ' is ' + 'a perfect cube')
   
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
