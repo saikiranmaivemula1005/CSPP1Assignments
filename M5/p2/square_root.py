@@ -1,20 +1,17 @@
 """kk"""
 # Write a python program to find the square root of the given number
-# using approximation method
-def main():
-    """kk"""
-NEG_ = False
-ANS_ = 0
-X = int(input())
-if X < 0:
-    NEG_ = True
-while ANS_**2 < X:
-    ANS_ = ANS_ + 1
-if ANS_**2 == X:
-    print("Square root of", X, "is", ANS_)
-else:
-    print(X, "is not a perfect square")
-    if NEG_:
-        print("Enter a positive number")
-if __name__ == "__main__":
-    main()
+# using Bi-section method
+X_ = int(input())
+EPSILON_ = 0.01
+NOG_ = 0
+LOW_ = 0.0
+HIGH_ = X_
+ANS_ = (HIGH_ + LOW_)/2.0
+while abs(ANS_**2 - X_) >= EPSILON_:
+    NOG_ += 1
+    if ANS_**2 < X_:
+        LOW_ = ANS_
+    else:
+        HIGH_ = ANS_
+    ANS_ = (HIGH_ + LOW_)/2.0
+print(str(ANS_))
