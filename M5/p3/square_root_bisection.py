@@ -1,23 +1,21 @@
-"""kk"""
-# Write a python program to find the square root of the given number 
-# using Bi-section method
+# Write a python program to find the square root of the given number
+# using approximation method
+
+# testcase 1
+# input: 25
+# output: 4.999999999999998
+
+# testcase 2
+# input: 49
+# output: 6.999999999999991
+
 def main():
-	"""kk"""
-inp_ = int(input())
-Step_ = 0.01
-Guesses_ = 0
-Low_ = 0.0
-High_ = inp_
-Ans_ = (High_ + Low_)/2
-while abs(Ans_**2 - inp_) >= Step_:
-    print('low = ' + str(Low_) + ' high = ' + str(High_) + ' ans = ' + str(Ans_))
-    Guesses_ += 1
-    if Ans_**2 < inp_:
-        Low_ = Ans_
-    else:
-    	High_ = Ans_
-    Ans_ = (High_ + Low_)/2
-print('Guesses_ = ' + str(Guesses_))
-print(str(Ans_) + ' is close to square root of ' + str(inp_))
+	s = raw_input()
+	# epsilon and step are initialized
+	# don't change these values
+	epsilon = 0.01
+	step = 0.1
+	# your code starts here
+
 if __name__== "__main__":
 	main()
