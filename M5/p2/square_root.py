@@ -8,17 +8,17 @@
 # output: 6.999999999999991
 def main():
     """kk"""
-cube = int(input())
-epsilon = 0.01
-guess = 0.0
-increment = 0.1
-num_guesses = 0
-while abs(guess**2 - cube) >= epsilon:
-    guess += increment
-    num_guesses += 1
-if abs(guess**2 - cube) >= epsilon:
-    print('Failed on cube root of', cube)
+INP_ = int(input())
+EPSILON_ = 0.01
+GUESS_ = 0.0
+INC_ = 0.1
+NOG_ = 0
+while abs(GUESS_**2 - INP_) >= EPSILON_:
+    GUESS_ += INC_
+    NOG_ += 1
+if abs(GUESS_**2 - INP_) >= EPSILON_:
+    print('Failed on cube root of', INP_)
 else:
-    print(guess)
+    print(GUESS_)
 if __name__== "__main__":
     main()
