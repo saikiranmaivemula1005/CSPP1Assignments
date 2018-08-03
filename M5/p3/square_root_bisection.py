@@ -17,5 +17,5 @@ while abs(Ans_**2 - inp_) >= Step_:
         High_ = Ans_
     Ans_ = (High_ + Low_)/2.0
 print(str(inp_))
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
