@@ -1,21 +1,17 @@
 """kk"""
 # Write a python program to find the square root of the given number 
 # using Bi-section method
-def main():
-	"""kk"""
-inp_ = int(input())
-Step_ = 0.01
-Guesses_ = 0
-Low_ = 0.0
-High_ = inp_
-Ans_ = (High_ + Low_)/2.0
-while abs(Ans_**2 - inp_) >= Step_:
-    Guesses_ += 1
-    if Ans_**2 < inp_:
-        Low_ = Ans_
+x = int(input())
+epsilon = 0.01
+numGuesses = 0
+low = 0.0
+high = x
+ans = (high + low)/2.0
+while abs(ans**2 - x) >= epsilon:
+    numGuesses += 1
+    if ans**2 < x:
+        low = ans
     else:
-        High_ = Ans_
-    Ans_ = (High_ + Low_)/2.0
-print(str(inp_))
-if __name__ == "__main__":
-    main()
+        high = ans
+    ans = (high + low)/2.0
+print(str(ans))
