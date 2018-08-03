@@ -13,16 +13,15 @@ def main():
     cube = int(input())
     epsilon = 0.0001
     guess = 0.0
-    increment = 0.00001
+    increment = 0.000001
     num_guesses = 0
     while abs(guess**2 - cube) >= epsilon:
         guess += increment
         num_guesses += 1
-    print('num_guesses =', num_guesses)
     if abs(guess**2 - cube) >= epsilon:
         print('Failed on cube root of', cube)
     else:
-        print(guess, 'is close to the cube root of', cube)
+        print(guess)
 
 if __name__== "__main__":
 	main()
