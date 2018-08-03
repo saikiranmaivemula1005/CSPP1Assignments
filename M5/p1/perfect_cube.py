@@ -11,7 +11,7 @@ if ANS_**3 != abs(X):
     print(str(X)+' is not a perfect cube') 
 else: 
     if X < 0: 
-        ANS_ = - ANS_
+        ANS_ = -ANS_
     print(str(X) + ' is ' + 'a perfect cube') 
 if __name__ == "__main__":
     main()
