@@ -5,7 +5,7 @@ def main():
     """kk"""
 NEG_ = False
 ANS_ = 0
-X = int(input("Enter an integer: "))
+X = int(input())
 if X < 0:
     NEG_ = True
 while ANS_**2 < X:
