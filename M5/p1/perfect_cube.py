@@ -8,7 +8,7 @@ ANS_ = 0
 while ANS_**3 < abs(X):
     ANS_ = ANS_ + 1 
 if ANS_**3 != abs(X):
-    print(str(X) + ' is not a perfect cube') 
+    print(str(X)+' is not a perfect cube') 
 else: 
     if X < 0: 
         ANS_ = - ANS_
