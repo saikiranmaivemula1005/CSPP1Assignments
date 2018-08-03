@@ -1,14 +1,18 @@
-"""kkk"""# Write a python program to find the square root of the number
-# using Newton-Rapson method
+# Write a python program to find the square root of the given number
+# using approximation method
+
+# testcase 1
+# input: 25
+# output: 4.999999999999998
+
+# testcase 2
+# input: 49
+# output: 6.999999999999991
+
 def main():
-    """kk"""
-STEP_ = 0.01
-Y_ = int(input())
-GUESS_ = Y_/2.0
-NOG_ = 0
-while abs(GUESS_*GUESS_ - Y_) >= STEP_:
-    NOG_ += 1
-    GUESS_ = GUESS_ - (((GUESS_**2) - Y_)/(2*GUESS_))
-print(str(GUESS_))
-if __name__ == "__main__":
-    main()
+	s = input()
+	x = math.sqrt(s)
+	print(x)
+
+if __name__== "__main__":
+	main()
