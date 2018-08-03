@@ -1,19 +1,20 @@
 """kk"""
-# Write a python program to find if the given number is a perfect cube or not 
-# using guess and check algorithm
-
+# Write a python program to find the square root of the given number
+# using approximation method
 def main():
-	"""kk"""
-x = int(input('Enter an integer: ')) 
-ans = 0 
-while ans**3 < abs(x):
-    ans = ans + 1 
-if ans**3 != abs(x):
-    print(str(x) + ' is not a perfect cube') 
-else: 
-    if x < 0: 
-        ans = - ans
-    print(str(x) + ' is ' + 'a perfect cube')
-  
-if __name__== "__main__":
+    """kk"""
+NEG_ = False
+ANS_ = 0
+X = int(input("Enter an integer: "))
+if X < 0:
+    NEG_ = True
+while ANS_**2 < X:
+    ANS_ = ANS_ + 1
+if ANS_**2 == X:
+    print("Square root of", X, "is", ANS_)
+else:
+    print(X, "is not a perfect square")
+    if NEG_:
+        print("Enter a positive number")
+if __name__ == "__main__":
     main()

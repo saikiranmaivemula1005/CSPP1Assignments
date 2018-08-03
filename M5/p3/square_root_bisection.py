@@ -1,5 +1,5 @@
 # Write a python program to find the square root of the given number 
-# using approximation method
+# using Bi-section method
 
 def main():
 	s = raw_input()
