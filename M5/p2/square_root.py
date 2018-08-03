@@ -11,7 +11,7 @@
 
 def main():
     cube = int(input())
-    epsilon = 0.001
+    epsilon = 0.0001
     guess = 0.0
     increment = 0.00001
     num_guesses = 0
