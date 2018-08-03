@@ -20,5 +20,5 @@ if abs(GUESS_**2 - INP_) >= EPSILON_:
     print('Failed on cube root of', INP_)
 else:
     print(GUESS_)
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
