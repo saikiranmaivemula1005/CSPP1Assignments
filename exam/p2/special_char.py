@@ -13,7 +13,7 @@ def main():
     while i < len(inp_):
         char_ = inp_[i]
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
-            print(res_ + ' ')
+            print('  ')
             i = i + 1
         else:
             print(res_ +  inp_[i])
