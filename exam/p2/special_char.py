@@ -11,9 +11,9 @@ def main():
     while i < len(inp_):
     	char_ = inp_[i]
     	for char_ in inp_:
-        if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
-            print('')
-        else:
+            if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
+                print('')
+            else:
             print(inp_)
 if __name__ == "__main__":
     main()
