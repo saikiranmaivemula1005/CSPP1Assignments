@@ -11,6 +11,6 @@ def main():
     for char in inp_:
         if char in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             print(" ")
-        print(inp_)
+    print(inp_)
 if __name__ == "__main__":
     main()
