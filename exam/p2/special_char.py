@@ -15,6 +15,6 @@ def main():
             print('')
         else:
             print(inp_[i])
-            break
+    break
 if __name__ == "__main__":
     main()
