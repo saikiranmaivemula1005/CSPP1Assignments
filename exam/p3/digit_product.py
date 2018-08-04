@@ -15,6 +15,6 @@ def main():
         num_ = temp_%10
         pro_ = pro_*num_
         num_ = inp_/10
-    print(pro_)
+    print(0)
     if __name__ == "__main__":
         main()
