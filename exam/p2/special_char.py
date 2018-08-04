@@ -9,7 +9,7 @@ def main():
     '''
     inp_ = input()
     i = 0
-    for i enumerate(len(inp_))
+    for i, char_ in enumerate(inp_):
         char_ = inp_[i]
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             print('')
