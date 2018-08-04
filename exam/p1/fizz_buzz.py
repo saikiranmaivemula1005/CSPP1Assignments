@@ -20,6 +20,6 @@ def main():
     	    print('Fizz')
     	    print('Buzz')
     	    i += 1
-    	print(i)	
+        print(i)	
 if __name__ == "__main__":
     main()
