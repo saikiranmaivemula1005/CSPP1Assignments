@@ -14,7 +14,7 @@ def main():
     while inp_ > 0:
         num_ = temp_%10
         pro_ = pro_*num_
-        num_ = inp_//10
+        num_ = inp_/10
     print(pro_)
     if __name__ == "__main__":
         main()
