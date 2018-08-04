@@ -16,7 +16,7 @@ def main():
         if inp_%5 == 0:
             print('Buzz')
             inp_ += 1
-        if inp_%3 == 0 and i_%5 == 0:
+        if inp_%3 == 0 and inp_%5 == 0:
             print('Fizz')
             print('Buzz')
             inp_ += 1
