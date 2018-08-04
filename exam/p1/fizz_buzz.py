@@ -8,18 +8,18 @@ def main():
     '''
     Read number from the input, store it in variable num.
     '''
-    num = int(input())
-    for i in range(1, num+1):
-        if i%3 == 0:
+    num_ = int(input())
+    for i_ in range(1, num_+1):
+        if i_%3 == 0:
             print('Fizz')
-            i += 1
-        if i%5 == 0:
-    	    print('Buzz')
-    	    i += 1
-        if i%3 == 0 and i%5 == 0:
-    	    print('Fizz')
-    	    print('Buzz')
-    	    i += 1
-        print(i)	
+            i_ += 1
+        if i_%5 == 0:
+            print('Buzz')
+            i_ += 1
+        if i_%3 == 0 and i_%5 == 0:
+            print('Fizz')
+            print('Buzz')
+            i_ += 1
+        print(i_)
 if __name__ == "__main__":
     main()
