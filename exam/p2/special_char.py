@@ -8,8 +8,8 @@ def main():
     Read string from the input, store it in variable str_input.
     '''
     inp_ = str(input())
-    for i in range(inp_):
-        if inp_[i] in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
+    for char in inp_:
+        if inp_[char] in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             print(" OK  ")
     print(inp_)
 if __name__ == "__main__":
