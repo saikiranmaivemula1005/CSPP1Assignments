@@ -10,14 +10,14 @@ def main():
     '''
     num_ = int(input())
     for inp_ in range(1, num_+1):
-        if inp_%3 == 0:
+        if inp_%3 == 0 and inp_%5 == 0:
+            print('Fizz')
+            print('Buzz')
+            inp_ += 1
+        elif inp_%3 == 0:
             print('Fizz')
             inp_ += 1
         elif inp_%5 == 0:
-            print('Buzz')
-            inp_ += 1
-        elif inp_%3 == 0 and inp_%5 == 0:
-            print('Fizz')
             print('Buzz')
             inp_ += 1
         else:
