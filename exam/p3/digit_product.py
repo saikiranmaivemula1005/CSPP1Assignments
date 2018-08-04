@@ -13,7 +13,6 @@ def main():
     temp_ = inp_
     while inp_ > 0:
         num_ = temp_%10
-        print(num_)
         pro_ = pro_*num_
         num_ = inp_/10
     print(pro_)
