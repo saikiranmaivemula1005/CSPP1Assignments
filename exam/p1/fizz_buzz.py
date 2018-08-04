@@ -10,16 +10,17 @@ def main():
     '''
     num = int(input())
     for i in range(1, num+1):
-        	if i%3 == 0:
+        if i%3 == 0:
             print('Fizz')
-    		i += 1
+    	    i += 1
     	if i%5 == 0:
-    		print('Buzz')
-    		i += 1
+    	    print('Buzz')
+    	    i += 1
     	if i%3 == 0 and i%5 == 0:
-    		print('Fizz')
-    		print('Buzz')
-    		i += 1
-    	print(i)	
+    	    print('Fizz')
+    	    print('Buzz')
+    	    i += 1
+    	print(i)
+        i += 1	
 if __name__ == "__main__":
     main()
