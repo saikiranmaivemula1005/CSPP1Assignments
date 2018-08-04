@@ -10,7 +10,7 @@ def main():
     '''
     inp_ = int(input())
     pro_ = 1
-    while inp_>0:
+    while inp_ > 0:
         num_ = inp_%10
         pro_ = pro_*num_
         num_ = num_//10
