@@ -7,9 +7,11 @@ def main():
     '''
     Read string from the input, store it in variable str_input.
     '''
-    inp_ = int(input())
-    for char_ in inp_:
-        if inp_[char_] in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
+    inp_ = input()
+    while i < len(inp_):
+    	char_ = inp_[i]
+    	for char_ in inp_:
+        if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             print('')
         else:
             print(inp_)
