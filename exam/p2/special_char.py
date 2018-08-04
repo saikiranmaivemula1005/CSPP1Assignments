@@ -13,6 +13,7 @@ def main():
         char_ = inp_[i]
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             print('')
-    print(inp_)
+        else:
+            print(inp_[i])
 if __name__ == "__main__":
     main()
