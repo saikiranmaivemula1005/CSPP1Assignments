@@ -13,10 +13,11 @@ def main():
     while i < len(inp_):
         char_ = inp_[i]
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
-            inp_[i] = res_ + ' '
+            res_ = res_ + ' '
         else:
-            res_ + inp_[i]
+            res_ =  res_ +  inp_[i]
             i = i + 1
-    print(res_)
+        print(res_)
+        break
 if __name__ == "__main__":
     main()
