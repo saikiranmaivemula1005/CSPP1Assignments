@@ -17,7 +17,7 @@ def main():
             i = i + 1
         else:
             res_ = res_ +  inp_[i]
-        i = i + 1
+            i = i + 1
         print(res_) 
 if __name__ == "__main__":
     main()
