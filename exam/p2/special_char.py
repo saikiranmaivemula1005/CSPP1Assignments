@@ -9,11 +9,12 @@ def main():
     '''
     inp_ = input()
     i = 0
-    res_ = ' '
+    res_ = ''
     while i < len(inp_):
         char_ = inp_[i]
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             res_ = res_ + ' '
+        i = i + 1
         else:
             res_ =  res_ +  inp_[i]
         i = i + 1
