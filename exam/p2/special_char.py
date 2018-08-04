@@ -14,11 +14,10 @@ def main():
         char_ = inp_[i]
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             res_ = res_ + ' '
-            i = i + 1
-            print(res_)
         else:
-            res_ = res_ +  inp_[i]
+            res_ =  res_ +  inp_[i]
             i = i + 1
-    print(res_)
+        print(res_)
+        i = i + 1
 if __name__ == "__main__":
     main()
