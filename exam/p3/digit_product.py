@@ -9,6 +9,7 @@ def main():
     Read any number from the input, store it in variable int_input.
     '''
     inp_ = int(input())
+    pro_ = 1
     while inp_>0:
         num_ = inp_%10
         pro_ = pro_*num_
