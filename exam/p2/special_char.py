@@ -13,7 +13,6 @@ def main():
         char_ = inp_[i]
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             print('')
-            break
         else:
             print(inp_[i])
             break
