@@ -9,17 +9,18 @@ def main():
     Read number from the input, store it in variable num.
     '''
     num_ = int(input())
-    for inp_ in range(1, num_):
+    for inp_ in range(1, num_+1):
         if inp_%3 == 0:
             print('Fizz')
             inp_ += 1
-        if inp_%5 == 0:
+        elif inp_%5 == 0:
             print('Buzz')
             inp_ += 1
-        if inp_%3 == 0 and inp_%5 == 0:
+        elif inp_%3 == 0 and inp_%5 == 0:
             print('Fizz')
             print('Buzz')
             inp_ += 1
-        print(inp_)
+        else:
+            print(inp_)
 if __name__ == "__main__":
     main()
