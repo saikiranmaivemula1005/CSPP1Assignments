@@ -16,8 +16,8 @@ def main():
             res_ = res_ + ' '
             i = i + 1
         else:
-            res_ =  res_ +  inp_[i]
+            res_ = res_ +  inp_[i]
             i = i + 1
-        print(res_)
+    print(res_)
 if __name__ == "__main__":
     main()
