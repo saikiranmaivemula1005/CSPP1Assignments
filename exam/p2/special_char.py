@@ -15,6 +15,7 @@ def main():
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
             res_ = res_ + ' '
             i = i + 1
+            print(res_)
         else:
             res_ = res_ +  inp_[i]
             i = i + 1
