@@ -9,7 +9,7 @@ def main():
     '''
     inp_ = input()
     for char in inp_:
-        if char in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
+        if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*':
             print(' ')
         print(inp_)
 if __name__ == "__main__":
