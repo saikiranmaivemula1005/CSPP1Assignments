@@ -10,9 +10,9 @@ def main():
     inp_ = input()
     i =0
     for i in len(inp_):
-    	char_ = inp_[i]
-    	if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
-                print('')
+        char_ = inp_[i]
+        if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
+            print('')
     print(inp_)
 if __name__ == "__main__":
     main()
