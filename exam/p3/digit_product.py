@@ -9,12 +9,12 @@ def main():
     Read any number from the input, store it in variable int_input.
     '''
     x = str(int(input()))
-    temp = x
     product = 1
+    i = 1
     while i < x:
         n = temp%10
         product = product*n
-        n= n//10
+        n = n//10
     print(product)
 if __name__ == "__main__":
     main()
