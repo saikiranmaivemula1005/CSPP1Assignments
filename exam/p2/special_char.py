@@ -9,7 +9,7 @@ def main():
     '''
     inp_ = input()
     i = 0
-    res_ = ''
+    res_ = ' '
     while i < len(inp_):
         char_ = inp_[i]
         if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
@@ -17,6 +17,6 @@ def main():
         else:
             res_ + inp_[i]
             i = i + 1
-    print(res_)    
+    print(res_)
 if __name__ == "__main__":
     main()
