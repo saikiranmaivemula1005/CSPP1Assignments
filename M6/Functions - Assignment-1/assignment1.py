@@ -17,11 +17,11 @@
 # Minimum monthly payment = (Minimum monthly payment rate) x (Previous balance)
 # Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
 # Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
-def payingDebtOff_InAYear(balance_, annual_Interest_Rate_, monthly_Payment_Rate_):
-    mir_ = annual_Interest_Rate_ / 12
+def payingdebtoff_inayear(balance_, annual_interest_rate_, monthly_payment_rate_):
+    mir_ = annual_interest_rate_ / 12
     for i in range (1, 13):
-    	mir_ = annual_Interest_Rate_ / 12
-    	mmp_ = monthly_Payment_Rate_ * balance_
+    	mir_ = annual_interest_rate_ / 12
+    	mmp_ = monthly_payment_rate_ * balance_
     	mub_ = balance_ - mmp_
     	ubem_ = mub_ + mir_ * mub_
     	balance_ = ubem_
@@ -31,7 +31,7 @@ def main():
 	data = input()
 	data = data.split(' ')
 	data = list(map(float, data))
-	print("Remaining balance:",payingDebtOff_InAYear(data[0],data[1],data[2]))
+	print("Remaining balance:",payingdebtoff_inayear(data[0],data[1],data[2]))
 if __name__ == "__main__":
 	main()
 
