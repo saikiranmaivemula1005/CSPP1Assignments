@@ -3,6 +3,7 @@ def payingdebtoff_inayear(balance_, annual_interest_rate_, monthly_payment_rate_
     """kkk"""
     mir_ = annual_interest_rate_ / 12
     nom_ = 1
+    ubem_ = 0
     while nom_ > 12:
         mir_ = annual_interest_rate_ / 12
         mmp_ = monthly_payment_rate_ * balance_
