@@ -17,11 +17,11 @@
 # Minimum monthly payment = (Minimum monthly payment rate) x (Previous balance)
 # Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
 # Updated balance each month = (Monthly unpaid balance) + (Monthly interest rate x Monthly unpaid balance)
-def payingDebtOffInAYear(balance_, annualInterestRate_, monthlyPaymentRate_):
-    mir_ = annualInterestRate_ / 12
+def payingDebtOff_InAYear(balance_, annual_Interest_Rate_, monthly_Payment_Rate_):
+    mir_ = annual_Interest_Rate_ / 12
     for i in range (1, 13):
-    	mir_ = annualInterestRate_ / 12
-    	mmp_ = monthlyPaymentRate_ * balance_
+    	mir_ = annual_Interest_Rate_ / 12
+    	mmp_ = monthly_Payment_Rate_ * balance_
     	mub_ = balance_ - mmp_
     	ubem_ = mub_ + mir_ * mub_
     	balance_ = ubem_
