@@ -26,14 +26,14 @@
 
 
 def payingDebtOffInAYear(balance, annualInterestRate, monthlyPaymentRate):
-    MIR = annualInterestRate / 12
+    mir_ = annualInterestRate / 12
     for i in range (1, 13):
-    	MIR_ = annualInterestRate / 12
-    	MMP_ = monthlyPaymentRate * balance
-    	MUB_ = balance - MMP_
-    	UBEM_ = MUB_ + MIR_ * MUB_
-    	balance = UBEM_
-    return round (UBEM_, 2)
+    	mir_ = annualInterestRate / 12
+    	mmp_ = monthlyPaymentRate * balance
+    	mub_ = balance - mmp_
+    	ubem_ = mub_ + mir_ * mub_
+    	balance = ubem_
+    return round (ubem_, 2)
     	
 def main():
 	data = input()
