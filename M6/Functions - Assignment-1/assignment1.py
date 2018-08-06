@@ -9,6 +9,7 @@ def payingdebtoff_inayear(balance_, annual_interest_rate_, monthly_payment_rate_
         mub_ = balance_ - mmp_
         ubem_ = mub_ + mir_ * mub_
         balance_ = ubem_
+        i += 1
     return round(ubem_, 2)
 def main():
     """kk"""
