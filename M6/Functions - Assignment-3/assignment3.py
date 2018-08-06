@@ -1,5 +1,5 @@
 def paying_debt_off_in_a_year(balance, annual_interest_rate):
-     monthly_interest_rate = (annual_interest_rate) / 12.0
+    monthly_interest_rate = (annual_interest_rate) / 12.0
     monthly_payment_lower_bound = balance / 12
     monthly_payment_upper_bound = (balance * (1 + monthly_interest_rate)**12) / 12.0
     new_balance = balance
