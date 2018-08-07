@@ -1,3 +1,4 @@
+"""kk"""
 # Exercise: Assignment-2
 # This function takes in one number and returns one number.
 def sum_of_digits(num_):
