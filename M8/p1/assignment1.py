@@ -5,7 +5,7 @@
 # This function takes in one number and returns one number.
 
 
-def factorial(n):
+def factorial(n_):
     '''
     n is positive Integer
 
