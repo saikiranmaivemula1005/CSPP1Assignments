@@ -19,9 +19,8 @@ def factorial(num_):
 
 
 def main():
-	"""kk"""
+    """kk"""
     inp_ = input()
     print(factorial(int(inp_)))    
-
 if __name__== "__main__":
     main()
