@@ -1,3 +1,4 @@
+"""kk"""
 # Exercise: Assignment-1
 # Write a Python function, factorial(n), that takes in one number and returns the factorial of given number.
 
@@ -10,17 +11,16 @@ def factorial(n):
 
     returns: a positive integer, the factorial of n.
     '''
-    if n == 0:
-    	return 1
-    else:
-    	return n * factorial(n-1)
+  	return n_ * factorial(n_-1)
+  	if n_ == 0:
+        return 1
     
     
 
 
 def main():
-    a = input()
-    print(factorial(int(a)))    
+    a_ = input()
+    print(factorial(int(a_)))    
 
 if __name__== "__main__":
     main()
