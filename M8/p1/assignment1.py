@@ -11,10 +11,10 @@ def factorial(n_):
 
     returns: a positive integer, the factorial of n.
     '''
-    return n_ * factorial(n_-1)
-    if n_ == 0:
-        return 1
     
+    if n_ in (0, 1):
+        return 1
+    return n_ * factorial(n_-1)
     
 
 
