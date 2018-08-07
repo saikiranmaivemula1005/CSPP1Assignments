@@ -5,22 +5,23 @@
 # This function takes in one number and returns one number.
 
 
-def factorial(n_):
+def factorial(num_):
     '''
     n is positive Integer
 
     returns: a positive integer, the factorial of n.
     '''
     
-    if n_ in (0, 1):
+    if num_ in (0, 1):
         return 1
-    return n_ * factorial(n_-1)
+    return num_ * factorial(num_-1)
     
 
 
 def main():
-    a_ = input()
-    print(factorial(int(a_)))    
+	"""kk"""
+    inp_ = input()
+    print(factorial(int(inp_)))    
 
 if __name__== "__main__":
     main()
