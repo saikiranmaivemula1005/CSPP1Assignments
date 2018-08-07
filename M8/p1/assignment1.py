@@ -3,8 +3,8 @@
 # This function takes in one number and returns one number.
 def factorial(num_):
     """kk"""
-    n is positive Integer
-    returns: a positive integer, the factorial of n.
+    #n is positive Integer
+    #returns: a positive integer, the factorial of n.
     if num_ in (0, 1):
         return 1
     return num_ * factorial(num_-1)
