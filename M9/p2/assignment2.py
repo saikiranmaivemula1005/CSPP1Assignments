@@ -19,7 +19,7 @@ def get_guessed_word(secret_word, letters_guessed):
         cou_ = 0
         for ite1_ in letters_guessed:
             if ite1_ == x1_[ite_]:
-                cou_ = 1            
+                cou_ = 1
         if cou_ == 1:
             x3_ = x3_ + x1_[ite_]
         else:
