@@ -18,7 +18,7 @@ def get_guessed_word(secret_word, letters_guessed):
     for ite_ in range(len(x1_)):
         for ite1_ in range(len(x2)):
             if ite1_ == ite_:
-                x3[ite1_] = x3[ite1_] + x1_
+                x3[ite1_] = x3[ite1_] + x1_[ite1_]
             else:
                 x2 = x3[ite1_] + '_'
         return x3
