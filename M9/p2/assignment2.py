@@ -14,6 +14,7 @@ def get_guessed_word(secret_word, letters_guessed):
     '''
     cou_ = 0
     x1_ = list(secret_word)
+    x2 = []
     for ite_ in x1_:
         for ite1_ in letters_guessed:
             if ite1_ == ite_:
