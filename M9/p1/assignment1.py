@@ -5,8 +5,6 @@ a string, secret_word, and a list of letters, letters_guessed. This function
 returns a boolean - True if secret_word has been guessed (ie, all the letters of
 secret_word are in letters_guessed) and False otherwise.
 '''
-
-
 def is_word_guessed(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing
@@ -14,19 +12,16 @@ def is_word_guessed(secret_word, letters_guessed):
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
     '''
-    c = 0
-    x = list(secret_word)
-    for i in x:
-        for j in letters_guessed:
-            if j == i:
-                c = c + 1
-    if c == len(secret_word):
+    cou_ = 0
+    x1_ = list(secret_word)
+    for ite_ in x1_:
+        for ite1_ in letters_guessed:
+            if ite1_ == ite_:
+                cou_ = cou_ + 1
+    if cou_ == len(secret_word):
         return True
     else:
-        return False         
-
-
-
+        return False
 def main():
     '''
     Main function for the program
@@ -42,6 +37,5 @@ def main():
     for j in range(1, len(data)):
         list1.append(data[j][0])
     print(is_word_guessed(secret_word, list1))
-
 if __name__ == "__main__":
     main()
