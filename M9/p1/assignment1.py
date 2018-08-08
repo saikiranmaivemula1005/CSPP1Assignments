@@ -18,7 +18,7 @@ def is_word_guessed(secret_word, letters_guessed):
         for ite1_ in letters_guessed:
             if ite1_ == ite_:
                 cou_ = cou_ + 1
-    return(cou_ == len(secret_word))
+    return cou_ == len(secret_word)
 def main():
     '''
     Main function for the program
