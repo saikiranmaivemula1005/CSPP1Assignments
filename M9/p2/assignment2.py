@@ -12,17 +12,16 @@ def get_guessed_word(secret_word, letters_guessed):
     returns: string, comprised of letters and underscores that represents
       what letters in secret_word have been guessed so far.
     '''
+    cou_ = 0
     x1_ = list(secret_word)
     x2 = []
-    l1 = len(x1_)
-    l2 = len(letters_guessed)
-    for ite_ in range(l1):
-        for ite1_ in range(l2):
+    for ite_ in x1_:
+        for ite1_ in letters_guessed:
             if ite1_ == ite_:
-                x2[ite1_] = x2[ite1_] + x1_[ite_]
+                x2 = x2.append(x1_)
             else:
-                x2[ite1_] = x2[ite1_] + ['_']
-        return x2
+                x2 = x2.append('_')
+    return x2
 
 def main():
     '''
