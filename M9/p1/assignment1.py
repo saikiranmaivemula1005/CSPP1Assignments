@@ -6,13 +6,12 @@ returns a boolean - True if secret_word has been guessed (ie, all the letters of
 secret_word are in letters_guessed) and False otherwise.
 '''
 def is_word_guessed(secret_word, letters_guessed):
-    '''
+    """
     secret_word: string, the word the user is guessing
     letters_guessed: list, what letters have been guessed so far
     returns: boolean, True if all the letters of secret_word are in letters_guessed;
       False otherwise
-    '''
-    """cou_ = 0
+    cou_ = 0
     x1_ = list(secret_word)
     for ite_ in x1_:
         for ite1_ in letters_guessed:
