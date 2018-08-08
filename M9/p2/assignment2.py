@@ -15,11 +15,14 @@ def get_guessed_word(secret_word, letters_guessed):
     x1_ = secret_word
     x3 = ''
     for ite_ in range(len(x1_)):
+        cou_ = 0
         for ite1_ in letters_guessed:
             if ite1_ == x1_[ite_]:
-                x3 = x3 + x1_[ite_]
-            else:
-                x3 = x3 + '_'
+                cou_ = 1            
+        if cou_ == 1:
+            x3 = x3 + x1_[ite_]
+        else:
+            x3 = x3 + '_'
     return x3
 
 def main():
