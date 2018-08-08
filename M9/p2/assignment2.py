@@ -17,9 +17,10 @@ def get_guessed_word(secret_word, letters_guessed):
     for ite_ in x1_:
         for ite1_ in letters_guessed:
             if ite1_ == ite_:
-                cou_ = cou_ + 1
+                x2 = x2 + x1_
             else:
-                return '_'
+                x2 = x2 + '_'
+    return x2
 
 def main():
     '''
