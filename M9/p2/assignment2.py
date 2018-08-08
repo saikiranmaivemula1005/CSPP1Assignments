@@ -21,7 +21,7 @@ def get_guessed_word(secret_word, letters_guessed):
                 x3[ite_] = x3[ite_] + x1_[ite_]
             else:
                 x3[ite_] = x3[ite_] + '_'
-            return x3
+        return x3
 
 def main():
     '''
