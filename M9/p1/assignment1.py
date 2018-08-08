@@ -20,6 +20,8 @@ def is_word_guessed(secret_word, letters_guessed):
         for j in range(i):
             if x[i]  == letters_guessed[i]:
                 return True
+            elif letters_guessed = 0:
+                return False
             else:
                 return False 
 
