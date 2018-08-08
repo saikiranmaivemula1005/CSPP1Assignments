@@ -20,7 +20,7 @@ def get_guessed_word(secret_word, letters_guessed):
             if ite1_ == ite_:
                 x2 = x2 + x1_
             else:
-                x2 = x2.append('_')
+                x2 = x2 + ('_')
     return x2
 
 def main():
