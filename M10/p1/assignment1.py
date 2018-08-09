@@ -2,7 +2,7 @@
 def get_available_letters(letters_guessed):
     """kk"""
     import string
-    res__ = ''
+    res_ = ''
     key_ = list(string.ascii_lowercase)
     val_ = key_
     dic_ = dict(zip(key_, val_))
