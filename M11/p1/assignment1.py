@@ -18,7 +18,7 @@ def get_word_score(word, num_):
     n: integer (HAND_SIZE; i.e., hand size required for additional points)
     returns: int >= 0
     """
-    sum = 0
+    sum_ = 0
     scramble_letters = {
     'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1,
     'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1, 'p': 3, 'q': 10, 'r': 1,
@@ -27,13 +27,13 @@ def get_word_score(word, num_):
     if length <= num_:
         for i in word:
             if i in scramble_letters.keys():
-                sum = sum + scramble_letters[i]
+                sum_ = sum_ + scramble_letters[i]
     #print(sum)
     #print(di1)
-        sum = sum * length
+        sum_ = sum_ * length
         if num_ == length:
-            sum += 50
-        return sum
+            sum_ += 50
+        return sum_
     else:
         return'invalid'
     # TO DO ... <-- Remove this comment when you code this function
