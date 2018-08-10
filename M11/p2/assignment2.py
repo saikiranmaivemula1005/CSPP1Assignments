@@ -13,7 +13,7 @@ def main():
     for i in range(int(num_)):
         data=input()
         le_=data.split()
-        adict[l[0]]=int(l[1])
+        adict[le_[0]]=int(le_[1])
     data1=input()
     print(update_hand(adict, data1))
 if __name__ == "__main__":
