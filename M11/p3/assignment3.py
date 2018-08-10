@@ -24,6 +24,6 @@ def main():
         adict[le_[0]] = int(le_[1])
         i = i + 1
     l2_ = input().split()
-    print(is_valid_word(word, adict,l2_))
+    print(is_valid_word(word, adict, l2_))
 if __name__ == "__main__":
     main()
