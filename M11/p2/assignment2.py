@@ -10,12 +10,14 @@ def update_hand(hand_, word_):
 def main():
     """kk"""
     num_ = input()
-    adict={}
+    adict = {}
+    i = 0
     for i in range(int(num_)):
-        data=input()
-        le_=data.split()
-        adict[le_[0]]=int(le_[1])
-    data1=input()
+        data = input()
+        le_= data.split()
+        adict[le_[0]] = int(le_[1])
+    i = i + 1
+    data1 = input()
     print(update_hand(adict, data1))
 if __name__ == "__main__":
-	main()
+    main()
