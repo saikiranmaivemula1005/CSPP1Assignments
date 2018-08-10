@@ -23,15 +23,14 @@ def get_word_score(word, n):
     val_ = 0
     l1 = []
     sum = 0
-    for i in range (0, 25):
-        l1.append(val_)
-        val_ += 1
-        #print(val_)
-    di1 = dict(zip(key_, l1))
+    fSCRABBLE_LETTER_VALUES = {
+    'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1,
+    'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1, 'p': 3, 'q': 10, 'r': 1,
+    's': 1, 't': 1, 'u': 1, 'v': 4, 'w': 4, 'x': 8, 'y': 4, 'z': 10}
     length = len(word)
     if n <= length:
         for i in word:
-            sum = sum + di1[i]
+            sum = sum + SCRABBLE_LETTER_VALUES[i]
     #print(sum) 
     #print(di1)
         sum = sum * length
