@@ -82,6 +82,9 @@ def hangman(secret_word):
             print(get_guessed_word(secret_word, guess_string))
             print("available letters: ", get_available_letters(guess_string))
             print('_______________________')
+            if is_word_guessed(secret_word, guess_string) is True:
+                print('Congratulations!!! YOU WON')
+                break
         else:
             available_guess -= 1
             print("OH NO!! WRONG GUESS")
@@ -89,8 +92,6 @@ def hangman(secret_word):
             print(get_guessed_word(secret_word, guess_string))
             print("available letters: ", get_available_letters(guess_string))
             print('_______________________')
-    if is_word_guessed(secret_word, guess_string) is True:
-        print('yes')
     else:
         print('Sorry!! You lost the game. It is ', secret_word)
 def main():

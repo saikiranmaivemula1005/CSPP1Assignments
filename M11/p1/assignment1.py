@@ -29,13 +29,13 @@ def get_word_score(word, n):
         #print(val_)
     di1 = dict(zip(key_, l1))
     length = len(word)
-    if n < length:
+    if n <= length:
         for i in word:
             sum = sum + di1[i]
     #print(sum) 
     #print(di1)
         sum = sum * length
-        if length <= n:
+        if length == n:
             sum += 50
         return sum
     else:
