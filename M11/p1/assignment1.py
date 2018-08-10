@@ -18,10 +18,6 @@ def get_word_score(word, n):
     n: integer (HAND_SIZE; i.e., hand size required for additional points)
     returns: int >= 0
     """
-    import string
-    key_ = list(string.ascii_lowercase)
-    val_ = 0
-    l1 = []
     sum = 0
     fSCRABBLE_LETTER_VALUES = {
     'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1,
@@ -30,7 +26,8 @@ def get_word_score(word, n):
     length = len(word)
     if n <= length:
         for i in word:
-            sum = sum + fSCRABBLE_LETTER_VALUES[i]
+            if i in fSCRABBLE_LETTER_VALUES.keys():
+                sum = sum + fSCRABBLE_LETTER_VALUES[i]
     #print(sum) 
     #print(di1)
         sum = sum * length
