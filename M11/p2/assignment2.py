@@ -14,7 +14,7 @@ def main():
     i = 0
     for i in range(int(num_)):
         data = input()
-        le_= data.split()
+        le_ = data.split()
         adict[le_[0]] = int(le_[1])
     i = i + 1
     data1 = input()
