@@ -33,8 +33,7 @@ def get_word_score(word, num_):
         if num_ == length:
             sum_ += 50
         return sum_
-        return 'invalid'
-    # TO DO ... <-- Remove this comment when you code this function
+            # TO DO ... <-- Remove this comment when you code this function
 
 
 
