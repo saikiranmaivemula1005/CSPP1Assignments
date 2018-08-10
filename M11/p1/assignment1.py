@@ -31,7 +31,7 @@ def get_word_score(word, n):
     #print(sum) 
     #print(di1)
         sum = sum * length
-        if length == n:
+        if n == length:
             sum += 50
         return sum
     else:
