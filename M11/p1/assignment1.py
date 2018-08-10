@@ -34,9 +34,6 @@ def get_word_score(word, num_):
             sum_ += 50
         return sum_
             # TO DO ... <-- Remove this comment when you code this function
-
-
-
 def main():
     '''
     Main function for the given problem
