@@ -23,8 +23,8 @@ def isValidWord(word, hand, wordList):
     	for i in word:
     	    if i in hand: 
                 return True
-    	else:
-    		return False
+    	    else:
+    		    return False
 
 
     
