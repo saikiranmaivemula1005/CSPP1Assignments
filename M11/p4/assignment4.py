@@ -17,7 +17,7 @@ def main():
 	"""kk"""
 	num_ = input()
 	adict = {}
-	for i in range(int(n)):
+	for i in range(int(num_)):
 		data = input()
 		le_ = data.split()
 		adict[le_[0]] = int(le_[1])
