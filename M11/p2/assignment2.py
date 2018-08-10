@@ -21,9 +21,8 @@ def updateHand(hand, word):
     # TO DO ... <-- Remove this comment when you code this function
     for i in hand:
         if i in word:
-            hand[i] -= 1
-            print(hand[i])
-    print(hand)
+            hand.key(i) -= 1
+    return hand
     
 
 def main():
