@@ -19,14 +19,10 @@ def isValidWord(word, hand, wordList):
     wordList: list of lowercase strings
     """
     # TO DO ... <-- Remove this comment when you code this function
-    if word in wordList:
     	for i in word:
-    	    if i in hand.keys(): 
-                return True
-    	    else:
-    		    return False
-    else:
-    	return False
+    	    if i not in hand.keys(): 
+                return False
+    	return bool(word in wordList)
 
 
     
