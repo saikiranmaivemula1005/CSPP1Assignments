@@ -30,7 +30,7 @@ def get_word_score(word, n):
     length = len(word)
     if n <= length:
         for i in word:
-            sum = sum + SCRABBLE_LETTER_VALUES[i]
+            sum = sum + fSCRABBLE_LETTER_VALUES[i]
     #print(sum) 
     #print(di1)
         sum = sum * length
