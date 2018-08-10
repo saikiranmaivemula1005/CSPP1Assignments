@@ -1,6 +1,7 @@
 """kkk"""
 def update_hand(hand_, word_):
     """kkk"""
+    i = 0
     for ite_ in word_:
         if ite_ in hand_.keys():
             hand_[ite_] -= 1
