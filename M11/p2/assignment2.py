@@ -19,7 +19,8 @@ def updateHand(hand, word):
     returns: dictionary (string -> int)
     """
     # TO DO ... <-- Remove this comment when you code this function
-    for i in hand:
+    #hand1 = hand
+    for i in hand.keys():
         if i in word:
             hand[i] -= 1
     return hand
