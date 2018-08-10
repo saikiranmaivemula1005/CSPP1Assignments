@@ -8,7 +8,7 @@ def update_hand(hand_, word_):
     return hand_
 def main():
     """kk"""
-    num- = input()
+    num_ = input()
     adict={}
     for i in range(int(n)):
         data=input()
