@@ -29,10 +29,10 @@ def get_word_score(word, num_):
                 sum_ = sum_ + scramble_letters[i]
     #print(sum)
     #print(di1)
-        sum_ = sum_ * length
-        if num_ == length:
-            sum_ += 50
-        return sum_
+    sum_ = sum_ * length
+    if num_ == length:
+        sum_ += 50
+    return sum_
             # TO DO ... <-- Remove this comment when you code this function
 def main():
     '''
