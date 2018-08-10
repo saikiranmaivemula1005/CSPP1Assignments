@@ -20,8 +20,9 @@ def updateHand(hand, word):
     """
     # TO DO ... <-- Remove this comment when you code this function
     for i in hand:
-        for i in word:
+        if i in word:
             hand[i] -= 1
+    i += 1
     return hand
     
 
