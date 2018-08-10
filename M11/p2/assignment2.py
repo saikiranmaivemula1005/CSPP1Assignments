@@ -4,14 +4,15 @@ def update_hand(hand_, word_):
     for ite_ in word_:
         if ite_ in hand_.keys():
             hand_[ite_] -= 1
+    i = i + 1
     return hand_
 def main():
     """kk"""
-    n = input()
+    num- = input()
     adict={}
     for i in range(int(n)):
         data=input()
-        l=data.split()
+        le_=data.split()
         adict[l[0]]=int(l[1])
     data1=input()
     print(update_hand(adict, data1))
