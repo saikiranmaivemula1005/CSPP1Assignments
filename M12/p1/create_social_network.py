@@ -33,16 +33,19 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-    d1 = {}
     x = data.split('\n')
+# print(x)
+    d1 = {}
     data = data.split(' follows ')
+#print(data)
     for i in x:
         if i.split(' follows ')[0] not in d1:
-            d1[i.split(' follows ')[0]] = str(i.split(' follows ')[1])
+            d1[i.split(' follows ')[0]] = str((i.split(' follows ')[1]))
         else:
             d1[i.split(' follows ')[0]].append(i.split(' follows ')[1])
-    return(d1)
+        i.split(' follows ')[0] = i.split(' follows ')[0].split(',')
 
+    return(d1)
 def main():
     '''
         handling testcase input and printing output
