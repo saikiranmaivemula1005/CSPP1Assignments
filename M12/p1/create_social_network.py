@@ -33,7 +33,7 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-    x = data.split('\n')
+    x = data.split('')
 # print(x)
     d1 = {}
     data = data.split(' follows ')
@@ -43,8 +43,6 @@ def create_social_network(data):
             d1[i.split(' follows ')[0]] = str((i.split(' follows ')[1]))
         else:
             d1[i.split(' follows ')[0]].append(i.split(' follows ')[1])
-        i.split(' follows ')[0] = i.split(' follows ')[0].split(',')
-
     return(d1)
 def main():
     '''
