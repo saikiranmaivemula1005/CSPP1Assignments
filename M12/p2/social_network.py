@@ -29,7 +29,7 @@ def unfollow(network, arg1, arg2):
     # remove the pass below and start writing your code
     for i in network:
         if network[i][0] == arg1:
-            delete(network[i][0])
+            network.remove(arg2)
     return network
 def delete_person(network, arg1):
     '''
@@ -44,7 +44,7 @@ def delete_person(network, arg1):
     # remove the pass below and start writing your code
     for i in network:
         if network[i] == arg1:
-            network.remove(arg2)
+            network.remove(arg1)
     return network
 def main():
     '''
