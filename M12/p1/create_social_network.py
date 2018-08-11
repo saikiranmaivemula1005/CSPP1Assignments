@@ -43,6 +43,7 @@ def create_social_network(data):
         print(i[0],i[1])
         if i[0] not in d1:
             d1[i[0]] = i[1].split(',')
+            print(d1[i[0]])
         else:
             d1[i[0]].extend(i[1].split(','))
     return(d1)
