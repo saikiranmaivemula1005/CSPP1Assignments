@@ -38,7 +38,7 @@ def create_social_network(data):
     dic_ = {}
     data = data.split('follows')
     # print(data)
-    for ite_ in x:
+    for ite_ in x+1:
         ite_ = ite_.split(' follows ')
         # print(i[0],i[1])
         if ite_[0] not in dic_:
