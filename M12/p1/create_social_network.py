@@ -41,12 +41,12 @@ def create_social_network(data):
     for ite_ in x:
         ite_ = ite_.split(' follows ')
         # print(i[0],i[1])
-        if ite_[0] not in d1:
-            d1[ite_[0]] = ite_[1].split(' , ')
-            print(d1[ite_[0]],ite_[0])
+        if ite_[0] not in dic_:
+            dic_[ite_[0]] = ite_[1].split(' , ')
+            print(dic_[ite_[0]],ite_[0])
         else:
-            d1[ite_[0]].extend(ite_[1].split(','))
-    return d1
+            dic_[ite_[0]].extend(ite_[1].split(','))
+    return dic_
 def main():
     '''
         handling testcase input and printing output
