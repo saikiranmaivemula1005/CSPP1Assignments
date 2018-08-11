@@ -30,11 +30,7 @@ def unfollow(network, arg1, arg2):
     for i in network:
         if network[i][0] == arg1:
             delete(arg2)
-    return network
-
-
-    
-
+    return network  
 def delete_person(network, arg1):
     '''
         2 arguments are passed to this function
