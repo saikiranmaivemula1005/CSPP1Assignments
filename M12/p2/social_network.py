@@ -14,7 +14,11 @@ def follow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
+    for i in network:
+        if network[i][0] == arg1:
+            network.append(arg2)
+    return network
+    
 
 def unfollow(network, arg1, arg2):
     '''
@@ -26,7 +30,13 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
+    for i in network:
+        if network[i][0] == arg1:
+            remove(arg2)
+    return network
+
+
+    
 
 def delete_person(network, arg1):
     '''
@@ -39,7 +49,11 @@ def delete_person(network, arg1):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    pass
+    for i in network:
+        if network[i] == arg1:
+            remove(arg1)
+    return network
+    
 
 def main():
     '''
