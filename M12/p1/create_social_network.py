@@ -42,11 +42,11 @@ def create_social_network(data):
         i = i.split(' follows ')
         # print(i[0],i[1])
         if i[0] not in d1:
-            d1[i[0]] = i[1].split(',')
+            d1[i[0]] = i[1].split(', ')
             print(d1[i[0]],i[0])
         else:
             d1[i[0]].extend(i[1].split(','))
-    return(d1)
+    return d1
 def main():
     '''
         handling testcase input and printing output
