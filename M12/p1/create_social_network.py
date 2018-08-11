@@ -33,7 +33,7 @@ def create_social_network(data):
     '''
 
     # remove the pass below and start writing your code
-    x = data.split('')
+    x = data.split('\n')
 # print(x)
     d1 = {}
     data = data.split(' follows ')
