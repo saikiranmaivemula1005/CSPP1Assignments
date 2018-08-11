@@ -44,7 +44,7 @@ def delete_person(network, arg1):
     # remove the pass below and start writing your code
     for i in network:
         if network[i] == arg1:
-            remove(arg1)
+            network.remove(arg2)
     return network
 def main():
     '''
