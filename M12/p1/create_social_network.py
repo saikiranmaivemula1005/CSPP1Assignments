@@ -45,7 +45,7 @@ def create_social_network(data):
             dic_[ite_[0]] = ite_[1].split(' , ')
             print(dic_[ite_[0]],ite_[0])
         else:
-            dic_[ite_[0]].extend(ite_[1].split(','))
+            dic_[ite_[0]].append(ite_[1].split(' , '))
     return dic_
 def main():
     '''
