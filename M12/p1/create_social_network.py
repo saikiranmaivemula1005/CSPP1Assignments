@@ -43,12 +43,10 @@ def create_social_network(data):
         # print(i[0],i[1])
         if i[0] not in d1:
             d1[i[0]] = i[1].split(',')
-            # print(d1[i[0]],i[0])
+            print(d1[i[0]],i[0])
         else:
             d1[i[0]].extend(i[1].split(','))
-    d2 = dict(zip(i[0],i[1]))
-    print(d2)
-    return(d2)
+    return(d1)
 def main():
     '''
         handling testcase input and printing output
