@@ -38,7 +38,7 @@ def create_social_network(data):
     data = data.split('follows')
     for i in data:
         if i.split('follows')[0] not in d1:
-            d1[i.split('follows')[0]] = list(i.split('follows')[1])
+            d1[i.split('follows')[0]] = str(i.split('follows')[1])
         else:
             d1[i.split('follows')[0]].append(i.split('follows')[1])
     return(d1)
