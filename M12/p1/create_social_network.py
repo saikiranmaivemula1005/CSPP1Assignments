@@ -40,10 +40,10 @@ def create_social_network(data):
 #print(data)
     for i in data:
         if i.split(' follows ')[0] not in d1:
-            d1[i.split(' follows ')[0]] = str((i.split(' follows ')[1]))
+            d1[i.split(' follows ')[0]] = str((i.split(' follows ')[1]).split(","))
         else:
-            d1[i.split(' follows ')[0]].append(i.split(' follows ')[1])
-    return(data)
+            d1[i.split(' follows ')[0]].extend(i.split(' follows ')[1].split(","))
+    return(d1)
 def main():
     '''
         handling testcase input and printing output
