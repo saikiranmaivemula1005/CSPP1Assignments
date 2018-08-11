@@ -40,7 +40,7 @@ def create_social_network(data):
             d1[i.split('follows')[0]] = list(i.split('follows')[1])
         else:
             d1[i.split('follows')[0]].append(i.split('follows')[1])
-        return ("".join(d1))
+        return (d1)
 
 
 def main():
