@@ -32,7 +32,7 @@ def unfollow(network, arg1, arg2):
     # remove the pass below and start writing your code
     for i in network:
         if network[i][0] == arg1:
-            remove(arg2)
+            delete(arg2)
     return network
 
 
