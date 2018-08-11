@@ -43,7 +43,7 @@ def create_social_network(data):
             d1[i.split(' follows ')[0]] = str((i.split(' follows ')[1]))
         else:
             d1[i.split(' follows ')[0]].append(i.split(' follows ')[1])
-    return(d1)
+    return(data)
 def main():
     '''
         handling testcase input and printing output
