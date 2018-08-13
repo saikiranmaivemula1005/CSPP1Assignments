@@ -36,11 +36,11 @@ def create_social_network(data):
     x1_ = data.split('\n')
     print(x1_)
     dic_ = {}
-    data = data.split(' follows ')
+    x1_ = x1_.split(' follows ')
     print(data)
     for ite_ in x1_:
         ite_ = ite_.split(' follows ')
-        print(ite_[0],ite_[1])
+        # print(ite_[0],ite_[1])
         if ite_[0] not in dic_:
             dic_[ite_[0]] = ite_[1].split(' , ')
             print(ite_[0], dic_[ite_[0]])
