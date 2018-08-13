@@ -13,12 +13,6 @@ def follow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    l1_ = []
-    for i in network:
-        l1_ = network[i]
-        if l1_ == arg1:
-            network[i][0].append(arg2)
-    return network
     if arg1 in network:
         network[arg1].append(arg2)
     else:
