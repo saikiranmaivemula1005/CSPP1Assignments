@@ -44,16 +44,15 @@ def delete_person(network, arg1):
     '''
     # remove the pass below and start writing your code
     d1_ = network
-    for i in d1_:
-        if network[i] == arg1:
-            del d1_[arg1]
-        d2 = d1_
-        x=[]
-        for i in d2:
-            x = d2[i]
-            if arg1 in x:
-                x.remove(arg1)
-            d2[i] = x
+    if network[i] == arg1:
+        del d1_[arg1]
+    d2 = d1_
+    x=[]
+    for i in d2:
+        x = d2[i]
+        if arg1 in x:
+            x.remove(arg1)
+        d2[i] = x
     return d2
 def main():
     '''
