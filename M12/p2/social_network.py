@@ -30,9 +30,7 @@ def unfollow(network, arg1, arg2):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
-    for i in network:
-        if network[i][0] == arg1:
-            del arg2
+    network[arg1].remove(arg2)
     return network
 def delete_person(network, arg1):
     '''
@@ -56,7 +54,7 @@ def delete_person(network, arg1):
             if arg1 in x:
                 x.remove(arg1)
             d2[i] = x
-    return network
+    return d2
 def main():
     '''
         handling testcase input and printing output
