@@ -44,6 +44,7 @@ def delete_person(network, arg1):
         update the network dictionary and return it
     '''
     # remove the pass below and start writing your code
+    i = 0
     d1_ = network
     for arg1 in d1_:
         if network[i] == arg1:
