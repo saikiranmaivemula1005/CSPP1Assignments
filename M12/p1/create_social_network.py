@@ -40,7 +40,7 @@ def create_social_network(data):
     print(data)
     for ite_ in x1_:
         ite_ = ite_.split(' follows ')
-        print(i[0],i[1])
+        print(ite_[0],ite_[1])
         if ite_[0] not in dic_:
             dic_[ite_[0]] = ite_[1].split(' , ')
             print(dic_[ite_[0]],ite_[0])
