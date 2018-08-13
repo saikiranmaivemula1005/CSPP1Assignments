@@ -42,10 +42,10 @@ def create_social_network(data):
         ite_ = x1_[ite_].split(' follows ')
         # print(ite_[0],ite_[1])
         if ite_[0] not in dic_:
-            dic_[ite_[0]] = ite_[1].split(' , ')
+            dic_[ite_[0]] = ite_[1].split(',')
             # print(ite_[0], dic_[ite_[0]])
         else:
-            dic_[ite_[0]].extend(ite_[1].split(' , '))
+            dic_[ite_[0]].extend(ite_[1].split(','))
     return dic_
 def main():
     '''
