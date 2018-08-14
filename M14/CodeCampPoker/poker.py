@@ -14,13 +14,17 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    
+    x = []
     for i in hand:
         for j in i:
-            if hand[j+1][0] < hand [j][0]:
-                return True
-            else:
-                return False
+            x.append(int(j[0]))
+    for k in range(len(x)):
+        if x[k] > x[k+1]:
+            return True
+        else:
+            return False
+
+            
 
 def is_flush(hand):
     '''
