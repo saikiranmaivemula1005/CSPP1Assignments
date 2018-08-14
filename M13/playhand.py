@@ -1,5 +1,3 @@
-# The 6.00 Word Game
-
 import random
 import string
 
@@ -48,7 +46,7 @@ def getFrequencyDict(sequence):
     for x in sequence:
         freq[x] = freq.get(x,0) + 1
     return freq
-	
+    
 
 # (end of helper code)
 # -----------------------------------
@@ -281,51 +279,3 @@ def playHand(hand, wordList, n):
     return ' '
 
 
-
-
-#
-# Problem #5: Playing a game
-# 
-
-def playGame(wordList):
-    """
-    Allow the user to play an arbitrary number of hands.
-
-    1) Asks the user to input 'n' or 'r' or 'e'.
-      * If the user inputs 'n', let the user play a new (random) hand.
-      * If the user inputs 'r', let the user play the last hand again.
-      * If the user inputs 'e', exit the game.
-      * If the user inputs anything else, tell them their input was invalid.
- 
-    2) When done playing the hand, repeat from step 1    
-    """
-    # TO DO ... <-- Remove this comment when you code this function
-    # <-- Remove this line when you code the function
-    print('n: new game\nr:previous hand\ne:exit the game ')
-    x = input()
-    if x == 'n':
-        hand = dealHand(HAND_SIZE)
-        global old_hand
-        old_hand = dict(hand)
-        print(displayHand(hand))
-        playHand(hand, wordList, HAND_SIZE)
-    elif x == 'r':
-        print(displayHand(old_hand))
-        playHand(old_hand, wordList, HAND_SIZE)
-    elif x == 'e':
-        exit()
-    else:
-        print('enter valid data')
-
-
-
-   
-
-
-
-#
-# Build data structures used for entire session and play game
-#
-if __name__ == '__main__':
-    wordList = loadWords()
-    playGame(wordList)
