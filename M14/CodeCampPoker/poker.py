@@ -23,12 +23,12 @@ def is_straight(hand):
         else:
             z = int(i[0])
         x.append(z)
-
+    x.sort()
     for j in range(len(x)):
-        if abs(x[j]-x[j-1]) != 1:
+        t = x[j]+1
+        if t != x[j+1]:
             return False
-        else:
-            return True
+    return True
 
             
 
@@ -44,8 +44,7 @@ def is_flush(hand):
     for k in range(len(hand)):
         if hand[k][1] != hand[k+1][1]:
             return False
-        else:
-            return True
+    return True
 
 def hand_rank(hand):
     '''
