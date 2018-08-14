@@ -93,7 +93,7 @@ if __name__ == "__main__":
     COUNT = int(input())
     # iterate through the test cases to set up hands list
     HANDS = []
-    for x1_ in range(COUNT):
+    for x in range(COUNT):
         # print(x1_)
         line = input()
         ha = line.split(" ")
