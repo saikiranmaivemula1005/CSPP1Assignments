@@ -16,7 +16,6 @@ def is_straight(hand):
     '''
     x = []
     for i in hand:
-        z = int(i[0])
         if i[0] == 'J':
             z = 11
         elif i[0] == 'Q':
@@ -25,6 +24,7 @@ def is_straight(hand):
             z = 13
         elif i[0] == 'A':
             z = 1
+        z = int(i[0])
         x.append(z)
     for j in range(len(x)):
         if abs(x[j]-x[j-1]) == 1:
