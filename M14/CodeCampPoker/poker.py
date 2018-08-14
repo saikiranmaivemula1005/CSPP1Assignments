@@ -35,11 +35,10 @@ def is_flush(hand):
         Write the code for it and return True if it is a flush else return False
     '''
     for i in hand:
-        for j in i:
-            if hand[j+1][1] == hand[j][1]:
-                return True
-            else:
-                return False
+        if hand[i+1][1] == hand[i][1]:
+            return True
+        else:
+            return False
 
 def hand_rank(hand):
     '''
