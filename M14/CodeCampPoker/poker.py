@@ -16,7 +16,7 @@ def is_straight(hand):
     '''
     x = []
     for i in hand:
-        z = int(i[1])
+        z = int(i[0][0])
         x.append(z)
     for k in range(len(x)):
         if x[k] > x[k+1]:
