@@ -14,6 +14,11 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
+    T = 10
+    J = 11
+    Q = 12
+    K = 13
+    A = 1
     x = []
     for i in hand:
         z = int(i[0])
