@@ -16,11 +16,11 @@ def is_straight(hand):
     '''
     
     for i in hand:
-        hand = int(hand[0][0])
-        if hand[i+1][i][0] < hand [i][i][0]:
-            return True
-        else:
-            return False
+        for j in i:
+            if hand[j+1][0] < hand [j][0]:
+                return True
+            else:
+                return False
 
 def is_flush(hand):
     '''
@@ -31,11 +31,12 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    for i in range(len(hand)+2):
-        if hand[i+1][1][1] == hand[i][i][1]:
-            return True
-        else:
-            return False
+    for i in hand:
+        for j in i:
+            if hand[j+1][1] == hand[j][1]:
+                return True
+            else:
+                return False
 
 def hand_rank(hand):
     '''
