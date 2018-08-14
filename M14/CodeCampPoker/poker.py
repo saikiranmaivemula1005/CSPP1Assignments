@@ -15,7 +15,7 @@ def is_straight(hand):
         Write the code for it and return True if it is a straight else return False
     '''
     for i in hand:
-        if hand int([i][0]) == hand int([i+1][0]).sort():
+        if hand int([i])[0] == hand int([i+1])[0].sort():
             return True
         else:
             return False
