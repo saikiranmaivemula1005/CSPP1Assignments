@@ -88,7 +88,7 @@ def poker(hands):
     # hand_rank is a function passed to max1_
     # hand_rank takes a hand and returns its rank
     # max1_ uses the rank returned by hand_rank and returns the best hand
-    return max1_(hands, key=hand_rank)
+    return max(hands, key=hand_rank)
 if __name__ == "__main__":
     # read the number of test cases
     COUNT = int(input())
