@@ -14,7 +14,7 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    for i in range(len(hand)+1):
+    for i in range(len(hand)+2):
         if hand[i][i][0] > hand [i+1][i][0]:
             return True
         else:
@@ -29,7 +29,7 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    for i in range(len(hand)+1):
+    for i in range(len(hand)+2):
         if hand[i][1][1] == hand[i+1][i][1]:
             return True
         else:
