@@ -14,11 +14,10 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    for i in HANDS:
-        if hand[i][0] == hand[i][0].sort():
-            return True
-        else:
-            return False
+     if hand[i][0] == hand[i][0].sort():
+        return True
+    else:
+        return False
 
 def is_flush(hand):
     '''
@@ -59,11 +58,11 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    if is_straight == True and is_flush == True:
+    if is_straight(hand) == True and is_flush(hand) == True:
         return 3
-    elif is_flush == True:
+    elif is_flush(hand) == True:
         return 2
-    elif is_straight == True:
+    elif is_straight(hand) == True:
         return 1
     else:
         return 0
