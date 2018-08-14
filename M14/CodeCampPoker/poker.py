@@ -42,7 +42,7 @@ def is_flush(hand):
         Write the code for it and return True if it is a flush else return False
     '''
     for k in range(len(x)):
-        if x[k] !== x[k+1]:
+        if x[k] != x[k+1]:
             return False
         else:
             return True
