@@ -93,8 +93,10 @@ if __name__ == "__main__":
     # iterate through the test cases to set up hands list
     HANDS = []
     for x in range(COUNT):
+        print(x)
         line = input()
         ha = line.split(" ")
         HANDS.append(ha)
+        print(HANDS)
     # test the poker function to see how it works
-    # print(' '.join(poker(HANDS)))
+    print(' '.join(poker(HANDS)))
