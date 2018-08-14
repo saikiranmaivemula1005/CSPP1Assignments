@@ -21,6 +21,11 @@ def is_straight(hand):
     A = 1
     x = []
     for i in hand:
+        T = 10
+        J = 11
+        Q = 12
+        K = 13
+        A = 1
         z = int(i[0])
         x.append(z)
     if x == x.sort():
