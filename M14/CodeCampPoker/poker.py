@@ -14,18 +14,18 @@ def is_straight(hand):
         Write the code for it and return True if it is a straight else return False
     '''
     x1_ = []
-    s = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
+    s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
     for i in hand: 
         # print(i)
-        if i[0] in s.keys():
-            z = s[i[0]]
+        if i[0] in s1_.keys():
+            z1_ = s1_[i[0]]
         else:
-            z = int(i[0])
+            z1_ = int(i[0])
         x1_.append(z)
     x1_.sort()
     for j in range(4):
-        t = x1_[j]+1
-        if t != x1_[j+1]:
+        t1_ = x1_[j]+1
+        if t1_ != x1_[j+1]:
             return False
     return True           
 def is_flush(hand):
@@ -37,8 +37,8 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    for k in range(4):
-        if hand[k][1] != hand[k+1][1]:
+    for k1_ in range(4):
+        if hand[k1_][1] != hand[k1_+1][1]:
             return False
     return True
 def hand_rank(hand):
