@@ -34,8 +34,11 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
+    x = []
     for i in hand:
-        if hand[i+1][1] == hand[i][1]:
+        x.append(i[1])
+    for k in range(len(x)):
+        if x[k] == x[k+1]:
             return True
         else:
             return False
