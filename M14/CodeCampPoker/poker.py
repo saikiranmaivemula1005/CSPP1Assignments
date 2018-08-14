@@ -21,7 +21,7 @@ def is_straight(hand):
             z1_ = s1_[i[0]]
         else:
             z1_ = int(i[0])
-        x1_.append(z)
+        x1_.append(z1_)
     x1_.sort()
     for j in range(4):
         t1_ = x1_[j]+1
