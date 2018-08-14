@@ -15,13 +15,15 @@ def is_straight(hand):
         Write the code for it and return True if it is a straight else return False
     '''
     x = []
-    for i in hand:
-        s = {'T':10, 'J':11, 'K':12, 'Q':13, 'A':1}
+    s = {'T':10, 'J':11, 'K':12, 'Q':13, 'A':1}
+    for i in hand: 
+        print(i)
         if i in s.keys():
             z = s[i]
         else:
             z = int(i[0])
         x.append(z)
+
     for j in range(len(x)):
         if abs(x[j]-x[j-1]) == 1:
             return True
