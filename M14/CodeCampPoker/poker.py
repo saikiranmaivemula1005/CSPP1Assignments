@@ -18,7 +18,7 @@ def is_straight(hand):
     s = {'T':10, 'J':11, 'K':12, 'Q':13, 'A':1}
     for i in hand: 
         print(i)
-        if i in s.keys():
+        if i[0] in s.keys():
             z = s[i]
         else:
             z = int(i[0])
