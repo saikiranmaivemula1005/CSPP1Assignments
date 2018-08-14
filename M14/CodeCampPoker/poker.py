@@ -16,13 +16,12 @@ def is_straight(hand):
     '''
     x = []
     for i in hand:
-        z = int(i[0][0])
+        z = int(i[0])
         x.append(z)
-    for k in range(len(x)):
-        if x[k] > x[k+1]:
-            return True
-        else:
-            return False
+    if x == x.sort():
+        return True
+    else:
+        return False
 
             
 
