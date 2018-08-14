@@ -46,6 +46,11 @@ def is_flush(hand):
     '''
     x = []
     for i in hand:
+        T = 10
+        J = 11
+        Q = 12
+        K = 13
+        A = 1
         x.append(i[1])
     for k in range(len(x)):
         if x[k] == x[k+1]:
