@@ -16,11 +16,11 @@ def is_straight(hand):
     '''
     x = []
     for i in hand:
-        i[T] = 10
-        i[Q] = 11
-        i[J] = 12
-        i[K] = 13
-        i[A] = 1
+        i['T'] = 10
+        i['Q'] = 11
+        i['J'] = 12
+        i['K'] = 13
+        i['A'] = 1
         z = i[0]
         x.append(z)
     for j in range(len(x)):
