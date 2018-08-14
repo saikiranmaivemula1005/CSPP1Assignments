@@ -19,7 +19,7 @@ def is_straight(hand):
     for i in hand: 
         print(i)
         if i[0] in s.keys():
-            z = s[i]
+            z = s[i[0]]
         else:
             z = int(i[0])
         x.append(z)
