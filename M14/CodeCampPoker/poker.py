@@ -27,7 +27,7 @@ def is_straight(hand):
         t1_ = x1_[j]+1
         if t1_ != x1_[j+1]:
             return False
-    return True           
+    return True
 def is_flush(hand):
     '''
         How do we find out if the given hand is a flush?
@@ -65,9 +65,9 @@ def hand_rank(hand):
     # max1_ in poker function uses these return values to select the best hand
     if is_straight(hand) == True and is_flush(hand) == True:
         return 3
-    elif is_flush(hand) == True:
+    if is_flush(hand) == True:
         return 2
-    elif is_straight(hand) == True:
+    if is_straight(hand) == True:
         return 1
     else:
         return 0
