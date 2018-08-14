@@ -16,9 +16,9 @@ def is_straight(hand):
     '''
     for i in HANDS:
         if hand[i][0] == hand[i][0].sort():
-        return True
-    else:
-        return False
+            return True
+        else:
+            return False
 
 def is_flush(hand):
     '''
