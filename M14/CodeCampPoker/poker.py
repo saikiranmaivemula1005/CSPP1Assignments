@@ -15,7 +15,7 @@ def is_straight(hand):
         Write the code for it and return True if it is a straight else return False
     '''
     for i in range(len(hand)+2):
-        if hand[i][i][0] > hand [i+1][i][0]:
+        if hand[i+1][i][0] < hand [i][i][0]:
             return True
         else:
             return False
@@ -30,7 +30,7 @@ def is_flush(hand):
         Write the code for it and return True if it is a flush else return False
     '''
     for i in range(len(hand)+2):
-        if hand[i][1][1] == hand[i+1][i][1]:
+        if hand[i+1][1][1] == hand[i][i][1]:
             return True
         else:
             return False
