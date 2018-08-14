@@ -16,7 +16,7 @@ def is_straight(hand):
     '''
     
     for i in hand:
-        hand = int(hand[0])
+        hand = int(hand[0][0])
         if hand[i+1][i][0] < hand [i][i][0]:
             return True
         else:
