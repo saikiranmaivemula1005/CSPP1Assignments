@@ -16,12 +16,8 @@ def is_straight(hand):
     '''
     x = []
     for i in hand:
-        i['T'] = 10
-        i['Q'] = 11
-        i['J'] = 12
-        i['K'] = 13
-        i['A'] = 1
-        z = i[0]
+        i = {'T':10, 'J':11, 'K':12, 'Q':13, 'A':1}
+        z = int(i[0])
         x.append(z)
     for j in range(len(x)):
         if abs(x[j]-x[j-1]) == 1:
