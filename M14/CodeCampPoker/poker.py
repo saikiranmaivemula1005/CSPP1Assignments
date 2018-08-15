@@ -47,7 +47,10 @@ def is_four_of_a_kind(hand):
         for j in hand:
             if hand[i][0] == j[0]:
                 x1_ = x1_+1
-    if x1_ == 4:
+        for k in hand:
+            if hand[i][0] == k[0]:
+                k = k+1
+    if x1_ == 3 and k == 1:
         return True
     else:
         return False
