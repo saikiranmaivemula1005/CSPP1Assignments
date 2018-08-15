@@ -42,6 +42,7 @@ def is_flush(hand):
             return False
     return True
 def is_four_of_a_kind(hand):
+    x1_ = []
     s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
     for i in hand:
         # print(i)
