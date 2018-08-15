@@ -100,7 +100,7 @@ def is_one_pair(hand):
         x1_.append(z1_)
     x1_.sort()
     for i in range(len(hnad)):
-        if x1_[i]==x1_[i+1]:
+        if x1_[i] == x1_[i+1]:
             return True
     return False        
 def is_full_house(hand):
