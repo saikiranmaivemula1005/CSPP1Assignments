@@ -53,7 +53,7 @@ def is_four_of_a_kind(hand):
         x1_.append(z1_)
     x1_.sort()
     for i in range(2):
-        if x1[i]==x1[i+1]==x1[i+2]==x1[i+3]:
+        if x1_[i]==x1_[i+1]==x1_[i+2]==x1_[i+3]:
             return True
     return False
 def is_three_of_a_kind(hand):
