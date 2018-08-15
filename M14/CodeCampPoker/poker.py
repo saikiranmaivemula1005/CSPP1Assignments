@@ -83,7 +83,7 @@ def is_two_pair(hand):
             z1_ = int(i[0])
         x1_.append(z1_)
     x1_.sort()
-    pair_ = set(x1_):
+    pair_ = set(x1_)
     if len(pair_)==3:
         return True
     return False
