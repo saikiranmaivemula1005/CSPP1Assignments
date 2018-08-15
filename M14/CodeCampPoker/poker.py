@@ -61,6 +61,37 @@ def is_three_of_a_kind(hand):
         return True
     else:
         return False
+def is_two_pair(hand):
+    x1_ = 0
+    for i in range(len(hand)): 
+        for j in hand:
+            if hand[i][0] == j[0]:
+                x1_ = x1_+1
+    if x1_ == 9:
+        return True
+    else:
+        return False
+def is_one_pair(hand):
+    x1_ = 0
+    for i in range(len(hand)): 
+        for j in hand:
+            if hand[i][0] == j[0]:
+                x1_ = x1_+1
+    if x1_ == 7:
+        return True
+    else:
+        return False
+def is_full_house(hand):
+    x1_=0
+    for i in range(len(hand)): 
+        for j in hand:
+            if hand[i][0] == j[0]:
+            x1_ = x1_+1
+    if full_house == 13:
+        return True
+    else:
+        return False
+
 
 
 
@@ -86,15 +117,21 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max1_ in poker function uses these return values to select the best hand
-    if is_four_of_a_kind(hand):
-        return 5
     if is_straight(hand) and is_flush(hand):
-        return 4
+        return 8
+    if is_four_of_a_kind(hand):
+        return 7
+    if is_full_house(hand):
+        return 6
     if is_flush(hand):
-        return 3
+        return 5
     if is_straight(hand):
-        return 2
+        return 4
     if is_three_of_a_kind(hand):
+        return 3
+    if is_two_pair(hand):
+        return 2
+    if is_one_pair(hand):
         return 1
     return 0    
 def poker(hands):
