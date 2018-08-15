@@ -86,8 +86,8 @@ def is_full_house(hand):
     for i in range(len(hand)): 
         for j in hand:
             if hand[i][0] == j[0]:
-            x1_ = x1_+1
-    if full_house == 13:
+                x1_ = x1_+1
+    if x1_ == 13:
         return True
     else:
         return False
