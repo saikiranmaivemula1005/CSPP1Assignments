@@ -164,7 +164,6 @@ def hand_rank(hand):
     if is_one_pair(hand):
         x = 1
     return x
-else:
     return 0
 def poker(hands):
     '''
