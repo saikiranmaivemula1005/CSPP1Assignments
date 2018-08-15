@@ -51,7 +51,7 @@ def is_four_of_a_kind(hand):
         for k in hand:
             if hand[i][0] == k[0]:
                 x2 = x2+1
-    if x1_ == 3 and x2 == 1:
+    if x1_ == 3 or x2 == 1:
         return True
     else:
         return False
