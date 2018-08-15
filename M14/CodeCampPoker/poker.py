@@ -112,8 +112,9 @@ def is_full_house(hand):
     x1_.sort()
     for i in x1_:
         freq_.append(x1_.count(i))
-    if 3 and 2 in freq_:
-        return True
+    if 3 in freq_:
+        if 2 in freq_:
+            return True
     return False
 
 
