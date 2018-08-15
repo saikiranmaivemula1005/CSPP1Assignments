@@ -41,7 +41,7 @@ def is_flush(hand):
         if hand[k1_][1] != hand[k1_+1][1]:
             return False
     return True
-def five_of_a_kind(hand):
+def is_four_of_a_kind(hand):
     for i in range(len(hand)):
         x1_ = 0
         for j in hand:
@@ -51,6 +51,18 @@ def five_of_a_kind(hand):
         return True
     else:
         return False
+def is_three_of_a_kind(hand):
+    x1_ = 0
+    for i in range(len(hand)): 
+        for j in hand:
+            if hand[i][0] == j[0]:
+                x1_ = x1_+1
+    if x1_ == 11:
+        return True
+    else:
+        return False
+
+
 
 def hand_rank(hand):
     '''
@@ -74,7 +86,7 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max1_ in poker function uses these return values to select the best hand
-    if five_of_a_kind(hand):
+    if is_four_of_a_kind(hand):
         return 4
     if is_straight(hand) and is_flush(hand):
         return 3
