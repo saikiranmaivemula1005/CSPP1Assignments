@@ -42,6 +42,7 @@ def is_flush(hand):
             return False
     return True
 def is_four_of_a_kind(hand):
+    """kk"""
     x1_ = []
     s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
     for i in hand:
@@ -57,6 +58,7 @@ def is_four_of_a_kind(hand):
             return True
     return False
 def is_three_of_a_kind(hand):
+    """kk"""
     x1_ = []
     s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
     for i in hand:
@@ -71,8 +73,8 @@ def is_three_of_a_kind(hand):
         if x1_[i] == x1_[i+1] == x1_[i+2]:
             return True
     return False
-    
 def is_two_pair(hand):
+    """kk"""
     x1_ = []
     s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
     for i in hand:
@@ -87,8 +89,8 @@ def is_two_pair(hand):
     if len(pair_) == 3:
         return True
     return False
-
 def is_one_pair(hand):
+    """kk"""
     x1_ = []
     s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
     for i in hand:
@@ -102,8 +104,9 @@ def is_one_pair(hand):
     for i in range(len(hand)-1):
         if x1_[i] == x1_[i+1]:
             return True
-    return False        
+    return False
 def is_full_house(hand):
+    """kk"""
     x1_ = []
     freq_ = []
     s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
@@ -121,12 +124,6 @@ def is_full_house(hand):
         if 2 in freq_:
             return True
     return False
-
-
-
-
-
-
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -165,15 +162,13 @@ def hand_rank(hand):
         return 2
     if is_one_pair(hand):
         return 1
-    return 0    
+    return 0
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
-
         Input: List of 2 or more poker hands
                Each poker hand is represented as a list
                Print the hands to see the hand representation
-
         Output: Return the winning poker hand
     '''
     # the line below may be new to you
