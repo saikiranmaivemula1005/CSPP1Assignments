@@ -73,15 +73,18 @@ def is_three_of_a_kind(hand):
     return False
     
 def is_two_pair(hand):
-    x1_ = 0
-    for i in range(len(hand)): 
-        for j in hand:
-            if hand[i][0] == j[0]:
-                x1_ = x1_+1
-    if x1_ == 9:
-        return True
-    else:
-        return False
+    x1_ = []
+    s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
+    for i in hand:
+        # print(i)
+        if i[0] in s1_.keys():
+            z1_ = s1_[i[0]]
+        else:
+            z1_ = int(i[0])
+        x1_.append(z1_)
+    x1_.sort()
+    for i in range(len(hand)):
+
 def is_one_pair(hand):
     x1_ = 0
     for i in range(len(hand)): 
@@ -93,15 +96,24 @@ def is_one_pair(hand):
     else:
         return False
 def is_full_house(hand):
-    x1_=0
-    for i in range(len(hand)): 
-        for j in hand:
-            if hand[i][0] == j[0]:
-                x1_ = x1_+1
-    if x1_ == 13:
+    x1_ = []
+    freq_ = []
+    s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
+    for i in hand:
+        # print(i)
+        if i[0] in s1_.keys():
+            z1_ = s1_[i[0]]
+        else:
+            z1_ = int(i[0])
+        x1_.append(z1_)
+    x1_.sort()
+    for i in x1_:
+        freq_.append(x1_.count(i))
+    if 3 and 2 in freq_:
         return True
-    else:
-        return False
+    return False
+
+
 
 
 
