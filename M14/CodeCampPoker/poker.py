@@ -44,14 +44,15 @@ def is_flush(hand):
 def is_four_of_a_kind(hand):
     for i in range(len(hand)):
         x1_ = 0
-        x2 = 0
         for j in hand:
             if hand[i][0] == j[0]:
                 x1_ = x1_+1
+    for i in range(len(hand)):
+        x2 = 0
         for k in hand:
             if hand[i][0] == k[0]:
                 x2 = x2+1
-    if x1_ == 3 or x2 == 1:
+    if x1_ == 3 and x2 == 1:
         return True
     else:
         return False
