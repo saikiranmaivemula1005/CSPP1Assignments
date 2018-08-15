@@ -41,6 +41,11 @@ def is_flush(hand):
         if hand[k1_][1] != hand[k1_+1][1]:
             return False
     return True
+def five_of_a_kind(hand):
+    for k1_ in range(4):
+        if hand[k1_][0] != hand[k1_+1][0]:
+            return False
+    return False
 def hand_rank(hand):
     '''
         You will code this function. The goal of the function is to
@@ -63,13 +68,15 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max1_ in poker function uses these return values to select the best hand
+    if is five_of_a_kind(hand):
+        return 4
     if is_straight(hand) and is_flush(hand):
         return 3
     if is_flush(hand):
         return 2
     if is_straight(hand):
         return 1
-    return 0
+    return 0    
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
