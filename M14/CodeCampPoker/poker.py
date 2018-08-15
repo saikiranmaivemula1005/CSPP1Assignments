@@ -99,7 +99,7 @@ def is_one_pair(hand):
             z1_ = int(i[0])
         x1_.append(z1_)
     x1_.sort()
-    for i in range(len(hnad)):
+    for i in range(len(hand)):
         if x1_[i] == x1_[i+1]:
             return True
     return False        
