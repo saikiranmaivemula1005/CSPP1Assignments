@@ -44,8 +44,8 @@ def is_flush(hand):
 def five_of_a_kind(hand):
     for i in range(len(hand)):
         x1_ = 0
-        for i1_ in hand:
-            if hand[i1_][0] == i1_[0]:
+        for j in hand:
+            if hand[i][0] == j[0]:
                 x1_ = x1_+1
     if x1_ == 4:
         return True
