@@ -57,15 +57,21 @@ def is_four_of_a_kind(hand):
             return True
     return False
 def is_three_of_a_kind(hand):
-    x1_ = 0
-    for i in range(len(hand)): 
-        for j in hand:
-            if hand[i][0] == j[0]:
-                x1_ = x1_+1
-    if x1_ == 11:
-        return True
-    else:
-        return False
+    x1_ = []
+    s1_ = {'T':10, 'J':11, 'K':13, 'Q':12, 'A':14}
+    for i in hand:
+        # print(i)
+        if i[0] in s1_.keys():
+            z1_ = s1_[i[0]]
+        else:
+            z1_ = int(i[0])
+        x1_.append(z1_)
+    x1_.sort()
+    for i in range(len(hand)-3):
+        if x1_[i]==x1_[i+1]==x1_[i+2]:
+            return True
+    return False
+    
 def is_two_pair(hand):
     x1_ = 0
     for i in range(len(hand)): 
