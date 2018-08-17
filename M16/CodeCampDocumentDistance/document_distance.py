@@ -42,7 +42,7 @@ def similarity(dict1, dict2):
     num_ = 0
     for i in fr1_.keys():
         if i in fr2_.keys():
-            num_ = sum(fr1_[i][1] * fr2_[i][1])
+            num_ = sum(fr1_.values(i) * fr2_.values(i))
     print(num_)
 
 
