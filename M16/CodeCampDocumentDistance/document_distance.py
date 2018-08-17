@@ -40,10 +40,10 @@ def similarity(dict1, dict2):
     for i in fr_list:
         if i not in fr_dic  and len(i) > 0:
             fr_dic[i] = [doc_1.count(i), doc_2.count(i)]
-    print(sorted(fr_dic.keys()))
+    # print(sorted(fr_dic.keys()))
     # print(len(fr_dic))
     num_ = 0
-    for i in fr_dic:
+    for i in fr_dic  and len(i) > 0:
         num_ = num_ + fr_dic[i][0]*fr_dic[i][1]
     # print(num_)
     den_ = 0.0
