@@ -16,6 +16,9 @@ def similarity(dict1, dict2):
     for i in doc_1:
         if i in ('!', '@', '#', '$', '%', '^', '&', '*', '?'):
             doc_1.remove(i)
+    for i in doc_2:
+        if i in ('!', '@', '#', '$', '%', '^', '&', '*', '?'):
+            doc_2.remove(i)
     # regex_ = re.compile([,^a-z])
     # doc_1 = [regex_.sub('', w) for w in doc_1]
     # doc_2 = [regex_.sub('', w) for w in doc_2]
