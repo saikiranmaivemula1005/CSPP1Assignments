@@ -36,6 +36,7 @@ def similarity(dict1, dict2):
         if i not in fr_dic:
             fr_dic[i] = [doc_1.count(i), doc_2.count(i)]
     # print(fr_dic)
+    print(len(fr_dic))
     num_ = 0
     for i in fr_dic:
         num_ = num_ + fr_dic[i][0]*fr_dic[i][1]
@@ -51,7 +52,7 @@ def similarity(dict1, dict2):
     sqr1_ = math.sqrt(sum1_)
     sqr2_ = math.sqrt(sum2_)
     den_ = sqr1_*sqr2_
-    print(den_)
+    # print(den_)
     res_ = num_ / den_
     # print(res_)
     return round(res_, 1) 
