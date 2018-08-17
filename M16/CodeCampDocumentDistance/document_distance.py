@@ -35,7 +35,7 @@ def similarity(dict1, dict2):
         if i not in fr1_:
             fr1_[i] = fre1[i]
         
-    print(fr1)
+    print(fr1_)
 
 
 
