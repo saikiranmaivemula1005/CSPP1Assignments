@@ -10,8 +10,8 @@ def similarity(dict1, dict2):
     doc_2 = str(dict2)
     doc_1.strip()
     doc_2.strip()
-    doc_1 = doc_1.lower().split('')
-    doc_2 = doc_2.lower().split('')
+    doc_1 = doc_1.lower().split(' ')
+    doc_2 = doc_2.lower().split(' ')
     stopwords = load_stopwords("stopwords.txt")
     for i in doc_1:
         if i in stopwords:
@@ -51,7 +51,7 @@ def similarity(dict1, dict2):
     sqr1_ = math.sqrt(sum1_)
     sqr2_ = math.sqrt(sum2_)
     den_ = sqr1_*sqr2_
-    # print(pro_)
+    print(den_)
     res_ = num_ / den_
     # print(res_)
     return round(res_, 1) 
