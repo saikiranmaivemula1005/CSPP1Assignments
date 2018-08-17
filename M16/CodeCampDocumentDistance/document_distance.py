@@ -18,11 +18,11 @@ def similarity(dict1, dict2):
     # doc_2 = [regex_.sub(' ', w) for w in doc_2]
     stopwords = load_stopwords("stopwords.txt")
     for i in doc_1:
-        if i in stopwords  and len(i)>0:
+        if i in stopwords  and i != '-':
             doc_1.remove(i)
     # print(doc_1)
     for i in doc_2:
-        if i in stopwords  and len(i)>0:
+        if i in stopwords  and i != '-':
             doc_2.remove(i)
     # print(doc_2)
     # fre1 = []
