@@ -12,12 +12,15 @@ def similarity(dict1, dict2):
     doc_2.strip()
     doc_1 = doc_1.lower().split(' ')
     doc_2 = doc_2.lower().split(' ')
-
     stopwords = load_stopwords("stopwords.txt")
     for i in doc_1:
         if i in stopwords:
             doc_1.remove(i)
     print(doc_1)
+    for i in doc_2:
+        if i in stopwords:
+            doc_2.remove(i)
+    print(doc_2)
 
 
 def load_stopwords(filename):
