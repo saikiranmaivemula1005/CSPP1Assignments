@@ -8,8 +8,8 @@ def similarity(dict1, dict2):
     '''
     doc_1 = str(dict1)
     doc_2 = str(dict2)
-    print(doc_1)
-    print(doc_2)
+    print(doc_1.lowercase())
+    print(doc_2.lowercase())
 
 def load_stopwords(filename):
     '''
