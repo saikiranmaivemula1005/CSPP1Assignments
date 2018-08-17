@@ -37,8 +37,8 @@ def similarity(dict1, dict2):
             fr_dic[i] = [doc_1.count(i), doc_2.count(i)]
     # print(fr_dic)
     num_ = 0
-    for i in fr_dic:
-        num_ = num_ + sum(fr_dic[i][0]*fr_dic[i][1])
+    for i in range(len(fr_dic)):
+        num_ = num_ + sum(fr_dic[i][0][0]*fr_dic[i][1][0])
     print(num_)
 
 
