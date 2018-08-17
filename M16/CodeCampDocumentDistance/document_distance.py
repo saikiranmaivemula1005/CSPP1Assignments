@@ -69,7 +69,7 @@ def similarity(dict1, dict2):
 
     # print(num,den1*den2)
 
-    return round(num/(den1*den2), 1)
+    return (num/(den1*den2))
 
 
 
