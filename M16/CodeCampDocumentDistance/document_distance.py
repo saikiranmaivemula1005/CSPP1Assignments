@@ -58,9 +58,11 @@ def similarity(dict1, dict2):
     sqr2_ = math.sqrt(sum2_)
     den_ = sqr1_*sqr2_
     # print(den_)
+    if(den==0.0):
+        return 0.0
     res_ = num_ / den_
     # print(res_)
-    return round(res_, 1) 
+    return (res_)
 
 
 
