@@ -22,7 +22,7 @@ def similarity(dict1, dict2):
             doc_1.remove(i)
     # print(doc_1)
     for i in doc_2:
-        if i in stopwords:
+        if i in stopwords and len(i)>0:
             doc_2.remove(i)
     # print(doc_2)
     # fre1 = []
