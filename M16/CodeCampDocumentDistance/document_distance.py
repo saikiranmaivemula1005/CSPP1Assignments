@@ -53,7 +53,8 @@ def similarity(dict1, dict2):
     den_ = sqr1_*sqr2_
     # print(pro_)
     res_ = num_ / den_
-    print(res_)
+    # print(res_)
+    return round(res_)
 
 
 
