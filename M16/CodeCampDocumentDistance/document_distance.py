@@ -54,7 +54,7 @@ def similarity(dict1, dict2):
     # print(pro_)
     res_ = num_ / den_
     # print(res_)
-    return round(res_, 0.1)
+    return round(res_, 1)
 
 
 
