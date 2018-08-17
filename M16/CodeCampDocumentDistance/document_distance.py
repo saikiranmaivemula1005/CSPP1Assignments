@@ -46,23 +46,28 @@ def similarity(dict1, dict2):
     for i in fr_dic:
         num_ = num_ + fr_dic[i][0]*fr_dic[i][1]
     # print(num_)
-    den_ = 0
-    sum1_ = 0
-    sum2_ = 0
-    sqr1_ = 0
-    sqr2_ = 0
-    for i in fr_dic:
-        sum1_ = sum1_ + fr_dic[i][0]**2
-        sum2_ = sum2_ + fr_dic[i][1]**2
-    sqr1_ = math.sqrt(sum1_)
-    sqr2_ = math.sqrt(sum2_)
-    den_ = sqr1_*sqr2_
-    # print(den_)
-    if(den_==0.0):
-        return 0.0
-    res_ = num_ / den_
-    # print(res_)
-    return (res_)
+    # den_ = 0
+    # sum1_ = 0
+    # sum2_ = 0
+    # sqr1_ = 0
+    # sqr2_ = 0
+    # for i in fr_dic:
+    #     sum1_ = sum1_ + fr_dic[i][0]**2
+    #     sum2_ = sum2_ + fr_dic[i][1]**2
+    # sqr1_ = math.sqrt(sum1_)
+    # sqr2_ = math.sqrt(sum2_)
+    # den_ = sqr1_*sqr2_
+    # # print(den_)
+    # if(den_==0.0):
+    #     return 0.0
+    # res_ = num_ / den_
+    # # print(res_)
+    # return (res_)
+    num = sum([v[0] * v[1] for v in fr_dic.values()])
+    den1 = math.sqrt(sum([v[0] **2 for v in fr_dic.values()]))
+    den2 = math.sqrt(sum([v[1] **2 for v in fr_dic.values()]))
+
+    return num/(den1*den2)
 
 
 
