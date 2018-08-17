@@ -16,11 +16,20 @@ def similarity(dict1, dict2):
     for i in doc_1:
         if i in stopwords:
             doc_1.remove(i)
-    print(doc_1)
+    # print(doc_1)
     for i in doc_2:
         if i in stopwords:
             doc_2.remove(i)
-    print(doc_2)
+    # print(doc_2)
+    fre1 = []
+    fre2 = []
+    for i in doc_1:
+        fre1.append(doc_1.count(i))
+    print(fre1)
+    for i in doc_2:
+        fre2.append(doc_2.count(i))
+    print(fre2)
+
 
 
 def load_stopwords(filename):
