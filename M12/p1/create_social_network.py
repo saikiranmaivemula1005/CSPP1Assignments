@@ -47,7 +47,7 @@ def create_social_network(data):
         print(ite_[0],ite_[1])
         if ite_[0] not in dic_:
             dic_[ite_[0]] = ite_[1].split(',')
-            # print(ite_[0], dic_[ite_[0]])
+            print(ite_[0], dic_[ite_[0]])
         else:
             dic_[ite_[0]].append(ite_[1].split(','))
     return dic_
