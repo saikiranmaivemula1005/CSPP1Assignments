@@ -52,7 +52,7 @@ def similarity(dict1, dict2):
     sqr2_ = math.sqrt(sum2_)
     den_ = sqr1_*sqr2_
     # print(pro_)
-    res_ = num_ // den_
+    res_ = num_ / den_
     # print(res_)
     return res_
 
