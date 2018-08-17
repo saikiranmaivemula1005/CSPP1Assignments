@@ -33,7 +33,7 @@ def similarity(dict1, dict2):
     fr2_ = {}
     for i in doc_1:
         doc_1[i] = fr1_[i][0]
-        fre1[i] = fr1_.[i][1]
+        fre1[i] = fr1_[i][1]
     print(fr1)
 
 
