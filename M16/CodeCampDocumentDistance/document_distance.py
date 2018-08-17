@@ -41,7 +41,7 @@ def similarity(dict1, dict2):
     # print(fr2_)
     for i in fr1_:
         if i in fr2_:
-            num_ = sum(fr1_*fr2_[i])
+            num_ = sum(fr1_[i]*fr2_[i])
     print(num_)
 
 
