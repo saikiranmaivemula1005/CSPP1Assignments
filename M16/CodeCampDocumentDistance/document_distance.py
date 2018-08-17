@@ -40,11 +40,11 @@ def similarity(dict1, dict2):
     for i in fr_dic:
         num_ = num_ + fr_dic[i][0]*fr_dic[i][1]
     # print(num_)
-    den_ = 0
-    sum1_ = 0
-    sum2_ = 0
-    sqr1_ = 0
-    sqr2_ = 0
+    den_ = 0.0
+    sum1_ = 0.0
+    sum2_ = 0.0
+    sqr1_ = 0.0
+    sqr2_ = 0.0
     for i in fr_dic:
         sum1_ = sum1_ + fr_dic[i][0]**2
         sum2_ = sum2_ + fr_dic[i][1]**2
