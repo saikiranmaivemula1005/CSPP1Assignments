@@ -40,9 +40,9 @@ def similarity(dict1, dict2):
             fr2_[i] = doc_2.count(i)
     # print(fr2_)
     num_ = 0
-    for i in range(len(fr1_)):
+    for i in fr1_:
         if i in fr2_:
-            num_ = sum(fr1_[i][0] * fr2_[i][0])
+            num_ = sum(fr1_[i][1] * fr2_[i][1])
     print(num_)
 
 
