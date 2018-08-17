@@ -1,7 +1,7 @@
 '''
     Document Distance - A detailed description is given in the PDF
 '''
-
+import math 
 def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
@@ -48,9 +48,9 @@ def similarity(dict1, dict2):
     pro_ = 0
     for i in fr_dic:
         sum1_ = sum1_ + fr_dic[i][0]**2
-        sqr1_ = sqrt(sum1_)
+        sqr1_ = math.sqrt(sum1_)
         sum2_ = sum2_ + fr_dic[i][1]**2
-        sqr2_ = sqrt(sum2_)
+        sqr2_ = math.sqrt(sum2_)
     pro_ = sqr1_*sqr2_
     print(pro_)
 
