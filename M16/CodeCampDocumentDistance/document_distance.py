@@ -33,7 +33,7 @@ def similarity(dict1, dict2):
     # for i in doc_2:
     #     fre2.append(doc_2.count(i))
     # # print(fre2)
-    fr_list = doc_1+doc_2
+    fr_list = set(doc_1+doc_2)
     # print(len(fr_list))
     # print(fr_list)
     fr_dic = {}
