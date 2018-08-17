@@ -18,7 +18,7 @@ def similarity(dict1, dict2):
                 dictionary[word_]=[0,0]
             dictionary[word_][0]+=1
     for word_ in words2:
-        if word_ not in stopwords and len(w)>0:
+        if word_ not in stopwords and len(word_)>0:
             if word_ not in dictionary.keys():
                 dictionary[word_]=[0,0]
             dictionary[word_][1]+=1
