@@ -45,14 +45,15 @@ def similarity(dict1, dict2):
     sum2_ = 0
     sqr1_ = 0
     sqr2_ = 0
-    pro_ = 0
     for i in fr_dic:
         sum1_ = sum1_ + fr_dic[i][0]**2
         sqr1_ = math.sqrt(sum1_)
         sum2_ = sum2_ + fr_dic[i][1]**2
         sqr2_ = math.sqrt(sum2_)
-    pro_ = sqr1_*sqr2_
+    den_ = sqr1_*sqr2_
     print(pro_)
+    res_ = num_ / den_
+    print(res_)
 
 
 
