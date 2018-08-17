@@ -6,11 +6,11 @@ def similarity(dict1, dict2):
     '''
         Compute the document distance as given in the PDF
     '''
-    doct_1 = str(dict1)
-    doct_2 = str(dict2)
-    doc_1 = doc_1.lower().split(' ')
-    doc_2 = doc_2.lower().split(' ')
-    stopwords = load_stopwords(doct_1)
+    doc_1 = str(dict1)
+    doc_2 = str(dict2)
+    doct_1 = doc_1.lower().split(' ')
+    doct_2 = doc_2.lower().split(' ')
+    stopwords = load_stopwords(doc_1)
     for i in doc_1:
         if i in stopwords:
             doc_1.remove(i)
