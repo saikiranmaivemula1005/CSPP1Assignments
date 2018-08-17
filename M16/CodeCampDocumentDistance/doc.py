@@ -8,8 +8,8 @@ def similarity(dict1, dict2):
         Compute the document distance as given in the PDF
     '''
     regex = re.compile('[^a-z]')
-    words1 =[regex.sub("",w.strip()) for w in dict1.lower().split(" ")]
-    words2 =[regex.sub("",w.strip()) for w in dict2.lower().split(" ")]
+    words1 =[regex.sub("", w.strip()) for w in dict1.lower().split(" ")]
+    words2 =[regex.sub("", w.strip()) for w in dict2.lower().split(" ")]
     dictionary = {}
     stopwords = load_stopwords("stopwords.txt")
     for word_ in words1:
