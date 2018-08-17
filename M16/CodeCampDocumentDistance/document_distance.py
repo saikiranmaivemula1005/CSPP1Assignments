@@ -8,8 +8,13 @@ def similarity(dict1, dict2):
     '''
     doc_1 = str(dict1)
     doc_2 = str(dict2)
-    print(doc_1.lower().split(' ').remove(' '))
-    print(doc_2.lower().split(' ').remove(' '))
+    # print(doc_1.lower().split(' '))
+    # print(doc_2.lower().split(' '))
+    for i in doc_1:
+        if i in load_stopwords:
+            doc_1.remove(i)
+    print(doc_1)
+
 
 def load_stopwords(filename):
     '''
