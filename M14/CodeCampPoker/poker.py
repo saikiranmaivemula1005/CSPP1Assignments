@@ -202,7 +202,7 @@ def poker(hands):
         Temp_hands2=hands.copy()
         # Temp_Ranks
         k=0
-        for i in temp_hands:
+        for i in range(len(temp_hands)):
             Temp_hands2[k] = sorted(i, reverse = True)
             k+=1
         TempMax = max(Temp_hands2)
