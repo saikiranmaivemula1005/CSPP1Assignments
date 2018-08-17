@@ -12,16 +12,16 @@ def similarity(dict1, dict2):
     words2 =[regex.sub("",w.strip()) for w in dict2.lower().split(" ")]
     dictionary = {}
     stopwords = load_stopwords("stopwords.txt")
-    for word_ in words1:
-        if word_ not in stopwords and len(word_)>0:
-            if word_ not in dictionary.keys():
-                dictionary[word_]=[0,0]
-            dictionary[word_][0]+=1
-    for word_ in words2:
-        if word_ not in stopwords and len(word_)>0:
-            if word_ not in dictionary.keys():
-                dictionary[word_]=[0,0]
-            dictionary[word_][1]+=1
+    for w in words1:
+        if w not in stopwords and len(w)>0:
+            if w not in dictionary.keys():
+                dictionary[w]=[0,0]
+            dictionary[w][0]+=1
+    for w in words2:
+        if w not in stopwords and len(w)>0:
+            if w not in dictionary.keys():
+                dictionary[w]=[0,0]
+            dictionary[w][1]+=1
     num = sum([v1*v2 for v1,v2 in dictionary.values()])
     den1 = math.sqrt((sum([v1**2 for v1,v2 in dictionary.values()])))
     den2 = math.sqrt((sum([v2**2 for v1,v2 in dictionary.values()])))
