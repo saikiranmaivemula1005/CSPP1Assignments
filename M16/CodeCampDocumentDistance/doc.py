@@ -12,7 +12,7 @@ def similarity(dict1, dict2):
     words2 =[regex.sub("",w.strip()) for w in dict2.lower().split(" ")]
     dictionary = {}
     stopwords = load_stopwords("stopwords.txt")
-    for w in words1:
+    for word_ in words1:
         if word_ not in stopwords and len(word_)>0:
             if word_ not in dictionary.keys():
                 dictionary[word_]=[0,0]
