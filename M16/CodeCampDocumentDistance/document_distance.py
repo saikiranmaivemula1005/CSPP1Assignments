@@ -25,10 +25,17 @@ def similarity(dict1, dict2):
     fre2 = []
     for i in doc_1:
         fre1.append(doc_1.count(i))
-    print(dict(fre1))
+    # print(fre1)
     for i in doc_2:
         fre2.append(doc_2.count(i))
-    print(dict(fre2))
+    # print(fre2)
+    fr1_ = {}
+    fr2_ = {}
+    for i in doc_1:
+        doc_1[i] = fr1.keys(i)
+        fre1[i] = fr1.values(i)
+    print(fr1)
+
 
 
 
