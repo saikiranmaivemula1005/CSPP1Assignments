@@ -67,6 +67,8 @@ def similarity(dict1, dict2):
     den1 = math.sqrt(sum([v[0] **2 for v in fr_dic.values()]))
     den2 = math.sqrt(sum([v[1] **2 for v in fr_dic.values()]))
 
+    print(num,den1*den2)
+
     return num/(den1*den2)
 
 
