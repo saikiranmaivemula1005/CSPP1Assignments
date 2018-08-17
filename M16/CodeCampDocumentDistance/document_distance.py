@@ -38,7 +38,7 @@ def similarity(dict1, dict2):
     # print(fr_list)
     fr_dic = {}
     for i in fr_list:
-        if i not in fr_dic:
+        if i not in fr_dic and len(i)>0:
             fr_dic[i] = [doc_1.count(i), doc_2.count(i)]
     print(sorted(fr_dic.keys()))
     # print(len(fr_dic))
