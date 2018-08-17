@@ -1,7 +1,7 @@
 '''
     Document Distance - A detailed description is given in the PDF
 '''
-import math 
+import math
 import re
 def similarity(dict1, dict2):
     '''
