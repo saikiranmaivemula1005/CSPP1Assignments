@@ -38,7 +38,7 @@ def similarity(dict1, dict2):
     # print(fr_dic)
     num_ = 0
     for i in range(len(fr_dic)):
-        num_ = num_ + sum(fr_dic[i][0][0]*fr_dic[i][1][0])
+        num_ = num_ + fr_dic[i][0]*fr_dic[i][1]
     print(num_)
 
 
