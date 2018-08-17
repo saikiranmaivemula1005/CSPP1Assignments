@@ -178,7 +178,7 @@ def poker(hands):
     # hand_rank is a function passed to max1_
     # hand_rank takes a hand and returns its rank
     # max1_ uses the rank returned by hand_rank and returns the best hand
-    # return max(hands, key=hand_rank)
+    return max(hands, key=hand_rank)
     # l1 = list(map(hand_rank, hands))
     # max_rank = max(l1)
     # count_max = l1.count(count_max)
@@ -187,29 +187,7 @@ def poker(hands):
     # else:
     #     temp_hands = []
     #     for i in :
-    lst = list(map(hand_rank,hands))
-    # print(lst)
-    maxTemp = max(lst)
-    countMAx = lst.count(maxTemp)
-    if countMAx == 1 :  
-        return hands[lst.index(maxTemp)]
-    else :
-        temp_hands =[]
-        for i in lst:
-            if i == maxTemp:
-                temp_hands.append(hands[lst.index(i)])
-        # T=map(sortedList,temp_hands,)
-        Temp_hands2=hands.copy()
-        # Temp_Ranks
-        k=0
-        for i in range(len(temp_hands)):
-            Temp_hands2[k] = sorted(i, reverse = True)
-            k+=1
-        TempMax = max(Temp_hands2)
-        Max_index=Temp_hands2.index(TempMax)
-        return(Temp_hands2[i])
-
-
+    
 
 
 if __name__ == "__main__":
