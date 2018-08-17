@@ -179,6 +179,16 @@ def poker(hands):
     # hand_rank takes a hand and returns its rank
     # max1_ uses the rank returned by hand_rank and returns the best hand
     return max(hands, key=hand_rank)
+    # l1 = list(map(hand_rank, hands))
+    # max_rank = max(l1)
+    # count_max = l1.count(count_max)
+    # if count_max == 1:
+    #     return hands[l1.index(count_max)]
+    # else:
+    #     temp_hands = []
+    #     for i in :
+
+
 if __name__ == "__main__":
     # read the number of test cases
     COUNT = int(input())
