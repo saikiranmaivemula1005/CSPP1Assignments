@@ -10,7 +10,7 @@ def kind(face_values, num):
             return face
 def get_facevalues(hand):
     """k"""
-    print(sorted(['--23456789TJQKA'.index(face) for face, suite in hand], reverse = True))
+    # print(sorted(['--23456789TJQKA'.index(face) for face, suite in hand], reverse = True))
     return sorted(['--23456789TJQKA'.index(face) for face, suite in hand], reverse = True)
 def is_straight(hand):
     '''
