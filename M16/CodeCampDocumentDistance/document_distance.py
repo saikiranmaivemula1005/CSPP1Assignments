@@ -30,8 +30,7 @@ def similarity(dict1, dict2):
         fre2.append(doc_2.count(i))
     # print(fre2)
     fr1_ = {}
-    fr2_ = {}
-    for i in range(len(doc_1)):
+    for i in doc_1:
         if i not in fr1_:
             fr1_[i] = fre1[i]
         
