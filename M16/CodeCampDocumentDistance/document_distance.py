@@ -32,8 +32,8 @@ def similarity(dict1, dict2):
     fr1_ = {}
     fr2_ = {}
     for i in range(len(doc_1)):
-        fr1_.append(doc_1[i][0])
-        fr1_.append(doc_1[i][1])
+        fr1_.extend(doc_1[i][0])
+        fr1_.extend(doc_1[i][1])
     print(fr1)
 
 
