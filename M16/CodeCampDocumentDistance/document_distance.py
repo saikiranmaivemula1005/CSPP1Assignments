@@ -21,8 +21,8 @@ def similarity(dict1, dict2):
         if i in stopwords:
             doc_2.remove(i)
     # print(doc_2)
-    fre1 = []
-    fre2 = []
+    fre1 = {}
+    fre2 = {}
     for i in doc_1:
         fre1.append(doc_1.count(i))
     print(fre1)
