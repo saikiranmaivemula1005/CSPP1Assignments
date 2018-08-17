@@ -12,6 +12,9 @@ def similarity(dict1, dict2):
     doc_2.strip()
     doc_1 = doc_1.lower().split(' ')
     doc_2 = doc_2.lower().split(' ')
+    regex_ = re.compile([^a-z])
+    doc_1 = [regex_.sub('', w) for w in doc_1]
+    doc_2 = [regex_.sub('', w) for w in doc_2]
     stopwords = load_stopwords("stopwords.txt")
     for i in doc_1:
         if i in stopwords:
@@ -30,7 +33,7 @@ def similarity(dict1, dict2):
     #     fre2.append(doc_2.count(i))
     # # print(fre2)
     fr_list = doc_1+doc_2
-    print(len(fr_list))
+    # print(len(fr_list))
     # print(fr_list)
     fr_dic = {}
     for i in fr_list:
