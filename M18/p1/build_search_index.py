@@ -56,6 +56,7 @@ def build_search_index(docs):
     search_index = {}
     stopwords = load_stopwords('stopwords.txt')
     l1 = word_list(docs)
+    l2 = []
     for i in l1:
         if i not in stopwords:
             l2.append(i)
