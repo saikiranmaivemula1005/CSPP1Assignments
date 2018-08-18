@@ -54,6 +54,7 @@ def build_search_index(docs):
     # add or update the words of the doc to the search index
     # return search index
     search_index = {}
+    stopwords = []
     stopwords = stopwords('stopwords.txt')
     for i in docs:
         doc_id = docs.index(i)
