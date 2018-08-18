@@ -56,15 +56,15 @@ def build_search_index(docs):
     search_index = {}
     stopwords = load_stopwords('stopwords.txt')
     # l1 = word_list(docs)
-    def clean(stopwords,word_list):
-        l2 = []
+    def clean(stopwords, word_list):
+        l2_ = []
         for i in word_list:
             if i not in stopwords:
-                l2.append(i)
-        return l2
+                l2_.append(i)
+        return l2_
     for index, doc in enumerate(docs):
         list1 = word_list(doc)
-        list1 = clean(stopwords,list1)
+        list1 = clean(stopwords, list1)
         for word in set(list1):
             if word in search_index:
                 search_index[word].append((index, list1.count(word)))
