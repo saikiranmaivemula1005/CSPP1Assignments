@@ -69,7 +69,7 @@ def build_search_index(docs):
     line = []
     for i in range(len(doc1)):
         line.append(doc1[i])
-    print(line[0])
+    # print(line[0])
 
     print(count) 
     wordslist = []
@@ -91,7 +91,10 @@ def build_search_index(docs):
     # for i in searchindex:
     #     wordslist.count(i) = i[1]  
     print(searchindex)
-    # for i in wordslist:
+    for i in searchindex.keys():
+        if i in line:
+            print(line(i))
+
 
     return print_search_index(searchindex)
     
