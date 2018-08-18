@@ -108,10 +108,8 @@ def main():
     # iterate through N times and add documents to the list
     for i in range(lines):
         # print(i)
-        x = input
-        print(x)
         documents.append(input())
-        # print(documents)
+        print(documents)
         i += 1
 
     # call print to display the search index
