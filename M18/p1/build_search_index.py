@@ -62,7 +62,8 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    
+    for i in docs:
+        print(i) 
     wordslist = []
     frequency = []
     searchindex = {}
