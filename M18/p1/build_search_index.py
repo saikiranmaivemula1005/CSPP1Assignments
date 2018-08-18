@@ -60,9 +60,10 @@ def build_search_index(docs):
     l1 = word_list(docs)
     for i in range(len(l1)):
         s1 = l1[i]
-        if i in s1:
-            if l1[i] not in stopwords:
-                if l1[i] not in search_index.keys():
+        temp = s1.split(' ')
+        if i in temp:
+            if i not in stopwords:
+                if i not in search_index.keys():
                     search_index[j] = [(i, l1.count(i))]
                 else:
                     search_index[j].append((i, l1.count(i)))    
