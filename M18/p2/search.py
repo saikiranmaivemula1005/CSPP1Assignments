@@ -62,7 +62,7 @@ def process_queries(search_index, queries):
         iterate through all the queries and call the search function
         print the results returned by search function
     '''
-    l1 = search(search_index, queries)
+    search(search_index, queries)
     # print(l1)
 
 
