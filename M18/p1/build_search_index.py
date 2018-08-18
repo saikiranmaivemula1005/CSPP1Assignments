@@ -56,9 +56,9 @@ def build_search_index(docs):
     search_index = {}
     stopwords = load_stopwords('stopwords.txt')
     # l1 = word_list(docs)
-    def clean(stopwords, word_list):
+    def clean(stopwords, wordslist):
         l2_ = []
-        for i in word_list:
+        for i in wordslist:
             if i not in stopwords:
                 l2_.append(i)
         return l2_
@@ -70,8 +70,7 @@ def build_search_index(docs):
                 search_index[word].append((index, list1.count(word)))
             else:
                 search_index[word] = [(index, list1.count(word))]
-    return search_index
-    
+    return search_index   
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):
