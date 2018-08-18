@@ -49,8 +49,9 @@ def word_list(text):
     for i in document:
         if i not in stopwords and len(i) > 0:
             if i not in dictionary.keys():
-                dictionary[i] = [0, 0]
-            dictionary[i][0] += 1
+                dictionary[i] = [0]
+                dictionary[i] += 1
+            
     print(dictionary)
     # for i in document:
     #     frequency = document.count(i)
