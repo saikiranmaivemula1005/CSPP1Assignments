@@ -44,7 +44,7 @@ def search(search_index, query):
     for i in query:
         if i in search_index.keys():
             l1.append(i)
-        print(l1)
+            print(l1)
     return set(l1)
 
 
