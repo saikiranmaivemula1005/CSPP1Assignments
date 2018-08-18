@@ -60,7 +60,7 @@ def build_search_index(docs):
     line = []
     for i in range(len(doc1)):
         line.append(doc1[i])
-    print(line[0])
+    # print(line[0])
     wordslist = []
     searchindex = {}
     # doc_id = docs.split('\n')
@@ -78,10 +78,11 @@ def build_search_index(docs):
             # searchindex[0] += 1
         # searchindex[i][0] += 1
     for i in line:
+        print(line)
         if i in searchindex.keys():
             if i in wordslist:
                 searchindex[i] = i[1]
-    print(searchindex)
+    # print(searchindex)
     return print_search_index(searchindex)
 # helper function to print the search index
 # use this to verify how the search index looks
