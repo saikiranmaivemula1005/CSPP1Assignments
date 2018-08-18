@@ -46,12 +46,12 @@ def search(search_index, query):
     for i in query:
         if i not in searchindex.keys():
             searchindex[i] = i
-    print(searchindex)
-    print(search_index[1][1])
+    # print(searchindex)
+    # print(search_index[])
     
     for i in query:
-        if i in search_index.keys():
-            l1[i] = search_index[i][1][1]
+        if i in search_index.keys
+        print(search_index[i])            # l1[i] = search_index[i][1][1]
             print(l1)
     return set(l1)
 
