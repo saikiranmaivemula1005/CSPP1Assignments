@@ -58,7 +58,7 @@ def build_search_index(docs):
     # l1 = word_list(docs)
     def clean(stopwords,word_list):
         l2 = []
-        for i in l1:
+        for i in wordlist:
             if i not in stopwords:
                 l2.append(i)
         return l2
