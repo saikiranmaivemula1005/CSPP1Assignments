@@ -60,9 +60,11 @@ def build_search_index(docs):
     search_index = {}
     stopwords = load_stopwords('stopwords.txt')
     docs = str(docs)
-
-    document = docs.split(' ').split(',')
-    print(document)
+    document = docs.split(' ')
+    # print(document)
+    for i in document:
+    	frequency = document.count(i)
+    print(frequency)
 
 # helper function to print the search index
 # use this to verify how the search index looks
