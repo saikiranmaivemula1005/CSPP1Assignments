@@ -52,7 +52,7 @@ def search(search_index, query):
     for i in query:
         # if i in search_index.keys():
             print('hhh')
-            print(search_index[0])            
+            print(search_index(0))            
             print(l1)
     return set(l1)
 
