@@ -82,7 +82,7 @@ def build_search_index(docs):
     for i in searchindex:
         wordslist.count(i) = i[1]  
     print(searchindex)
-    for i in wordslist:
+    # for i in wordslist:
         
     return print_search_index(searchindex)
     
