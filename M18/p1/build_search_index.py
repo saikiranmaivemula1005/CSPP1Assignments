@@ -63,8 +63,8 @@ def build_search_index(docs):
 
     # return search index
     list1 = []
-    for i in docs:
-        list1[i] = i
+    for i in range(len(docs)):
+        list1[i] = docs[i]
     print(list1)
     wordslist = []
     frequency = []
