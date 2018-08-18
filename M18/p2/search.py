@@ -50,6 +50,7 @@ def search(search_index, query):
     print(search_index)
     
     for i in query:
+        print(i)
         if i in search_index.keys():
             print(search_index)            
             print(l1)
