@@ -56,7 +56,7 @@ def search(search_index, query):
                 # print(search_index)
                 l1_ += {search_index[j][0][0]}
     print(l1_)
-    return set(l1_)
+    return l1_
 def process_queries(search_index, queries):
     '''
         function to process the search queries
