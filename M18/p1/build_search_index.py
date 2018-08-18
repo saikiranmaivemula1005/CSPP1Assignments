@@ -64,7 +64,7 @@ def build_search_index(docs):
     # return search index
     count = 0
     for i in docs:
-        print(i[0])
+        print(i[1])
         if i == '\n':
             count += 1
     print(count) 
