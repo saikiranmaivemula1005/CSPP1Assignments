@@ -22,6 +22,7 @@
 '''
 
 # helper function to load the stop words from a file
+import re
 def load_stopwords(filename):
     '''
         loads stop words from a file and returns a dictionary
@@ -39,13 +40,21 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
+    dictionary = {}
     stopwords = load_stopwords('stopwords.txt')
     text = str(text)
     document = text.split(' ')
     print(document)
+    regex = re.compile(['^a-z'])
     for i in document:
-        frequency = document.count(i)
-    print(frequency)
+        if i not in stopwords and len(word_) > 0:
+            if i not in dictionary.keys():
+                dictionary[i] = [0, 0]
+            dictionary[i][0] += 1
+    print(dictionary)
+    # for i in document:
+    #     frequency = document.count(i)
+    # print(frequency)
 
 
 
@@ -65,7 +74,7 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    search_index = {}
+    
 
     print(word_list(docs))
     
@@ -98,7 +107,7 @@ def main():
 
     # call print to display the search index
     print_search_index(build_search_index(documents))
-    print(word_list(text))
+    
 
 if __name__ == '__main__':
     main()
