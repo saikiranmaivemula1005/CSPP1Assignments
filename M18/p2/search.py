@@ -42,13 +42,13 @@ def search(search_index, query):
     searchindex = {}
     # query = str(query)
     # query = query.split(' ')
-    print(query)
+    # print(query)
     # print(search_index)
     # for i in query:
     #     if i not in searchindex.keys():
     #         searchindex[i] = i
     # print(searchindex)
-    print(search_index)
+    # print(search_index)
     
     for i in query:
         # print(i)
@@ -57,7 +57,8 @@ def search(search_index, query):
             if j in search_index.keys():
                 # print(search_index)            
                 res[j] = (search_index[j][0][0])
-    return set(l1)
+                print(res)
+    return set(res)
 
 
 def process_queries(search_index, queries):
