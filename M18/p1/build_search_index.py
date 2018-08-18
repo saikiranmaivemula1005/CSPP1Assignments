@@ -55,20 +55,23 @@ def build_search_index(docs):
     # return search index
     search_index = {}
     stopwords = load_stopwords('stopwords.txt')
-    l1 = word_list(docs) 
-    l2 = []
-    for i in l1:
-        if i not in stopwords:
-            l2.append(i)
-    # print(l2)
-    # for i in docs:
-    #     doc_id = docs.index(i)
-    for j in set(l2):
-        if j not in search_index.keys():
-            search_index[j] = [(docs.index(j), l2.count(j))]
-        else:
-            search_index[j].append((docs.index(j), l2.count(j)))
+    # l1 = word_list(docs)
+    def clean(stopwords,word_list):
+        l2 = []
+        for i in l1:
+            if i not in stopwords:
+                l2.append(i)
+        return l2
+    for index, doc in enumerate(docs):
+        list1 = word_list(doc)
+        list1 = clean(stopwords,list1)
+        for word in list1:
+            if word in search_index:
+                search_index[word].append((index, list1.count(word)))
+            else:
+                search_index[word] = [(index, list1.count(word))]
     return search_index
+    
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):
