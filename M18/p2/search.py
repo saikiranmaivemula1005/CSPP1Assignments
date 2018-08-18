@@ -43,6 +43,10 @@ def search(search_index, query):
     # print(query)
     # print(search_index)
     for i in query:
+        if i not in dictionary:
+            dictionary.append(i)
+    print(dictionary)
+    for i in query:
         if i in search_index.keys():
             l1[i] = search_index[i][1][1]
             print(l1)
