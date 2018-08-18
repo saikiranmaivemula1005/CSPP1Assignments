@@ -65,7 +65,7 @@ def build_search_index(docs):
     wordslist = []
     frequency = []
     searchindex = {}
-    doc_id = docs.split('\n')
+    # doc_id = docs.split('\n')
     print(doc_id)
     stopwords = load_stopwords('stopwords.txt')
     words = word_list(docs)
