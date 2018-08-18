@@ -57,7 +57,7 @@ def process_queries(search_index, queries):
     '''
     for i in queries:
         search(search_index, queries)
-    print(l1)
+        print(l1)
 
 
 
