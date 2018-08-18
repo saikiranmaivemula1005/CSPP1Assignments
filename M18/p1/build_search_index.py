@@ -65,7 +65,7 @@ def build_search_index(docs):
     for index, doc in enumerate(docs):
         list1 = word_list(doc)
         list1 = clean(stopwords,list1)
-        for word in list1:
+        for word in set(list1):
             if word in search_index:
                 search_index[word].append((index, list1.count(word)))
             else:
