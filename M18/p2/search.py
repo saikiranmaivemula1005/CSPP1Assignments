@@ -50,7 +50,7 @@ def search(search_index, query):
     print(search_index)
     
     for i in query:
-        print(i)
+        # print(i)
         x = i.split(' ')
         for j in x:
             if j in search_index.keys():
