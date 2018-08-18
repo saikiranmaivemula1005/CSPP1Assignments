@@ -38,10 +38,9 @@ def word_list(text):
         return a list of words
     '''
     text = str(text)
-    # document = text.split(' ')
-    # print(document)
     regex = re.compile('[^a-z]')
     word_list = [regex.sub("", w.strip()) for w in text.lower().split(" ")]
+    print(word_list)
     return word_list
 def build_search_index(docs):
     '''
@@ -51,39 +50,10 @@ def build_search_index(docs):
     # iterate through all the docs
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
-        # clean up doc and tokenize to words list
-        # add or update the words of the doc to the search index
+    # clean up doc and tokenize to words list
+    # add or update the words of the doc to the search index
     # return search index
-    for i in docs:
-       doc1 = str(docs).split(',')
-       # print(doc1)
-    line = []
-    for i in range(len(doc1)):
-        line.append(doc1[i])
-    # print(line[0])
-    wordslist = []
-    searchindex = {}
-    # doc_id = docs.split('\n')
-    # print(doc_id)
-    stopwords = load_stopwords('stopwords.txt')
-    words = word_list(docs)
-    # print(words)
-    for i in words:
-        if i not in stopwords and len(i) > 0:
-                wordslist.append(i)
-    # print(wordslist)
-    for i in wordslist:
-        if i not in searchindex.keys():
-            searchindex[i] = [(0, 0)]
-            # searchindex[0] += 1
-        searchindex[i][0] += 1
-    for i in line:
-        # print(line)
-        if i in searchindex.keys():
-            if i in wordslist:
-                searchindex[i] = i[1]
-    # print(searchindex)
-    return print_search_index(searchindex)
+    
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):

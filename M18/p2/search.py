@@ -44,25 +44,6 @@ def search(search_index, query):
             for each in search_index[word]:
                 s1_.add(each[0])
     return s1_
-    # l1_ = []
-    # # query = str(query)
-    # # query = query.split(' ')
-    # # print(query)
-    # # print(search_index)
-    # # for i in query:
-    # #     if i not in searchindex.keys():
-    # #         searchindex[i] = i
-    # # print(searchindex)
-    # # print(search_index)
-    # for i in query:
-    #     # print(i)
-    #     x1_ = i.split(' ')
-    #     for j in x1_:
-    #         # print(j)
-    #         if j in search_index.keys():
-    #             # print(search_index)
-    #             l1_ += search_index[j][0][0]
-    # return l1_
 def process_queries(search_index, queries):
     '''
         function to process the search queries
