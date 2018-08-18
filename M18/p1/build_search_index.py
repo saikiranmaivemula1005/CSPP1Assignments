@@ -39,9 +39,9 @@ def word_list(text):
     '''
     text = str(text)
     regex = re.compile('[^a-z]')
-    word_list = [regex.sub("", w.strip()) for w in text.lower().split(" ")]
+    wordlist1 = [regex.sub("", w.strip()) for w in text.lower().split(" ")]
     # print(word_list)
-    return word_list
+    return wordlist1
 def build_search_index(docs):
     '''
         Process the docs step by step as given below
@@ -70,7 +70,7 @@ def build_search_index(docs):
                 search_index[word].append((index, list1.count(word)))
             else:
                 search_index[word] = [(index, list1.count(word))]
-    return search_index   
+    return search_index
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):
