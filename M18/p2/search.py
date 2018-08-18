@@ -50,8 +50,8 @@ def search(search_index, query):
     # print(search_index[])
     
     for i in query:
-        if i in search_index.keys
-        print(search_index[i])            # l1[i] = search_index[i][1][1]
+        if i in search_index.keys():
+            print(search_index[i])            # l1[i] = search_index[i][1][1]
             print(l1)
     return set(l1)
 
