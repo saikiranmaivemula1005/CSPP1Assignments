@@ -39,9 +39,7 @@ def word_list(text):
         Change case to lower and split the words using a SPACE
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
-    '''
-    
-    
+    '''   
     text = str(text)
     # document = text.split(' ')
     # print(document)
@@ -66,6 +64,9 @@ def build_search_index(docs):
     # return search index
     wordslist = []
     frequency = []
+    searchindex = {}
+    doc_id = docs.split('\n')
+    print(doc_id)
     stopwords = load_stopwords('stopwords.txt')
     words = word_list(docs)
     # print(words)
