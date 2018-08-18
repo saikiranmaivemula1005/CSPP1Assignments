@@ -57,7 +57,8 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    pass
+    search_index = {}
+    stopwords = load_stopwords('stopwords.txt')
 
 # helper function to print the search index
 # use this to verify how the search index looks
@@ -80,7 +81,7 @@ def main():
     lines = int(input())
     # iterate through N times and add documents to the list
     for i in range(lines):
-    	print(i)
+        print(i)
         documents.append(input())
         print(documents)
         i += 1
