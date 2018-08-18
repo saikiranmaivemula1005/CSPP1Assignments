@@ -53,7 +53,8 @@ def build_search_index(docs):
     # clean up doc and tokenize to words list
     # add or update the words of the doc to the search index
     # return search index
-    search_index = {}
+    search_index = 
+    k =0
     stopwords = load_stopwords('stopwords.txt')
     l1 = word_list(docs)
     for i in docs:
