@@ -55,7 +55,7 @@ def search(search_index, query):
         for j in x:
             if j in search_index.keys():
                 # print(search_index)            
-                l1 = {(search_index[j][0][0])}
+                l1 = {(search_index[j][0][0],search_index[j][0][0])}
                 print(l1)
     return set(l1)
 
