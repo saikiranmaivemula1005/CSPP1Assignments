@@ -87,9 +87,9 @@ def build_search_index(docs):
     # for i in searchindex:
     #     wordslist.count(i) = i[1]  
     
-    for i in wordslist:
+    for i in line:
         if i in searchindex.keys():
-            if i in line:
+            if i in wordslist:
                 searchindex[i] = i[1]
     print(searchindex)
 
