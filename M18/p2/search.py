@@ -51,7 +51,7 @@ def search(search_index, query):
     
     for i in query:
         print(i)
-        i.split(' ')
+        print(i.split(' '))
         if i in search_index.keys():
             print(search_index)            
             print(l1)
