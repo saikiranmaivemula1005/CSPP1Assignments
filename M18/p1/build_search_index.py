@@ -60,12 +60,11 @@ def build_search_index(docs):
     for i in docs:
         doc_id = docs.index(i)
         for j in l1:
-            print(j)
             if j not in stopwords:
                 if j not in search_index.keys():
-                    search_index[k] = [(i, l1.count(i))]
+                    search_index[k] = [(j, l1.count(j))]
                 else:
-                    search_index[k].append((i, l1.count(i)))    
+                    search_index[k].append((j, l1.count(j)))    
     return search_index
 # helper function to print the search index
 # use this to verify how the search index looks
