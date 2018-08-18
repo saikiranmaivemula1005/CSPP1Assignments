@@ -79,7 +79,7 @@ def main():
         # print(documents)
         i += 1
     # call print to display the search index
-    word_list(text)
+    word_list(documents)
     print_search_index(build_search_index(documents))
 
 if __name__ == '__main__':
