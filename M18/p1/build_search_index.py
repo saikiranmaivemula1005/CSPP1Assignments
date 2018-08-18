@@ -47,7 +47,7 @@ def word_list(text):
     # print(document)
     # regex = re.compile(['^a-z'])
     for i in document:
-        if i not in stopwords and len(word_) > 0:
+        if i not in stopwords and len(i) > 0:
             if i not in dictionary.keys():
                 dictionary[i] = [0, 0]
             dictionary[i][0] += 1
