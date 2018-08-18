@@ -61,7 +61,7 @@ def build_search_index(docs):
     stopwords = load_stopwords('stopwords.txt')
     docs = str(docs)
 
-    document = docs.split(' ')
+    document = docs.split(' ').split(',')
     print(document)
 
 # helper function to print the search index
