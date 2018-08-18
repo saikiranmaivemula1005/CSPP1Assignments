@@ -20,7 +20,6 @@
         .
     }
 '''
-
 # helper function to load the stop words from a file
 import re
 def load_stopwords(filename):
@@ -32,8 +31,6 @@ def load_stopwords(filename):
         for line in f_stopwords:
             stopwords[line.strip()] = 0
     return stopwords
-
-
 def word_list(text):
     '''
         Change case to lower and split the words using a SPACE
@@ -50,17 +47,12 @@ def build_search_index(docs):
     '''
         Process the docs step by step as given below
     '''
-
     # initialize a search index (an empty dictionary)
-
     # iterate through all the docs
     # keep track of doc_id which is the list index corresponding the document
     # hint: use enumerate to obtain the list index in the for loop
-
         # clean up doc and tokenize to words list
-
         # add or update the words of the doc to the search index
-
     # return search index
     for i in docs:
        doc1 = str(docs).split(',')
@@ -85,32 +77,21 @@ def build_search_index(docs):
             searchindex[i] = [(0,0)]
             # searchindex[0] += 1
         # searchindex[i][0] += 1
-     
-    
     for i in line:
         if i in searchindex.keys():
             if i in wordslist:
                 searchindex[i] = i[1]
     print(searchindex)
-
-
     return print_search_index(searchindex)
-    
-
-   
-    
-
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):
     '''
         print the search index
     '''
-
     keys = sorted(index.keys())
     for key in keys:
         print(key, " - ", index[key])
-
 # main function that loads the docs from files
 def main():
     '''
@@ -126,10 +107,7 @@ def main():
         documents.append(input())
         # print(documents)
         i += 1
-
     # call print to display the search index
     print_search_index(build_search_index(documents))
-    
-
 if __name__ == '__main__':
     main()
