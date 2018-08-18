@@ -71,12 +71,12 @@ def build_search_index(docs):
     # return search index
     dictionary = {}
     stopwords = load_stopwords('stopwords.txt')
-    for i in document:
-        if i not in stopwords and len(i) > 0:
-            if i not in dictionary.keys():
-                dictionary[i] = [0]
-            dictionary[i][0] += 1
-    print(dictionary)
+    # for i in document:
+    #     if i not in stopwords and len(i) > 0:
+    #         if i not in dictionary.keys():
+    #             dictionary[i] = [0]
+    #         dictionary[i][0] += 1
+    # print(dictionary)
     
 
     print(word_list(docs))
