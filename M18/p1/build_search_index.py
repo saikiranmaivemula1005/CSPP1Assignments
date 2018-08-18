@@ -64,13 +64,14 @@ def build_search_index(docs):
                 search_index[i] = [i, l1.count(i)]
             else:
                 search_index[i].append((i, l1.count(i)))    
+    return search_index
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):
     '''
         print the search index
     '''
-    keys = sorted(index.keys())
+    keys = sorted(search_index.keys())
     for key in keys:
         print(key, " - ", index[key])
 # main function that loads the docs from files
