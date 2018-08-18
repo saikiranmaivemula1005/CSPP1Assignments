@@ -38,7 +38,6 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     l1_ = []
-    searchindex = {}
     # query = str(query)
     # query = query.split(' ')
     # print(query)
