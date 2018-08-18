@@ -80,7 +80,7 @@ def build_search_index(docs):
             searchindex[i] = i[0]
             # searchindex[0] += 1
     for i in searchindex:
-        i[1] = searchindex.keys().count(i)
+        i[1] = wordslist.count(i)
     print(searchindex)
     return print_search_index(searchindex)
     
