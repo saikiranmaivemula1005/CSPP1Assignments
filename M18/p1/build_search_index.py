@@ -90,7 +90,7 @@ def build_search_index(docs):
     # print(searchindex)
     for i in searchindex.keys():
         if i in line:
-            print(line(i))
+            print(line[i])
 
 
     return print_search_index(searchindex)
