@@ -74,9 +74,9 @@ def build_search_index(docs):
         if i not in stopwords and len(i) > 0:
                 wordslist.append(i)
     for i in wordslist:
-        frequency = wordslist.count(i)
-        print(frequency)
-    print (wordslist)
+        if i not in searchindex.keys():
+            searchindex[0].append(i)
+    print(searchindex)
     
 
    
