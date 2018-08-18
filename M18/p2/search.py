@@ -54,8 +54,8 @@ def search(search_index, query):
             # print(j)
             if j in search_index.keys():
                 # print(search_index)
-                l1_ += [search_index[j][0][0]]
-            return l1_
+                l1_ += list[search_index[j][0][0]]
+    return l1_
 def process_queries(search_index, queries):
     '''
         function to process the search queries
