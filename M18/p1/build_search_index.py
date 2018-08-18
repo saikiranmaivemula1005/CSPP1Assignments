@@ -62,16 +62,13 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    count = 0
     for i in docs:
        doc1 = str(docs).split(',')
-    print(doc1)
+    # print(doc1)
     line = []
     for i in range(len(doc1)):
         line.append(doc1[i])
     # print(line[0])
-
-    print(count) 
     wordslist = []
     frequency = []
     searchindex = {}
@@ -83,14 +80,14 @@ def build_search_index(docs):
     for i in words:
         if i not in stopwords and len(i) > 0:
                 wordslist.append(i)
-    print(wordslist)
+    # print(wordslist)
     for i in wordslist:
         if i not in searchindex.keys():
             searchindex[i] = i[0]
             # searchindex[0] += 1
     # for i in searchindex:
     #     wordslist.count(i) = i[1]  
-    print(searchindex)
+    # print(searchindex)
     for i in searchindex.keys():
         if i in line:
             print(line(i))
