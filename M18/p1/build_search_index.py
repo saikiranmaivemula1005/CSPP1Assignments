@@ -75,7 +75,7 @@ def build_search_index(docs):
                 wordslist.append(i)
     for i in wordslist:
         if i not in searchindex.keys():
-            searchindex[0].append(i)
+            searchindex[i].append(i)
     print(searchindex)
     
 
