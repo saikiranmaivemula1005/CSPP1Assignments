@@ -66,7 +66,7 @@ def build_search_index(docs):
 
     # return search index
     search_index = {}
-    print(word_list(text))
+    print(word_list(docs))
     
 
 # helper function to print the search index
