@@ -71,7 +71,6 @@ def build_search_index(docs):
     # print(words)
     for i in words:
         if i not in stopwords and len(i) > 0:
-            if i not in wordslist:
                 wordslist.append(i)
     for i in wordslist:
         frequency = wordslist.count(i)
