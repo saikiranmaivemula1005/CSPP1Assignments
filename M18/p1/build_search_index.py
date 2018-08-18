@@ -40,7 +40,7 @@ def word_list(text):
     text = str(text)
     regex = re.compile('[^a-z]')
     word_list = [regex.sub("", w.strip()) for w in text.lower().split(" ")]
-    print(word_list)
+    # print(word_list)
     return word_list
 def build_search_index(docs):
     '''
