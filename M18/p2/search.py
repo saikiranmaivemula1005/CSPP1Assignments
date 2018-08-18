@@ -50,8 +50,8 @@ def search(search_index, query):
     # print(search_index)
     for i in query:
         # print(i)
-        x_ = i.split(' ')
-        for j in x_:
+        x1_ = i.split(' ')
+        for j in x1_:
             # print(j)
             if j in search_index.keys():
                 # print(search_index)
@@ -74,8 +74,7 @@ def main():
     search_index = eval(input())
 
     # read the number of search queries
-    lines = int(input())
-    
+    lines = int(input())    
     # read the search queries into a list
     queries = []
     for i in range(lines):
