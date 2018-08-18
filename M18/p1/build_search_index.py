@@ -77,7 +77,7 @@ def build_search_index(docs):
         if i not in searchindex.keys():
             searchindex[i[0]] = i[1].split(',')
             # searchindex[0] += 1
-        print(searchindex)
+    print(searchindex)
     return print_search_index(searchindex)
     
 
