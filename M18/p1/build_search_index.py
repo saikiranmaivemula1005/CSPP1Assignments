@@ -63,8 +63,8 @@ def build_search_index(docs):
 
     # return search index
     count = 0
-    for i in str(docs):
-        docs.split('\n')
+    for i in docs:
+       str(docs).split('\n')
     print(docs)
     print(count) 
     wordslist = []
