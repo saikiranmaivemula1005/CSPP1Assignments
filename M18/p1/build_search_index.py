@@ -56,8 +56,8 @@ def build_search_index(docs):
     search_index = {}
     for i in docs:
         doc_id = docs.index(i)
-        l1 = word_list(docs)
-        print(l1)
+    l1 = word_list(docs)
+    print(l1)
     
 # helper function to print the search index
 # use this to verify how the search index looks
