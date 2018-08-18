@@ -37,7 +37,12 @@ def search(search_index, query):
         collect all the values for the words that are in the search_index
         make a set of doc_id and return
     '''
-    pass
+    l1 = []
+    for i in query:
+        if i in search_index.keys():
+            l1.append(i)
+    return set(l1)
+
 
 def process_queries(search_index, queries):
     '''
