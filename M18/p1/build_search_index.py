@@ -71,7 +71,7 @@ def build_search_index(docs):
     for i in words:
         if i not in stopwords and len(i) > 0:
             if i not in wordslist:
-            wordslist.append(i)
+                wordslist.append(i)
             
     print(dictionary)
     
