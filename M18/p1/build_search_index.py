@@ -108,7 +108,7 @@ def main():
     # iterate through N times and add documents to the list
     for i in range(lines):
         # print(i)
-        x = input()
+        x = input
         print(x)
         documents.append(input())
         # print(documents)
