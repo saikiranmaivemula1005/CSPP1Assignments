@@ -83,7 +83,7 @@ def build_search_index(docs):
     #     wordslist.count(i) = i[1]  
     print(searchindex)
     # for i in wordslist:
-        
+
     return print_search_index(searchindex)
     
 
@@ -113,7 +113,7 @@ def main():
     # iterate through N times and add documents to the list
     for i in range(lines):
         # print(i)
-        documents.append(input())
+        documents.extend(input())
         print(documents)
         i += 1
 
