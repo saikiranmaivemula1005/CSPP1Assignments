@@ -60,7 +60,7 @@ def build_search_index(docs):
     for i in l1:
         if i not in stopwords:
             l2.append(i)
-    # print(l2)
+    print(l2)
     for i in docs:
         doc_id = docs.index(i)
     for j in l2:
