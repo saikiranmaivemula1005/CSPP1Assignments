@@ -41,7 +41,7 @@ def search(search_index, query):
     dictionary = []
     # query = str(query)
     # query = query.split(' ')
-    # print(query)
+    print(query)
     # print(search_index)
     for i in query:
         if i not in dictionary:
