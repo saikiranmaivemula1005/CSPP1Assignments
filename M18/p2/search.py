@@ -41,10 +41,10 @@ def search(search_index, query):
     query = str(query)
     query = query.split(' ')
     print(query)
-    for i in search_index.keys():
-        if i in query:
+    for i in query:
+        if i in search_index.keys():
             l1.append(i)
-        # print(l1)
+        print(l1)
     return set(l1)
 
 
