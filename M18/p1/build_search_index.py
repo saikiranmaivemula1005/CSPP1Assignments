@@ -58,7 +58,8 @@ def build_search_index(docs):
        doc1 = str(docs).split(',')
        # print(doc1)
     line = []
-    for i in range(len(doc1)):
+    length = len(doc1)
+    for i in length:
         line.append(doc1[i])
     # print(line[0])
     wordslist = []
