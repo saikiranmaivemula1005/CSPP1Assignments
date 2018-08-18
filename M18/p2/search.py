@@ -56,7 +56,7 @@ def search(search_index, query):
             # print(j)
             if j in search_index.keys():
                 # print(search_index)            
-                l1.append(search_index{[j][0][0]})
+                l1.extend({search_index[j][0][0]})
                 # print(l1)
     return l1
 
