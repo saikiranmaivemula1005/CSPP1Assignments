@@ -63,7 +63,7 @@ def build_search_index(docs):
 
     # return search index
     count = 0
-    for i in docs:
+    for i in str(docs):
         docs.split('\n')
     print(docs)
     print(count) 
