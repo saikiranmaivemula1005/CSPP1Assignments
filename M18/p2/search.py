@@ -50,9 +50,8 @@ def search(search_index, query):
     # print(search_index[])
     
     for i in query:
-        # if i in search_index.keys():
-            print('hhh')
-            print(search_index[i][0])            
+        if i in search_index.keys():
+            search_index.get(i[(0)])          
             print(l1)
     return set(l1)
 
