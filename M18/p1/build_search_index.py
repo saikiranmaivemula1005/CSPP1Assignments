@@ -82,7 +82,7 @@ def build_search_index(docs):
     # print(wordslist)
     for i in wordslist:
         if i not in searchindex.keys():
-            searchindex[i] = line[i]
+            searchindex[i] = [0,0]
             # searchindex[0] += 1
     # for i in searchindex:
     #     wordslist.count(i) = i[1]  
