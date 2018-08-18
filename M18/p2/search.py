@@ -53,7 +53,7 @@ def search(search_index, query):
         print(i)
         x = i.split(' ')
         for j in x:
-            if x in search_index.keys():
+            if j in search_index.keys():
                 print(search_index)            
                 print(l1)
     return set(l1)
