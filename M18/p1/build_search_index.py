@@ -74,7 +74,7 @@ def build_search_index(docs):
     for i in words:
         if i not in stopwords and len(i) > 0:
                 wordslist.append(i)
-    # print(wordslist)
+    print(wordslist)
     for i in wordslist:
         if i not in searchindex.keys():
             searchindex[i] = i[0]
@@ -82,6 +82,8 @@ def build_search_index(docs):
     for i in searchindex:
         wordslist.count(i) = i[1]  
     print(searchindex)
+    for i in wordslist:
+        
     return print_search_index(searchindex)
     
 
