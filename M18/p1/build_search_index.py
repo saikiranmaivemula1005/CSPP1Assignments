@@ -41,7 +41,7 @@ def word_list(text):
     '''
     stopwords = load_stopwords('stopwords.txt')
     text = str(text)
-    document = docs.split(' ')
+    document = text.split(' ')
     print(document)
     for i in document:
         frequency = document.count(i)
