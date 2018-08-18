@@ -65,7 +65,7 @@ def build_search_index(docs):
     #     doc_id = docs.index(i)
     for j in set(l2):
         if j not in search_index.keys():
-            search_index[j] = [, l2.count(j))]
+            search_index[j] = [(docs.index(j), l2.count(j))]
         else:
             search_index[j].append((docs.index(j), l2.count(j)))
     return search_index
