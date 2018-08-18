@@ -57,8 +57,8 @@ def search(search_index, query):
             if j in search_index.keys():
                 # print(search_index)            
                 res = {(search_index[j][0][0])}
-                print(res)
-    return res
+                print(set(res))
+    return set(res)
 
 
 def process_queries(search_index, queries):
