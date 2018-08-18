@@ -65,9 +65,8 @@ def build_search_index(docs):
 
     # return search index
     dictionary = {}
-    word_list = []
     stopwords = load_stopwords('stopwords.txt')
-    word_list = word_list(docs)
+    words = word_list(docs)
     for i in word_list:
         if i not in stopwords and len(i) > 0:
             if i not in dictionary.keys():
