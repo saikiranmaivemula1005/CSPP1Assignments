@@ -54,8 +54,7 @@ def build_search_index(docs):
     # add or update the words of the doc to the search index
     # return search index
     search_index = {}
-    stopwords = []
-    stopwords = stopwords('stopwords.txt')
+    stopwords = load_stopwords('stopwords.txt')
     for i in docs:
         doc_id = docs.index(i)
     l1 = word_list(docs)
@@ -72,7 +71,7 @@ def print_search_index(index):
     '''
         print the search index
     '''
-    keys = sorted(search_index.keys())
+    keys = sorted(index.keys())
     for key in keys:
         print(key, " - ", index[key])
 # main function that loads the docs from files
