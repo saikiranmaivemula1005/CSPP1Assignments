@@ -39,7 +39,14 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    print(text)
+    stopwords = load_stopwords('stopwords.txt')
+    text = str(text)
+    document = docs.split(' ')
+    print(document)
+    for i in document:
+        frequency = document.count(i)
+    print(frequency)
+
 
 
 def build_search_index(docs):
@@ -59,13 +66,7 @@ def build_search_index(docs):
 
     # return search index
     search_index = {}
-    stopwords = load_stopwords('stopwords.txt')
-    docs = str(docs)
-    document = docs.split(' ')
-    # print(document)
-    for i in document:
-    	frequency = document.count(i)
-    print(frequency)
+    
 
 # helper function to print the search index
 # use this to verify how the search index looks
