@@ -65,7 +65,7 @@ def build_search_index(docs):
     count = 0
     for i in docs:
         if i == '\n':
-        count += 1
+            count += 1
     print(count) 
     wordslist = []
     frequency = []
