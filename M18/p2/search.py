@@ -38,15 +38,16 @@ def search(search_index, query):
         make a set of doc_id and return
     '''
     l1 = []
-    dictionary = []
+    dictionary = {}
     # query = str(query)
     # query = query.split(' ')
     print(query)
     # print(search_index)
     for i in query:
-        if i not in dictionary:
-            dictionary.append(i)
-    print(dictionary)
+        if i not in searchindex.keys():
+            searchindex[i] = i[0]
+    print(searchindex)
+    
     for i in query:
         if i in search_index.keys():
             l1[i] = search_index[i][1][1]
