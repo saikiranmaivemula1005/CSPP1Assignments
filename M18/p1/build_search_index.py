@@ -70,7 +70,6 @@ def build_search_index(docs):
         line.append(doc1[i])
     # print(line[0])
     wordslist = []
-    frequency = []
     searchindex = {}
     # doc_id = docs.split('\n')
     # print(doc_id)
@@ -88,9 +87,10 @@ def build_search_index(docs):
     # for i in searchindex:
     #     wordslist.count(i) = i[1]  
     
-    for i in searchindex.keys():
-        if i in line:
-            searchindex[i] = i[1]
+    for i in wordslist:
+        if i in searchindex.keys():
+            if i in line:
+                searchindex[i] = i[1]
     print(searchindex)
 
 
