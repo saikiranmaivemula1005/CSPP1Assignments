@@ -55,7 +55,6 @@ def build_search_index(docs):
     # return search index
     search_index = {}
     stopwords = load_stopwords('stopwords.txt')
-    k = 0
     l1 = word_list(docs)
     for i in docs:
         doc_id = docs.index(i)
