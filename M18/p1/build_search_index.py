@@ -73,7 +73,7 @@ def build_search_index(docs):
             if i not in wordslist:
                 wordslist.append(i)
             
-    print(wordslist)
+    print(len(wordslist))
     
 
    
