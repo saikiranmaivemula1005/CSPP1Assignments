@@ -76,7 +76,7 @@ def build_search_index(docs):
     for i in wordslist:
         frequency = wordslist.count(i)
         print(frequency)
-    # print(len(wordslist))
+    print (wordslist)
     
 
    
