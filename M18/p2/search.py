@@ -47,7 +47,7 @@ def search(search_index, query):
     #     if i not in searchindex.keys():
     #         searchindex[i] = i
     # print(searchindex)
-    print(search_index[])
+    print(search_index)
     
     for i in query:
         if i in search_index.keys():
