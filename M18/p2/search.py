@@ -40,8 +40,8 @@ def search(search_index, query):
     l1 = []
     # query = str(query)
     # query = query.split(' ')
-    print(query)
-    print(search_index)
+    # print(query)
+    # print(search_index)
     for i in query:
         if i in search_index.keys():
             l1[i] = search_index[i][1][1]
