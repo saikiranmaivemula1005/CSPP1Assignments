@@ -65,6 +65,7 @@ def build_search_index(docs):
 
     # return search index
     wordslist = []
+    frequency = []
     stopwords = load_stopwords('stopwords.txt')
     words = word_list(docs)
     # print(words)
@@ -72,8 +73,10 @@ def build_search_index(docs):
         if i not in stopwords and len(i) > 0:
             if i not in wordslist:
                 wordslist.append(i)
-            
-    print(len(wordslist))
+    for i in wordslist:
+        frequency = wordslist.count(i)
+        print(frequency)
+    # print(len(wordslist))
     
 
    
