@@ -115,6 +115,7 @@ class Message(object):
         '''
         dic = {}
         keys = list(string.ascii_lowercase)+list(string.ascii_uppercase)
+        Output = ''
         # x = []
         # values = [x.append(i) for i in range(97,123)]+[x.append(i) for i in range(65,91)]
         # dic = dict(zip(keys,x))
