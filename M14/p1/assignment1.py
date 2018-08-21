@@ -125,7 +125,7 @@ class Message(object):
             else:
                 Output = Output + chr((ord(i) + shift - 97 ) % 26 + 97)
         dic = dict(zip(keys,Output))
-
+        return dic
 
 
     def apply_shift(self, shift):
@@ -140,15 +140,17 @@ class Message(object):
         Returns: the message text (string) in which every character is shifted
              down the alphabet by the input shift
         '''
-        Output = ''
-        for i in self:
-            if i == '':
-                Output = Output + i
-            elif i.isupper():
-                Output = Output + chr((ord(i) + shift - 65 ) % 26 + 65)
-            else:
-                Output = Output + chr((ord(i) + shift - 97 ) % 26 + 97)
-        return Output
+        # Output = ''
+        # for i in self:
+        #     if i == '':
+        #         Output = Output + i
+        #     elif i.isupper():
+        #         Output = Output + chr((ord(i) + shift - 65 ) % 26 + 65)
+        #     else:
+        #         Output = Output + chr((ord(i) + shift - 97 ) % 26 + 97)
+        # return Output
+        build_shift_dict(self, shift)
+
 
 
         
