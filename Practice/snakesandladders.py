@@ -1,4 +1,5 @@
 """kk"""
+import random
 p1 = 0
 p2 = 0
 n = 0
@@ -6,8 +7,8 @@ print('Welcome to snakes and ladders game')
 print('________________________________________________')
 import random
 def dice(n):
-	roll = int(input('roll the dice'))
-	if roll > 1 and roll < 6:
+	roll = input(int(random.randint(1, 6)))
+	if roll in range(1,6):
 		roll = roll + n
 	return roll
 def snakes_or_ladders(n):
@@ -28,7 +29,7 @@ while p1 < 100 or p2 < 100:
 	p1 = snakes_or_ladders(p1)
 	print('Player1 is at : ', p1, '   Player2 is at : ', p2)
 	print('________________________________________________')
-	if p1>99:
+	if p1 > 99:
 		print('Player1 is the winner!!')
 		break
 	print('Player2 turn')
