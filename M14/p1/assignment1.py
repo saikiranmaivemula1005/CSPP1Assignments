@@ -40,6 +40,7 @@
 # Remember that spaces and punctuation should not be changed by the cipher.
 
 # Helper code
+import string
 def load_words(file_name):
     '''
     file_name (string): the name of the file containing
@@ -147,6 +148,7 @@ class Message(object):
             # print(i)
             res = res + dictionary[i]
             # if i in dictionary.keys():
+        return res
             
 
        
