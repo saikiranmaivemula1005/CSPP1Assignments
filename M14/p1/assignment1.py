@@ -147,8 +147,9 @@ class Message(object):
         res = ''
         for i in self.message_text:
             # print(i)
-            res = res + dictionary[i]
-            # if i in dictionary.keys():
+            # res = res + dictionary[i]
+            if i in dictionary.keys():
+                res = res + dictionary[i]
         return res
             
 
