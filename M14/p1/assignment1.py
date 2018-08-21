@@ -150,6 +150,8 @@ class Message(object):
             # res = res + dictionary[i]
             if i in dictionary.keys():
                 res = res + dictionary[i]
+            else:
+                res = res + i
         return res
             
 
