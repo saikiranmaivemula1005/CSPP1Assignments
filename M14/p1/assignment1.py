@@ -117,7 +117,7 @@ class Message(object):
         # x = []
         # values = [x.append(i) for i in range(97,123)]+[x.append(i) for i in range(65,91)]
         # dic = dict(zip(keys,x))
-        for i in self.txt:
+        for i in message.txt:
             if i == '':
                 Output = Output + i
             elif i.isupper():
