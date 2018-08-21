@@ -55,6 +55,8 @@ def get_story_string():
 
 WORDLIST_FILENAME = 'words.txt'
 
+
+
 class Message(object):
     ### DO NOT MODIFY THIS METHOD ###
     def __init__(self, text):
@@ -107,7 +109,7 @@ class Message(object):
         # x = []
         # values = [x.append(i) for i in range(97,123)]+[x.append(i) for i in range(65,91)]
         # dic = dict(zip(keys,x))
-        for i in self:
+        for i in keys:
             if i == '':
                 Output = Output + i
             elif i.isupper():
@@ -115,6 +117,7 @@ class Message(object):
             else:
                 Output = Output + chr((ord(i) + shift - 97 ) % 26 + 97)
         dic = dict(zip(keys,Output))
+        return dic
 
 
 
@@ -130,15 +133,7 @@ class Message(object):
         Returns: the message text (string) in which every character is shifted
              down the alphabet by the input shift
         '''
-        Output = ''
-        for i in self:
-            if i == '':
-                Output = Output + i
-            elif i.isupper():
-                Output = Output + chr((ord(i) + shift - 65 ) % 26 + 65)
-            else:
-                Output = Output + chr((ord(i) + shift - 97 ) % 26 + 97)
-        return Output
+       
 
 
 class PlaintextMessage(Message):

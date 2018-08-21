@@ -117,7 +117,7 @@ class Message(object):
         # x = []
         # values = [x.append(i) for i in range(97,123)]+[x.append(i) for i in range(65,91)]
         # dic = dict(zip(keys,x))
-        for i in message.txt:
+        for i in keys:
             if i == '':
                 Output = Output + i
             elif i.isupper():
@@ -141,18 +141,12 @@ class Message(object):
         Returns: the message text (string) in which every character is shifted
              down the alphabet by the input shift
         '''
-        Output = ''
-        for i in self:
-            if i == '':
-                Output = Output + i
-            elif i.isupper():
-                Output = Output + chr((ord(i) + shift - 65 ) % 26 + 65)
-            else:
-                Output = Output + chr((ord(i) + shift - 97 ) % 26 + 97)
-        return Output
+        for i in self.message_text:
+            print(i)
+            
 
+       
 
-        
 
 def main():
     '''
