@@ -3,17 +3,16 @@ Replace all the special characters(!, @, #, $, %, ^, &, *) in a given string wit
 example : ab!@#cd is the input, the output is ab   cd
 Output has three spaces, which are to be replaced with these special characters
 '''
+"""string"""
 def main():
-    '''
-    Read string from the input, store it in variable str_input.
-    '''
-    inp_ = list(input())
-    i = 0
-    for i in range(len(inp_)):
-        if i in ('!', '@', '#', '$', '%', '^', '&', '*', '(', ')'):
-            inp_[i] = ' '
+    """special"""
+    input_ = input()
+    s1 = ""
+    for i in input_:
+        if i in '!' '@' '#' '$' '%' '^' '&' '*':
+            s1 = s1 + " "
         else:
-            inp_[i] = i
-    print(''.join(inp_))
+            s1 = s1+ i
+    print(s1)
 if __name__ == "__main__":
     main()
