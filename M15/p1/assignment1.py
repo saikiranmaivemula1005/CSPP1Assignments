@@ -259,6 +259,7 @@ class CiphertextMessage(Message):
                             m = m + x 
                 if m in self.valid_words:
                     if len(m) == len(message_text):
+                        print(i,m)
                         return i,m
 
 ### DO NOT MODIFY THIS METHOD ###
