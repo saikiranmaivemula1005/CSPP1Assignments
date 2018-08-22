@@ -9,12 +9,11 @@ def main():
     '''
     inp_ = input()
     i = 0
-    while i < len(inp_):
-        char_ = inp_[i]
-        if char_ in('!' or '@' or '#' or '$' or '%' or '^' or '&' or '*'):
-            print('')
+    for i in range(len(inp_)):
+        if i in ('!', '@', '#', '$', '%', '^', '&', '*', '(', ')'):
+            inp_[i] = ' '
         else:
-            print(inp_[i])
-            i = i + 1
+            inp_[i] = i
+    print(inp_)
 if __name__ == "__main__":
     main()
