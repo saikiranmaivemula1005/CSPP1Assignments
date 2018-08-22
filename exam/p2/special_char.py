@@ -7,13 +7,13 @@ def main():
     '''
     Read string from the input, store it in variable str_input.
     '''
-    inp_ = input()
+    inp_ = list(input())
     i = 0
     for i in range(len(inp_)):
         if i in ('!', '@', '#', '$', '%', '^', '&', '*', '(', ')'):
             inp_[i] = ' '
         else:
             inp_[i] = i
-    print(inp_)
+    print(''.join(inp_))
 if __name__ == "__main__":
     main()
