@@ -7,12 +7,12 @@ Output has three spaces, which are to be replaced with these special characters
 def main():
     """special"""
     input_ = input()
-    s1 = ""
-    for i in input_:
-        if i in '!' '@' '#' '$' '%' '^' '&' '*':
-            s1 = s1 + " "
+    s1_ = ""
+    for i_ in input_:
+        if i_ in '!' '@' '#' '$' '%' '^' '&' '*':
+            s1_ = s1_ + " "
         else:
-            s1 = s1+ i
+            s1_ = s1_ + i_
     print(s1)
 if __name__ == "__main__":
     main()
