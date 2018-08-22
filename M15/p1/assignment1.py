@@ -246,12 +246,20 @@ class CiphertextMessage(Message):
         and the decrypted message text using that shift value
         '''
         x = []
-        x =self.message_text.split(' ')
+        x =self.message_text.lower.split(' ')
         for i in x:
+            x = list(i)
             # print(i)
-            if not is_word(self.valid_words, i):
-                print('kk')
-
+            for j in range(26):
+                dictionary = self.build_shift_dict(j)
+                m = ''
+                for letter in x:
+                    for x in dictionary:
+                        if letter == dictionary[x]:
+                            m = m + x 
+                if m in self.valid_words:
+                    if len(m) == len(message_text):
+                        return i,m
 
 ### DO NOT MODIFY THIS METHOD ###
 def main():
