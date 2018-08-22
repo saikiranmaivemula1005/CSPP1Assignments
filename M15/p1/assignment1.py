@@ -246,7 +246,7 @@ class CiphertextMessage(Message):
         and the decrypted message text using that shift value
         '''
         x = []
-        x =self.message_text.lower.split(' ')
+        x =self.message_text.lower().split(' ')
         for i in x:
             x = list(i)
             # print(i)
