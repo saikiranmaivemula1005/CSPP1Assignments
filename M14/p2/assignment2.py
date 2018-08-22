@@ -140,8 +140,8 @@ class PlaintextMessage(Message):
         return self.message_text_encrypted
     def change_shift(self, shift):
         '''
-        Changes self.shift of the PlaintextMessage and updates other 
-        attributes determined by shift (ie. self.encrypting_dict and 
+        Changes self.shift of the PlaintextMessage and updates other
+        attributes determined by shift (ie. self.encrypting_dict and
         message_text_encrypted).
         shift (integer): the new shift that should be associated with this message.
         0 <= shift < 26
