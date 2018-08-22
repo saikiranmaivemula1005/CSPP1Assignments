@@ -191,8 +191,10 @@ class PlaintextMessage(Message):
         Returns: nothing
         '''
         self.shift = shift
-        Message.build_shift_dict(self,shift)
-        Message.apply_shift(self,shift)
+        # Message.build_shift_dict(self,shift)
+        # Message.apply_shift(self,shift)
+        self.encrypting_dict = Message.build_shift_dict(self,shift)
+        self.message_text_encrypted = Message.apply_shift(self,shift)
 
 
 
