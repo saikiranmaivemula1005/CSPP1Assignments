@@ -152,7 +152,7 @@ class PlaintextMessage(Message):
         self.message_text = text
         self.valid_words = load_words(WORDLIST_FILENAME)
         self.shift = shift
-        self.build_shift_dict(self,shift) = encrypting_dict
+        build_shift_dict(self,shift) = encrypting_dict
         
 
     def get_shift(self):
