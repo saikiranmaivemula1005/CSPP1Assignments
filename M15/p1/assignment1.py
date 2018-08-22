@@ -245,7 +245,10 @@ class CiphertextMessage(Message):
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
-        print(self.message_text.split(' '))
+        x = []
+        x =self.message_text.split(' ')
+        for i in x:
+            print(i)
 
 
 ### DO NOT MODIFY THIS METHOD ###
