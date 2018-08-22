@@ -152,7 +152,7 @@ class PlaintextMessage(Message):
         self.message_text = text
         self.valid_words = load_words(WORDLIST_FILENAME)
         self.shift = shift
-        print(Message.build_shift_dict(shift))
+        print(self.build_shift_dict(self,shift))
         
 
     def get_shift(self):
