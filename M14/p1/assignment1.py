@@ -54,6 +54,7 @@ WORDLIST_FILENAME = 'words.txt'
 # Helper code End
 ### Paste your implementation of the Message class here
 class Message(object):
+    """kk"""
     ### DO NOT MODIFY THIS METHOD ###
     def __init__(self, text):
         '''
