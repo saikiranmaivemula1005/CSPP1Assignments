@@ -168,7 +168,7 @@ class PlaintextMessage(Message):
         
         Returns: a COPY of self.encrypting_dict
         '''
-        return Message.build_shift_dict(self,shift)
+        return Message.build_shift_dict()
 
     def get_message_text_encrypted(self):
         '''
