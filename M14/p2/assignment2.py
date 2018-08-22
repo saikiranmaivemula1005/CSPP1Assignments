@@ -101,6 +101,7 @@ class Message(object):
 ### Helper code End
 ### Paste your implementation of the `PlaintextMessage` class here
 class PlaintextMessage(Message):
+    """kk"""
     def __init__(self, text, shift):
         '''
         Initializes a PlaintextMessage object
