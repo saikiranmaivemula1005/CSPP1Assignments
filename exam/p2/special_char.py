@@ -13,6 +13,6 @@ def main():
             s1_ = s1_ + " "
         else:
             s1_ = s1_ + i_
-    print(s1)
+    print(s1_)
 if __name__ == "__main__":
     main()
