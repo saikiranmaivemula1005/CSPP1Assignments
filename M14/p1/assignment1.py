@@ -57,10 +57,8 @@ class Message(object):
     ### DO NOT MODIFY THIS METHOD ###
     def __init__(self, text):
         '''
-        Initializes a Message object
-                
+        Initializes a Message object            
         text (string): the message's text
-
         a Message object has two attributes:
             self.message_text (string, determined by input text)
             self.valid_words (list, determined using helper function load_words
