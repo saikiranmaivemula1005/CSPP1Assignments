@@ -11,14 +11,14 @@ def load_words(file_name):
     Depending on the size of the word list, this function may
     take a while to finish.
     '''
-    print('Loading word list from file...')
+    # print('Loading word list from file...')
     # inFile: file
     in_file = open(file_name, 'r')
     # line: string
     line = in_file.readline()
     # word_list: list of strings
     word_list = line.split()
-    print('  ', len(word_list), 'words loaded.')
+    # print('  ', len(word_list), 'words loaded.')
     in_file.close()
     return word_list
 
@@ -40,7 +40,7 @@ def is_word(word_list, word):
     False
     '''
     word = word.lower()
-    word = word.strip(" !@#$%^&*()-_+={}[]|;'<>?,./\"")
+    word = word.strip(" !@#$%^&*()-_+={}[]|\:;'<>?,./\"")
     return word in word_list
 
 ### DO NOT MODIFY THIS FUNCTION ###
@@ -55,8 +55,6 @@ def get_story_string():
 
 WORDLIST_FILENAME = 'words.txt'
 
-
-
 class Message(object):
     ### DO NOT MODIFY THIS METHOD ###
     def __init__(self, text):
@@ -70,7 +68,7 @@ class Message(object):
             self.valid_words (list, determined using helper function load_words
         '''
         self.message_text = text
-        self.valid_words = load_words(WORDLIST_FILENAME)
+        self.valid_words = load_words("words.txt")
 
     ### DO NOT MODIFY THIS METHOD ###
     def get_message_text(self):
@@ -104,22 +102,20 @@ class Message(object):
         Returns: a dictionary mapping a letter (string) to 
                  another letter (string). 
         '''
-        dic = {}
-        keys = list(string.ascii_lowercase)+list(string.ascii_uppercase)
-        # x = []
-        # values = [x.append(i) for i in range(97,123)]+[x.append(i) for i in range(65,91)]
-        # dic = dict(zip(keys,x))
-        for i in keys:
-            if i == '':
-                Output = Output + i
-            elif i.isupper():
-                Output = Output + chr((ord(i) + shift - 65 ) % 26 + 65)
-            else:
-                Output = Output + chr((ord(i) + shift - 97 ) % 26 + 97)
-        dic = dict(zip(keys,Output))
-        return dic
+        lower_keys = list(string.ascii_lowercase)
+        lower_values = list(string.ascii_lowercase)
+        shift_lower_values = lower_values[shift:] + lower_values[:shift]
+        
+        upper_keys = list(string.ascii_uppercase)                 
+        upper_values = list(string.ascii_uppercase)
+        upper_shift_values = upper_values[shift:] + upper_values[:shift]
 
+        full_keys = lower_keys + upper_keys
+        full_values = shift_lower_values + upper_shift_values
 
+        self.shift_dict = dict(zip(full_keys, full_values))
+        return self.shift_dict        
+        
 
     def apply_shift(self, shift):
         '''
@@ -133,20 +129,14 @@ class Message(object):
         Returns: the message text (string) in which every character is shifted
              down the alphabet by the input shift
         '''
-        dictionary = self.build_shift_dict(shift)
-        res = ''
+        new_msg = []
         for i in self.message_text:
-            # print(i)
-            # res = res + dictionary[i]
-            if i in dictionary.keys():
-                res = res + dictionary[i]
+            if i not in self.build_shift_dict(shift).keys():
+                new_msg.append(i)
+                continue
             else:
-                res = res + i
-        return res
-
-
-       
-
+                new_msg.append(self.build_shift_dict(shift)[i])
+        return ''.join(new_msg)
 
 class PlaintextMessage(Message):
     def __init__(self, text, shift):
@@ -166,10 +156,7 @@ class PlaintextMessage(Message):
         Hint: consider using the parent class constructor so less 
         code is repeated
         '''
-        self.message_text = text
-        self.valid_words = load_words(WORDLIST_FILENAME)
-        self.shift = shift
-        
+        pass #delete this line and replace with your code here
 
     def get_shift(self):
         '''
@@ -177,7 +164,7 @@ class PlaintextMessage(Message):
         
         Returns: self.shift
         '''
-        return self.shift
+        pass #delete this line and replace with your code here
 
     def get_encrypting_dict(self):
         '''
@@ -185,7 +172,7 @@ class PlaintextMessage(Message):
         
         Returns: a COPY of self.encrypting_dict
         '''
-        return self.build_shift_dict(self,shift)
+        pass #delete this line and replace with your code here
 
     def get_message_text_encrypted(self):
         '''
@@ -193,7 +180,7 @@ class PlaintextMessage(Message):
         
         Returns: self.message_text_encrypted
         '''
-        return self.apply_shift(self,shift)
+        pass #delete this line and replace with your code here
 
     def change_shift(self, shift):
         '''
@@ -206,10 +193,8 @@ class PlaintextMessage(Message):
 
         Returns: nothing
         '''
-        self.shift = shift
-        self.build_shift_dict(self,shift)
-        self.apply_shift(self,shift)
-
+        pass #delete this line and replace with your code here
+        
 
 class CiphertextMessage(Message):
     def __init__(self, text):
@@ -244,10 +229,18 @@ class CiphertextMessage(Message):
 
 #Example test case (PlaintextMessage)
 plaintext = PlaintextMessage('hello', 2)
-print('Expected Output: jgnnq')
-print('Actual Output:', plaintext.get_message_text_encrypted())
+# print('Expected Output: jgnnq')
+# print('Actual Output:', plaintext.get_message_text_encrypted())
     
-#Example test case (CiphertextMessage)
-ciphertext = CiphertextMessage('jgnnq')
-print('Expected Output:', (24, 'hello'))
-print('Actual Output:', ciphertext.decrypt_message())
+# #Example test case (CiphertextMessage)
+# ciphertext = CiphertextMessage('jgnnq')
+# print('Expected Output:', (24, 'hello'))
+# print('Actual Output:', ciphertext.decrypt_message())
+
+
+def decrypt_story():
+    joke_code = CiphertextMessage(get_story_string())
+    print(get_story_string())
+    return joke_code.decrypt_message()
+
+# print(decrypt_story())
