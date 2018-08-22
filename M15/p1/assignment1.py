@@ -229,7 +229,7 @@ class CiphertextMessage(Message):
             self.valid_words (list, determined using helper function load_words)
         '''
         self.message_text = text
-        print(self.message_text)
+        # print(self.message_text)
         self.valid_words = load_words("words.txt")
     def decrypt_message(self):
         '''
@@ -245,6 +245,7 @@ class CiphertextMessage(Message):
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
+        print(build_shift_dict(self))
         
 
 
