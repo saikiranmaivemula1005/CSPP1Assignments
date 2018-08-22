@@ -5,16 +5,20 @@ example:
     output: 6
 '''
 def main():
-    '''
-    Read any number from the input, store it in variable int_input.
-    '''
-    inp_ = int(input())
-    pro_ = 0
-    temp_ = inp_
-    while inp_ > 0:
-        num_ = temp_%10
-        pro_ = pro_*num_
-        num_ = inp_/10
-    print(pro_)
-    if __name__ == "__main__":
-        main()
+    """product"""
+    input_ = int(input())
+    num_ = abs(input_)
+    pro_ = 1
+    rem_ = 0
+    if num_ == 0:
+        print(num_)
+    else:
+        while num_ >= 1:
+            rem_ = num_ % 10
+            pro_ = pro_ * rem_
+            num_ = num_ // 10
+        if input_ < 0:
+            pro_ = -pro_
+        print(pro_)
+if __name__ == "__main__":
+    main()
