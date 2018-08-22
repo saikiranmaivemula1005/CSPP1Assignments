@@ -190,8 +190,8 @@ class PlaintextMessage(Message):
         Returns: nothing
         '''
         self.shift = shift
-        self.build_shift_dict(self,shift)
-        self.apply_shift(self,shift)
+        Message.build_shift_dict(self,shift)
+        # self.apply_shift(self,shift)
 
 
 
