@@ -246,7 +246,7 @@ class CiphertextMessage(Message):
         and the decrypted message text using that shift value
         '''
         # print(Message.apply_shift(self,shift))
-        for i in self.text:
+        for i in self.message_text:
             print(i)
 
 
