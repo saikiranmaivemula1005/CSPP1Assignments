@@ -99,12 +99,12 @@ class Message(object):
         # dic = dict(zip(keys,x))
         for i in keys:
             if i == '':
-                Output_ = Output_ + i
+                output_ = output_ + i
             elif i.isupper():
-                Output_ = Output_ + chr((ord(i) + shift - 65) % 26 + 65)
+                output_ = output_ + chr((ord(i) + shift - 65) % 26 + 65)
             else:
-                Output_ = Output_ + chr((ord(i) + shift - 97) % 26 + 97)
-        dic = dict(zip(keys, Output_))
+                output_ = output_ + chr((ord(i) + shift - 97) % 26 + 97)
+        dic = dict(zip(keys, output_))
         return dic
     def apply_shift(self, shift):
         '''
