@@ -249,7 +249,7 @@ class CiphertextMessage(Message):
         x =self.message_text.split(' ')
         for i in x:
             # print(i)
-            if is_word(self.valid_words, i):
+            if not is_word(self.valid_words, i):
                 print('kk')
 
 
