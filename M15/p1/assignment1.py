@@ -245,7 +245,7 @@ class CiphertextMessage(Message):
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
-        print(build_shift_dict(self))
+        print(Message.build_shift_dict(self))
         
 
 
