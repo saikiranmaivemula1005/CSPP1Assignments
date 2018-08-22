@@ -248,7 +248,9 @@ class CiphertextMessage(Message):
         x = []
         x =self.message_text.split(' ')
         for i in x:
-            print(i)
+            # print(i)
+            if is_word(self.valid_words, i):
+                print('kk')
 
 
 ### DO NOT MODIFY THIS METHOD ###
