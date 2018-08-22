@@ -191,7 +191,7 @@ class PlaintextMessage(Message):
         '''
         self.shift = shift
         Message.build_shift_dict(self,shift)
-        # self.apply_shift(self,shift)
+        Message.apply_shift(self,shift)
 
 
 
