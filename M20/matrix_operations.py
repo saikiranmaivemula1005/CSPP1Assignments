@@ -33,6 +33,7 @@ def read_matrix():
     for i in range(row):
     	l1 = [int(i) for i in input().split(' ')]
     matrix.append(l1)
+    print(matrix)
     return matrix
 
 
