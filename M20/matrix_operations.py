@@ -18,7 +18,7 @@ def add_matrix(m1, m2):
     '''
     res = []
     if len(m1) == len(m2):
-        res = [m1[i] + m2[i] for i in range(len(m1[0]))]
+        res = [m1[i] + m2[i] for i in range(len(m1))]
         print(res)
     return(res)
 
