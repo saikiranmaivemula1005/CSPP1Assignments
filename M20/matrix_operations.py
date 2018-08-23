@@ -17,7 +17,7 @@ def add_matrix(m1, m2):
         error message should be "Error: Matrix shapes invalid for addition"
     '''
     res = []
-    if len(m1) == len(m2[0]):
+    if len(m1[0]) == len(m2[0]):
         res = m1 + m2
         print(res)
     return(res)
