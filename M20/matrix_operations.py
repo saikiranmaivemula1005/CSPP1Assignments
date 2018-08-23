@@ -21,7 +21,7 @@ def add_matrix(m1, m2):
      
         for i in range(len(m1)):
             res.append(m1[i][i] + m2[i][i])
-        print(res)
+            print(res)
     return(res)
 
 def read_matrix():
