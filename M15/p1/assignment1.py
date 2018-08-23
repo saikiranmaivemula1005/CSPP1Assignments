@@ -229,8 +229,9 @@ class CiphertextMessage(Message):
             self.valid_words (list, determined using helper function load_words)
         '''
         self.message_text = text
-        # print(self.message_text)
-        self.valid_words = load_words("words.txt")
+        self.valid_words = load_words("words.txt")[:]
+        self.max_valid_words = 0
+
     def decrypt_message(self):
         '''
         Decrypt self.message_text by trying every possible shift value
@@ -245,22 +246,17 @@ class CiphertextMessage(Message):
         Returns: a tuple of the best shift value used to decrypt the message
         and the decrypted message text using that shift value
         '''
-        x = []
-        x =self.message_text.lower().split(' ')
-        for i in x:
-            x = list(i)
-            # print(i)
-            for j in range(26):
-                dictionary = self.build_shift_dict(j)
-                m = ''
-                for letter in x:
-                    for x in dictionary:
-                        if letter == dictionary[x]:
-                            m = m + x 
-                if m in self.valid_words:
-                    if len(m) == len(message_text):
-                        return i,m
-
+        for shift in range(27):
+            message = PlaintextMessage(self.message_text, shift)
+            decrypted = message.get_message_text_encrypted()
+            valid_words_count = 0
+            for word in decrypted.split(' '):
+                if is_word(self.valid_words, word):
+                    valid_words_count += 1
+            if self.max_valid_words < valid_words_count:
+                self.max_valid_words = valid_words_count
+                self.decrypted_message = (26-shift, decrypted)
+        return self.decrypted_message
 ### DO NOT MODIFY THIS METHOD ###
 def main():
     ''' This method is provided to handle testcases'''
