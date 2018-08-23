@@ -20,9 +20,9 @@ def add_matrix(m1, m2):
     if len(m1) == len(m2):
      
         for i in range(len(m1)):
-            for j in range(i)
-            res.append(m1[i][j] + m2[i][j])
-            print(res)
+            for j in range(i):
+                res.append(m1[i][j] + m2[i][j])
+                print(res)
     return(res)
 
 def read_matrix():
