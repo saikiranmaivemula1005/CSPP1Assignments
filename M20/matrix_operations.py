@@ -26,10 +26,11 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    rows = input()
-    columns = input()
+    rows,columns = input().split(',')
+    row = int(rows)
+    columns = int(columns)
     matirx = []
-    for i in range(rows):
+    for i in range(row):
     	l1 = [int(i) for i in input().split(' ')]
     matrix.append(l1)
     return matrix
