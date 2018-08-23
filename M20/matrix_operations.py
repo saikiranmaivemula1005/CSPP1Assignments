@@ -28,8 +28,8 @@ def read_matrix():
     '''
     rows = []
     columns = []
-    i = int(input())
-    j = int(input())
+    i = input()
+    j = input()
     for k in range(0, i+1):
     	rows.append(k)
     for l in range(0, j+1):
