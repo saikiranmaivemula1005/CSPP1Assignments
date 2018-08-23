@@ -26,10 +26,14 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
+    rows = []
+    columns = []
     i = int(input())
     j = int(input())
-    rows = [rows(i) = i  for i in range(0,i+1)]
-    columns = [columns(i) = i for i in range(0,j+1)]
+    for k in range(0, i+1):
+    	rows.append(k)
+    for l in range(0, j+1):
+    	columns.append(l)
     print(rows,columns)
 
 
