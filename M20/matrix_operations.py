@@ -29,7 +29,7 @@ def read_matrix():
     rows,columns = input().split(',')
     row = int(rows)
     columns = int(columns)
-    matirx = []
+    matrix = []
     for i in range(row):
     	l1 = [int(i) for i in input().split(' ')]
     matrix.append(l1)
