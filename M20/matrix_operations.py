@@ -30,9 +30,9 @@ def read_matrix():
     columns = []
     i = input()
     j = input()
-    for k in range(0, i+1):
+    for k in range(0, i + '1'):
     	rows.append(k)
-    for l in range(0, j+1):
+    for l in range(0, j + '1'):
     	columns.append(l)
     print(rows,columns)
 
