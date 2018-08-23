@@ -6,7 +6,19 @@ def mult_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for mult"
     '''
-    pass
+    if len(m1[0]) == len(m2):
+        for i in range(len(m1)):
+            for j in range(len(m2[0])):
+                res = 0
+                restemp = []
+                for k in range(len(m2)):
+                    res += m1[i][k] * m2[k][j]
+                restemp.append(res)
+            result.append(restemp)
+        return result
+    print("Error: Matrix shapes invalid for mult")
+    return None
+
 def add_matrix(m1, m2):
     '''
         check if the matrix shapes are similar
@@ -29,7 +41,6 @@ def add_matrix(m1, m2):
             row.append(p + q)
         result.append(row)
     return result
-
 def read_matrix():
     '''
         read the matrix dimensions from input
