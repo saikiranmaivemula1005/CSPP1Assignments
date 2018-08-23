@@ -26,8 +26,8 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    rows = input().split(',')
-    columns = input().split(',')
+    rows = input()
+    columns = input()
     matirx = []
     for i in range(rows):
     	l1 = [int(i) for i in input().split(' ')]
