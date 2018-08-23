@@ -20,7 +20,6 @@ def mult_matrix(m1_, m2_):
         return result
     print("Error: Matrix shapes invalid for mult")
     return None
-
 def add_matrix(m1_, m2_):
     '''
         check if the matrix shapes are similar
