@@ -33,7 +33,6 @@ def read_matrix():
     for i in range(row):
         l1 = [int(i) for i in input().split(' ')]
         matrix.append(l1)
-    print(matrix)
     return matrix
 
 
@@ -46,6 +45,9 @@ def main():
 
     # multiply matrix 1 and matrix 2
     m1 = read_matrix()
+    print(m1)
+    m2 = read_matrix()
+    print(m2)
     # m2 = read_matrix()
 
 if __name__ == '__main__':
