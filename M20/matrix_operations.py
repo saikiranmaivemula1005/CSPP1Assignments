@@ -1,4 +1,4 @@
-def mult_matrix(m1, m2):
+def mult_matrix(m1_, m2_):
     '''
         check if the matrix1 columns = matrix2 rows
         mult the matrices and return the result matrix
@@ -7,20 +7,20 @@ def mult_matrix(m1, m2):
         error message should be "Error: Matrix shapes invalid for mult"
     '''
     result = []
-    if len(m1[0]) == len(m2):
-        for i in range(len(m1)):
+    if len(m1_[0]) == len(m2_):
+        for i in range(len(m1_)):
             restemp = []
-            for j in range(len(m2[0])):
+            for j in range(len(m2_[0])):
                 res = 0
-                for k in range(len(m2)):
-                    res += m1[i][k] * m2[k][j]
+                for k in range(len(m2_)):
+                    res += m1_[i][k] * m2_[k][j]
                 restemp.append(res)
             result.append(restemp)
         return result
     print("Error: Matrix shapes invalid for mult")
     return None
 
-def add_matrix(m1, m2):
+def add_matrix(m1_, m2_):
     '''
         check if the matrix shapes are similar
         add the matrices and return the result matrix
@@ -28,15 +28,15 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    if len(m1) != len(m2):
+    if len(m1_) != len(m2_):
         print("Error: Matrix shapes invalid for addition")
         return
-    for i, j in zip(m1, m2):
+    for i, j in zip(m1_, m2_):
         if len(i) != len(j):
             print("Error: Matrix shapes invalid for addition")
             return
     result = []
-    for i, j in zip(m1, m2):
+    for i, j in zip(m1_, m2_):
         row = []
         for p, q in zip(i, j):
             row.append(p + q)
@@ -66,12 +66,12 @@ def main():
     # read matrix 2
     # add matrix 1 and matrix 2
     # multiply matrix 1 and matrix 2
-    m1 = read_matrix()
-    # print(m1)
-    m2 = read_matrix()
-    if (m1 != None and m2 != None):
-        print(add_matrix(m1, m2))
-        print(mult_matrix(m1, m2))
-    # print(m2)
+    m1_ = read_matrix()
+    # print(m1_)
+    m2_ = read_matrix()
+    if (m1_ != None and m2_ != None):
+        print(add_matrix(m1_, m2_))
+        print(mult_matrix(m1_, m2_))
+    # print(m2_)
 if __name__ == '__main__':
     main()
