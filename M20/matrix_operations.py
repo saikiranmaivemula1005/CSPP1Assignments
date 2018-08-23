@@ -1,3 +1,4 @@
+"""kk"""
 def mult_matrix(m1_, m2_):
     '''
         check if the matrix1 columns = matrix2 rows
@@ -8,12 +9,12 @@ def mult_matrix(m1_, m2_):
     '''
     result = []
     if len(m1_[0]) == len(m2_):
-        for i in range(len(m1_)):
+        for i1_ in range(len(m1_)):
             restemp = []
-            for j in range(len(m2_[0])):
+            for j1_ in range(len(m2_[0])):
                 res = 0
-                for k in range(len(m2_)):
-                    res += m1_[i][k] * m2_[k][j]
+                for k1_ in range(len(m2_)):
+                    res += m1_[i1_][k1_] * m2_[k1_][j1_]
                 restemp.append(res)
             result.append(restemp)
         return result
@@ -31,15 +32,15 @@ def add_matrix(m1_, m2_):
     if len(m1_) != len(m2_):
         print("Error: Matrix shapes invalid for addition")
         return
-    for i, j in zip(m1_, m2_):
-        if len(i) != len(j):
+    for i1_, j1_ in zip(m1_, m2_):
+        if len(i1_) != len(j1_):
             print("Error: Matrix shapes invalid for addition")
             return
     result = []
-    for i, j in zip(m1_, m2_):
+    for i1_, j1_ in zip(m1_, m2_):
         row = []
-        for p, q in zip(i, j):
-            row.append(p + q)
+        for p1_, q1_ in zip(i1_, j1_):
+            row.append(p1_ + q1_)
         result.append(row)
     return result
 def read_matrix():
@@ -50,18 +51,19 @@ def read_matrix():
         print an error message and return None
         error message should be "Error: Invalid input for the matrix"
     '''
-    rows,columns = input().split(',')
+    rows, columns = input().split(',')
     rows = int(rows)
     columns = int(columns)
     matrix = []
-    for i in range(rows):
-        l1 = [int(i) for i in input().split(' ')]
-        if len(l1) != columns:
+    for i1_ in range(rows):
+        l1_ = [int(i1_) for i1_ in input().split(' ')]
+        if len(l1_) != columns:
             print("Error: Invalid input for the matrix")
             return None
-        matrix.append(l1)
+        matrix.append(l1_)
     return matrix
 def main():
+    """kk"""
     # read matrix 1
     # read matrix 2
     # add matrix 1 and matrix 2
