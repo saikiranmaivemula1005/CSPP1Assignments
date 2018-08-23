@@ -16,7 +16,7 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    if rows(m1) == columns(m2):
+    if len(m1[rows]) == len(m2[rows])
         print('k')
 
 def read_matrix():
