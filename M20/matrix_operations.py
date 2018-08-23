@@ -9,9 +9,9 @@ def mult_matrix(m1, m2):
     result = []
     if len(m1[0]) == len(m2):
         for i in range(len(m1)):
+            restemp = []
             for j in range(len(m2[0])):
                 res = 0
-                restemp = []
                 for k in range(len(m2)):
                     res += m1[i][k] * m2[k][j]
                 restemp.append(res)
