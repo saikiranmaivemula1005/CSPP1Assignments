@@ -28,8 +28,8 @@ def read_matrix():
     '''
     i = int(input())
     j = int(input())
-    rows = [rows[i] = i  for i in range(0,i+1)]
-    columns = [columns[i] = i for i in range(0,j+1)]
+    rows = [rows(i) = i  for i in range(0,i+1)]
+    columns = [columns(i) = i for i in range(0,j+1)]
     print(rows,columns)
 
 
