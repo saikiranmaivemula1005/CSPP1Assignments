@@ -77,7 +77,7 @@ def main():
     i1_ = 0
     while i1_ < 3:
         lst_ = input().split(" ")
-        matrix.append(lst)
+        matrix.append(lst_)
         i1_ = i1_ + 1
     # print(matrix)
     if check_Input(matrix):
