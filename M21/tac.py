@@ -16,4 +16,7 @@ if c >= 1:
     print('invalid input')
     exit()
 for i in matrix:
-	print(i)
+	# print(i)
+	for j in i:
+		if count(j) == 3:
+			print(j)
