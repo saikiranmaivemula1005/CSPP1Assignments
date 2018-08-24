@@ -48,7 +48,7 @@ def column(matrix):
 def diagonals(matrix):
     """kk"""
     d1_ =[]
-    len(matrix) = length
+    length = len(matrix)
     for i1_ in range(length):
         d1_.append(matrix[i1_][i1_])
     if d1_.count("o") == 3:
