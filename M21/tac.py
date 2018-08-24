@@ -7,7 +7,7 @@ for i1_ in range(rows):
     matrix.append(l1_)
 # print(matrix)
 for i in range(len(matrix)):
-    for j in i:
+    for j in range(len(matrix)):
         lst.append(j)
         print(matrix[i][j])
     if j not in ('x','o','.'):
