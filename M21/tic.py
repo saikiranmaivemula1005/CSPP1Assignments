@@ -10,6 +10,7 @@ for i in matrix:
 	for j in i:
 		lst.append(j)
 	if j != 'x' or 'o' or '.':
+		print(j)
 			c += 1
 if c >= 1:
 	print('invalid input')
