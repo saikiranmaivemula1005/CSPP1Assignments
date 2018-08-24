@@ -8,7 +8,7 @@ for i1_ in range(rows):
 # print(matrix)
 for i in range(len(matrix)):
     for j in range(len(matrix)):
-        lst.append(j)
+        # lst.append(j)
         print(matrix[i][j])
     if j not in ('x','o','.'):
         # print(j)
