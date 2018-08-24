@@ -15,4 +15,4 @@ for i in matrix:
     if c >= 1:
         print('invalid input')
         exit()
-    print(lst[int(j)])
+    print(j)
