@@ -15,7 +15,7 @@ for i in range(len(matrix)):
     #     exit()
 for i in range(len(matrix)):
     # print(i)
-    matrix.count(matrix[i])
+    print(matrix.count(matrix[i]))
     # for j in range(len(matrix)):
     #     # print(matrix[i][j])
     #     print(matrix.count(matrix[i][j]))
