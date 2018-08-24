@@ -15,6 +15,7 @@ for i in range(len(matrix)):
     #     exit()
 for i in matrix:
     print(i)
-    if i.count(matrix[i]) == 3:
-        print(matrix[i])
+    for j in i:
+        if matrix.count(matrix[i][j]) == 3:
+            print(matrix[i][j])
 
