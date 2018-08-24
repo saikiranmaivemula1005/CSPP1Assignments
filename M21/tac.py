@@ -69,6 +69,7 @@ def check_game(matrix):
                 c_of_x += 1
     if abs(c_of_x - c_of_o) == 1:
         return True
+    return False
 def main():
     matrix = []
     i = 0
