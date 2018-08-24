@@ -1,3 +1,4 @@
+"""kk"""
 def check_game(matrix):
     """kk"""
     count_o=0
@@ -47,7 +48,8 @@ def column(matrix):
 def diagonals(matrix):
     """kk"""
     d1_ =[]
-    for i1_ in range(len(matrix)):
+    len(matrix) = length
+    for i1_ in range(length):
         d1_.append(matrix[i1_][i1_])
     if d1_.count("o") == 3:
         return (True, "o")
@@ -55,7 +57,7 @@ def diagonals(matrix):
         return (True, "x")
     d2_ = []
     j1_ = len(matrix[0]) - 1
-    for i1_ in range(len(matrix)):
+    for i1_ in range(length):
         d2_.append(matrix[i1_][j1_])
         j1_ = j1_ - 1
     if d2_.count("o") == 3:
@@ -74,6 +76,7 @@ def check_winner(matrix):
     else:
         print("draw")
 def main():
+    """kk"""
     matrix =[]
     i1_ = 0
     while i1_ < 3:
