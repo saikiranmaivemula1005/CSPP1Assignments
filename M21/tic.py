@@ -5,6 +5,7 @@ for i1_ in range(rows):
     matrix.append(l1_)
 # print(matrix)
 for i in matrix:
+	print(i)
 	print(matrix.count(i))
 	if matrix.count(i) == 3:
 		print(matrix[i])
