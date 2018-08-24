@@ -18,5 +18,5 @@ if c >= 1:
 for i in matrix:
 	# print(i)
 	for j in i:
-		if count(j) == 3:
+		if j.count() == 3:
 			print(j)
