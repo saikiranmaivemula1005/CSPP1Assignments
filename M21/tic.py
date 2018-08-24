@@ -11,7 +11,7 @@ for i in matrix:
 		lst.append(j)
 	if j != 'x' or 'o' or '.':
 		print(j)
-			c += 1
+		c += 1
 if c >= 1:
 	print('invalid input')
 # print(lst)
