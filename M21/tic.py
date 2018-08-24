@@ -9,3 +9,11 @@ for i in matrix:
 	for j in i:
 		lst.append(j)
 print(lst)
+if lst.count('x') and lst.count('o') == 3:
+	print('draw')
+elif lst.count('x') == 3:
+	print('x')
+elif lst.count('o') == 3:
+	print('o')
+else:
+	print('inavlid game')
