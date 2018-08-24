@@ -20,8 +20,11 @@ if c >= 1:
 if lst.count('x') == 3 and lst.count('o') == 3:
     print('draw')
     exit()
-if lst.count('x') == lst.count('o') and lst.count('.') == 3:
+if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') == 3:
     print('invalid game')
+    exit()    
+if lst.count('x') == lst.count('o'):
+    print('draw')
 elif lst.count('x') == 3 and lst.count('o') < 3:
     print('x')
 elif lst.count('o') == 3 and lst.count('x') < 3:
