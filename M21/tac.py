@@ -83,7 +83,7 @@ def main():
     matrix =[]
     i=0
     while i<3:
-        lst = raw_input().split(" ")
+        lst = input().split(" ")
         matrix.append(lst)
         i=i+1
     # print(matrix)
