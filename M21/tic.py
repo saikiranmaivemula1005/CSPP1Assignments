@@ -7,5 +7,4 @@ for i1_ in range(rows):
 for i in range(rows):
 	if matrix.count(i) == 3:
 		print(matrix[i])
-	else:
-		print('invalid game')
+print('invalid game')
