@@ -16,6 +16,10 @@ for i in range(len(matrix)):
 for i in range(len(matrix)):
     # print(i)
     print(matrix.count(matrix[i]))
+    if matrix.count('o') == 3:
+        print('o')
+    if matrix.count('x') == 3:
+        print('x')
     # for j in range(len(matrix)):
     #     # print(matrix[i][j])
     #     print(matrix.count(matrix[i][j]))
