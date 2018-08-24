@@ -8,5 +8,4 @@ for i1_ in range(rows):
 for i in matrix:
 	for j in i:
 		lst.append(j)
-	if lst.count(j) == 3:
-		print(j)
+print(lst)
