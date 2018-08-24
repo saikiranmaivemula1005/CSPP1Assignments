@@ -14,7 +14,7 @@ for i in matrix:
 		c += 1
 if c >= 1:
 	print('invalid input')
-	break
+break
 # print(lst)
 
 if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') != 3 or lst.count('x') == lst.count('o'):
