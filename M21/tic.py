@@ -15,12 +15,12 @@ for i in matrix:
 if c >= 1:
     print('invalid input')
     exit()
-print(lst)
+# print(lst)
 
 if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') != 3:
     print('draw')
 if lst.count('x') == lst.count('o'):
-    print('draw')
+    print('invalid game')
 elif lst.count('x') == 3 and lst.count('o') < 3:
     print('x')
 elif lst.count('o') == 3 and lst.count('x') < 3:
