@@ -82,7 +82,7 @@ def main():
         l1 = input().split(' ')
         matrix.append(l1)
         i += 1
-    print(matrix)
+    # print(matrix)
     check_input(matrix)
     if check_game(matrix):
         print('')
