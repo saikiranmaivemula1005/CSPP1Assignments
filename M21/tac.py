@@ -13,9 +13,9 @@ for i in range(len(matrix)):
     # if c >= 1:
     #     print('invalid input')
     #     exit()
-for i in matrix:
+for i in range(len(matrix)):
     print(i)
-    for j in i:
+    for j in range(len(matrix)):
         if matrix.count(matrix[i][j]) == 3:
             print(matrix[i][j])
 
