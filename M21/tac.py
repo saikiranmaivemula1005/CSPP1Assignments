@@ -10,9 +10,9 @@ for i in range(len(matrix)):
     if i not in ('x','o','.'):
         # print(j)
         c += 1
-    if c >= 1:
-        print('invalid input')
-        exit()
+    # if c >= 1:
+    #     print('invalid input')
+    #     exit()
 for i in matrix:
     print(i)
 
