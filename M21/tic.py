@@ -9,5 +9,5 @@ for i in matrix:
 		print(j)
 		print(matrix.count(j))
 		if matrix.count(j) == 3:
-			print(matrix[j])
+			print(matrix[j],'kk')
 print('invalid game')
