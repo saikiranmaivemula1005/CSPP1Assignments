@@ -8,8 +8,10 @@ for i1_ in range(rows):
 for i in matrix:
 	for j in i:
 		lst.append(j)
-		if j != 'x' or 'o' or '.':
-			print('invalid input')
+	if j != 'x' or 'o' or '.':
+			c += 1
+if c >= 1:
+	print('invalid input')
 # print(lst)
 
 if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') != 3 or lst.count('x') == lst.count('o'):
