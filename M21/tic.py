@@ -3,8 +3,8 @@ matrix = []
 lst = []
 c = 0
 for i1_ in range(rows):
-    l1_ = [i1_ for i1_ in input().split(' ')]
-    matrix.append(l1_)
+	l1_ = [i1_ for i1_ in input().split(' ')]
+	matrix.append(l1_)
 # print(matrix)
 for i in matrix:
 	for j in i:
@@ -14,7 +14,7 @@ for i in matrix:
 		c += 1
 if c >= 1:
 	print('invalid input')
-    break
+	break
 # print(lst)
 
 if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') != 3 or lst.count('x') == lst.count('o'):
