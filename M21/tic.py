@@ -16,15 +16,16 @@ if c >= 1:
     print('invalid input')
     exit()
 # print(lst)
+if lst.count('x') == 5 and lst.count('o') == 3:
+    print('draw')
+    exit()
 if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') == 3:
     print('invalid game')
     exit()  
 if lst.count('x') == 3 and lst.count('o') == 3:
     print('draw')
     exit()
-if lst.count('x') == 5 and lst.count('o') == 3:
-    print('draw')
-    exit()
+
   
 if lst.count('x') == lst.count('o'):
     print('draw')
