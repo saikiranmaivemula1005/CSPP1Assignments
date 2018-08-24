@@ -13,4 +13,6 @@ for i in range(len(matrix)):
     if c >= 1:
         print('invalid input')
         exit()
-    
+for i in matrix:
+    print(i)
+
