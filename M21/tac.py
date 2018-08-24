@@ -2,8 +2,8 @@ def check_input(matrix):
     for i in matrix:
         for j in i:
             if j not in 'o,x,.':
-                return (True)
-            return False
+                return False
+            return True
 def row(matrix):
     winner_x = False
     winner_o = False
@@ -69,13 +69,6 @@ def check_game(matrix):
                 c_of_x += 1
     if abs(c_of_x - c_of_o) == 1:
         return True
-
-
-
-
-
-
-
 def main():
     matrix = []
     i = 0
