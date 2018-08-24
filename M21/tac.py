@@ -12,11 +12,6 @@ for i in matrix:
     if j not in ('x','o','.'):
         # print(j)
         c += 1
-if c >= 1:
-    print('invalid input')
-    exit()
-for i in matrix:
-	# print(i)
-	for j in i:
-		if j.count() == 3:
-			print(j)
+	if c >= 1:
+    	print('invalid input')
+    	exit()
