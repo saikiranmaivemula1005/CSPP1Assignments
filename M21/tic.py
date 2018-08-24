@@ -24,9 +24,7 @@ if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') == 3:
     exit()  
 if lst.count('x') == 3 and lst.count('o') == 3:
     print('draw')
-    exit()
-
-  
+    exit()  
 if lst.count('x') == lst.count('o'):
     print('draw')
 elif lst.count('x') == 3 and lst.count('o') < 3:
