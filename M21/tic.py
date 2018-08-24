@@ -5,6 +5,7 @@ for i1_ in range(rows):
     matrix.append(l1_)
 # print(matrix)
 for i in range(rows):
+	print(i)
 	if matrix.count(i) == 3:
 		print(matrix[i])
 print('invalid game')
