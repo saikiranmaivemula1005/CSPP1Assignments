@@ -8,8 +8,8 @@ for i1_ in range(rows):
 for i in matrix:
 	for j in i:
 		lst.append(j)
-print(lst)
-if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') != 3:
+# print(lst)
+if lst.count('x') == 3 and lst.count('o') == 3 and lst.count('.') != 3 and lst.count('x') == lst.count('o'):
 	print('draw')
 elif lst.count('x') == 3:
 	print('x')
