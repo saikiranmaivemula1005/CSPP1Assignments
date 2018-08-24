@@ -14,8 +14,8 @@ for i in range(len(matrix)):
     #     print('invalid input')
     #     exit()
 for i in range(len(matrix)):
-    print(i)
+    # print(i)
     for j in range(len(matrix)):
         # print(matrix[i][j])
         if matrix.count(matrix[i][j]) == 3:
-            print(i)
+            print(matrix[i][j])
