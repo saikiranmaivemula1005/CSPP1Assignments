@@ -16,4 +16,4 @@ elif lst.count('x') == 3:
 elif lst.count('o') == 3 and lst.count('x') < 3:
 	print('o')
 else:
-	print('inavlid game')
+	print('invalid game')
