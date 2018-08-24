@@ -6,8 +6,8 @@ for i1_ in range(rows):
 # print(matrix)
 for i in matrix:
 	for j in i:
-		print(j)
+		# print(j)
 		print(matrix.count(j))
 		if matrix.count(j) == 3:
 			print(matrix[j],'kk')
-print('invalid game')
+# print('invalid game')
