@@ -15,7 +15,7 @@ for i in matrix:
 if c >= 1:
     print('invalid input')
     exit()
-print(lst)
+# print(lst)
 if lst.count('x') == 5 and lst.count('o') == 4:
     print('draw')
     exit()
