@@ -87,6 +87,6 @@ def main():
     if check_input(matrix):
         if check_game(matrix):
             print('')
-        else:
+    else:
             print('invalid game')
 main()
