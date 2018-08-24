@@ -14,7 +14,7 @@ def row(matrix):
         if row.count('o') == 3:
             return(True, 'o')
             winner_o = True
-    if winner_o and winner_x:
+    if winner_o == True and winner_x == True:
         print('invalid game')
         exit()
     if winner_x:
