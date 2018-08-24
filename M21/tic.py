@@ -19,6 +19,7 @@ if c >= 1:
 
 if lst.count('x') == 3 and lst.count('o') == 3:
     print('draw')
+    break
 if lst.count('x') == lst.count('o'):
     print('invalid game')
 elif lst.count('x') == 3 and lst.count('o') < 3:
