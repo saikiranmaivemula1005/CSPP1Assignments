@@ -12,6 +12,6 @@ for i in matrix:
     if j not in ('x','o','.'):
         # print(j)
         c += 1
-	if c >= 1:
-    	print('invalid input')
-    	exit()
+    if c >= 1:
+        print('invalid input')
+        exit()
