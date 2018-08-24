@@ -2,7 +2,8 @@ def check_input(matrix):
     for i in matrix:
         for j in i:
             if j not in 'o,x,.':
-                return 'invalid input'
+                return (True)
+            return False
 def row(matrix):
     winner_x = False
     winner_o = False
@@ -83,9 +84,9 @@ def main():
         matrix.append(l1)
         i += 1
     # print(matrix)
-    check_input(matrix)
-    if check_game(matrix):
-        print('')
-    else:
-        print('invalid game')
+    if check_input(matrix):
+        if check_game(matrix):
+            print('')
+        else:
+            print('invalid game')
 main()
