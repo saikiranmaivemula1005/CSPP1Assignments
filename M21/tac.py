@@ -4,11 +4,11 @@ def checkGame(matrix):
     count_x=0
     for row in matrix:
         for i in row:
-            if i =="o":
-                count_o+=1
-            elif i=="x":
-                count_x+=1
-    if abs(count_x-count_o)==1 or abs(count_x-count_o)==0:
+            if i == "o":
+                count_o += 1
+            elif i == "x":
+                count_x += 1
+    if abs(count_x-count_o) == 1 or abs(count_x-count_o) == 0:
         return True
     return False    
 
@@ -20,22 +20,21 @@ def checkInput(matrix):
     return True
 
 def rows(matrix):
-    winner_x=False
-    winner_o=False
+    winner_x = False
+    winner_o = False
     for row in matrix:
-        if row.count("x")==3:
-            winner_x =True  
-        if row.count("o")==3:
-            winner_o =True
+        if row.count("x") == 3:
+            winner_x = True  
+        if row.count("o") == 3:
+            winner_o = True
     if winner_o and winner_x:
         print("invalid game")
         exit()
     if winner_x:
-        return (True,"x")
+        return (True, "x")
     if winner_o:
-        return (True,"o")
-    return (False,0)
-
+        return (True, "o")
+    return (False, 0)
 def column(matrix):
     transPose =[]
     for i in range(len(matrix)):
@@ -44,25 +43,24 @@ def column(matrix):
             row.append(matrix[j][i])
         transPose.append(row)
     return rows(transPose)
-
 def diagonals(matrix):
     d1 =[]
     for i in range(len(matrix)):
         d1.append(matrix[i][i])
-    if d1.count("o")==3:
-        return (True,"o")
-    if  d1.count("x")==3:
-        return (True,"x")
-    d2 =[]
-    j=len(matrix[0])-1
+    if d1.count("o") == 3:
+        return (True, "o")
+    if  d1.count("x") == 3:
+        return (True, "x")
+    d2 = []
+    j = len(matrix[0]) - 1
     for i in range(len(matrix)):
         d2.append(matrix[i][j])
-        j=j-1
-    if d2.count("o")==3:
-        return (True,"o")
-    if  d2.count("x")==3:
-        return (True,"x")
-    return (False,0)
+        j = j - 1
+    if d2.count("o") == 3:
+        return (True, "o")
+    if  d2.count("x") == 3:
+        return (True, "x")
+    return (False, 0)
 
 
 
