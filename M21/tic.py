@@ -1,5 +1,6 @@
 rows = 3
 matrix = []
+lst = []
 for i1_ in range(rows):
     l1_ = [i1_ for i1_ in input().split(' ')]
     matrix.append(l1_)
