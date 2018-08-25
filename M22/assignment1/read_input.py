@@ -6,7 +6,7 @@ def main():
     documents = []
     lines = int(input())
     for i in range(lines):
-        documents.append(input().split(','))
+        documents.append(input())
         i += 1
     print(documents)
 if __name__ == '__main__':
