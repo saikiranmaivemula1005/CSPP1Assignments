@@ -10,7 +10,7 @@ def print_dictionary(dictionary):
     for i1_ in dictionary.keys():
         LIST1.append(i1_,dictionary[i1_])
     l3_ = sorted(LIST1)
-   for i in l3_:
+    for i in l3_:
         print(i)
 def main():
     """kk"""
