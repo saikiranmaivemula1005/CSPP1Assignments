@@ -14,6 +14,7 @@ def print_dictionary(dictionary):
         # print(i)
         for j in range(1):
             print(str(i[0]) + ' '+ '-'+' '+str(i[1]))
+            j += 1
 def main():
     """kk"""
     dictionary = eval(input())
