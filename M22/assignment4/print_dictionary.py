@@ -10,10 +10,10 @@ def print_dictionary(dictionary):
     for i1_ in dictionary.keys():
         LIST1.append([i1_,dictionary[i1_]])
     l3_ = sorted(LIST1)
-    for i in l3_:
+    for i in range(2):
         # print(i)
-        for j in i:
-            print(str(i[0]) + ' '+ '-'+' '+str(i[1]))
+        for j in l3_:
+            print(str(l3_[0]) + ' '+ '-'+' '+str(l3_[1]))
 def main():
     """kk"""
     dictionary = eval(input())
