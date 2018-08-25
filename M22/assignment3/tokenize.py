@@ -7,10 +7,10 @@ def tokenize(string):
     dictionary = {}
     for word in string:
         list1.append(word) 
-            if word in dictionary:
-                dictionary[word].append(word, list1.count(word))
-            else:
-                dictionary[word] = [(word, list1.count(word))]
+        if word in dictionary:
+            dictionary[word].append(word, list1.count(word))
+        else:
+            dictionary[word] = [(word, list1.count(word))]
     return word
     
             
