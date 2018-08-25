@@ -4,6 +4,7 @@ frequency of each word. Format of the printing should be one key per line and se
 the key and frequency with a SPACE - SPACE.
 '''
 l1 = []
+l2 = []
 def print_dictionary(dictionary):
 	for i in dictionary.keys():
 		l1.append(i)
