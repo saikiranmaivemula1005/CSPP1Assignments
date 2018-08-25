@@ -5,7 +5,6 @@ each word
 
 def tokenize(string):
     dictionary = {}
-    string = str(string)
     list1 = string.split(' ')
     print(list1)
     for word in list1:
@@ -18,11 +17,13 @@ def tokenize(string):
             
 def main():
     inp = int(input())
-    string = []
+    string = ''
     for i in range(inp):
-        string.append(input())
-    print(tokenize(string))
-    
+        i += 1
+        string += input()
+        string += '\n'
+    print(string)
+    tokenize(string)
 
 if __name__ == '__main__':
     main()
