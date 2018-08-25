@@ -11,7 +11,7 @@ def tokenize(string):
     lis = []
     for i in list1:
         lis.append(re.sub('[^a-zA-Z0-0]',"",i))
-    print(lis)
+    # print(lis)
     # length = len(list1)
     # for i in range(length):
     #     # print(word)
