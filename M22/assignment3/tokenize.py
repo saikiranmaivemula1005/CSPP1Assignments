@@ -20,7 +20,11 @@ def tokenize(string):
     #     else:
     #         dictionary[list1[i]] = list1.count(list1[i])
     # # print(dictionary)
-    # return dictionary
+    dictionary = {}
+    for i in lis:
+        if i not in dictionary:
+            dictionary[i] = lis.count(i)
+    return dictionary
 def main():
     """kk"""
     inp = int(input())
