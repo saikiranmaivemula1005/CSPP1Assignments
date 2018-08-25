@@ -13,7 +13,7 @@ def print_dictionary(dictionary):
     for i in l3_:
         print(i)
         for j in i:
-            print(i[0] + ' '+ '-'+' '+i[1])
+            print(str(i[0]) + ' '+ '-'+' '+str(i[1]))
 def main():
     """kk"""
     dictionary = eval(input())
