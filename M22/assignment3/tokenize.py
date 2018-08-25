@@ -6,7 +6,7 @@ def tokenize(string):
     """kk"""
     dictionary = {}
     list1 = string.split(' ')
-    print(list1)
+    # print(list1)
     length = len(list1)
     for i in range(length+1):
         # print(word)
@@ -14,7 +14,7 @@ def tokenize(string):
             dictionary[list1[i]] = list1.count(list1[i])
         else:
             dictionary[list1[i]][i].append(list1.count(list1[i]))           
-    print(dictionary)
+    # print(dictionary)
     return dictionary
 def main():
     """kk"""
