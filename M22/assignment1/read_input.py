@@ -1,0 +1,14 @@
+'''
+Write a python program to read multiple lines of text input and store the input into a string.
+'''
+
+def main():
+    documents = []
+    lines = int(input())
+    for i in range(lines):
+    	print(i)
+        documents.append(input())
+        i += 1
+    print_search_index(build_search_index(documents))
+if __name__ == '__main__':
+    main()
