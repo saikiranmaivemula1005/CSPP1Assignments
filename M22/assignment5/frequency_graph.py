@@ -5,7 +5,8 @@ frequency of each word. Display the frequency values using “#” as a text bas
 LIST1 = []
 LIST2 = []
 def frequency_graph(dictionary):
-    dic = {'1':'#'}
+    """kk"""
+    dic = {'1':'#','2':'##','3':'###''4':'####''5':'#####''6':'######''7':'#######''8':'########''9':'#########'}
     for i1_ in dictionary.keys():
         LIST1.append([i1_, dictionary[i1_]])
     l3_ = sorted(LIST1)
@@ -15,8 +16,8 @@ def frequency_graph(dictionary):
             print(str(i[0]) + ' '+ '-'+' '+dic[str(i[1])])
             j += 1
 def main():
+    """kk"""
     dictionary = eval(input())
     frequency_graph(dictionary)
-
 if __name__ == '__main__':
     main()
