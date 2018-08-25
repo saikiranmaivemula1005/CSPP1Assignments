@@ -6,7 +6,7 @@ LIST1 = []
 LIST2 = []
 def frequency_graph(dictionary):
 	dic = {'1':'#'}
-     for i1_ in dictionary.keys():
+    for i1_ in dictionary.keys():
         LIST1.append([i1_, dictionary[i1_]])
     l3_ = sorted(LIST1)
     for i in l3_:
