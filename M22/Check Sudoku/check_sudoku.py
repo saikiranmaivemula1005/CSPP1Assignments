@@ -16,11 +16,12 @@ def check_sudoku(sudoku):
     for i1_ in range(len(sudoku)):
         l1_ = []
         l2_ = []
-        for j1_ in range(len(sudoku)):
+        length = len(sudoku)
+        for j1_ in range(length):
             if sudoku[i1_][j1_] in l1_:
                 return False
             l1_.append(sudoku[i1_][j1_])
-        for k1_ in range(len(sudoku)):
+        for k1_ in range(length):
             if sudoku[k1_][i1_] in l2_:
                 return False
             l2_.append(sudoku[k1_][i1_])
