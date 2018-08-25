@@ -4,9 +4,9 @@ each word
 '''
 
 def tokenize(string):
-	dictionary = {}
-	for word in string:
-		list1.append(word) 
+    dictionary = {}
+    for word in string:
+        list1.append(word) 
             if word in dictionary:
                 dictionary[word].append(word, list1.count(word))
             else:
@@ -15,9 +15,9 @@ def tokenize(string):
     
             
 def main():
-	inp = int(input())
-	string = input()
-	print(tokenize(string))
+    inp = int(input())
+    string = input()
+    print(tokenize(string))
     
 
 if __name__ == '__main__':
