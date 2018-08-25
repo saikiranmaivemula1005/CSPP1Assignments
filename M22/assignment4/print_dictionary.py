@@ -8,7 +8,9 @@ def print_dictionary(dictionary):
 	for i in dictionary.keys():
 		l1.append([i,dictionary[i]])
 	for i in sorted(l1):
-		print(''.join(str(i)))
+		x = ''.join(str(i))
+		print(x)
+		
 		
 
 
