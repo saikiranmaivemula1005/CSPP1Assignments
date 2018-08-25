@@ -5,7 +5,7 @@ each word
 import re
 def tokenize(string):
     """kk"""
-
+    list1 = []
     dictionary = {}
     for i in string:
         list1.append(i.split(' '))
