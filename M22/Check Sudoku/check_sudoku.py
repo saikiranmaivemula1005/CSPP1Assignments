@@ -15,7 +15,7 @@ def check_sudoku(sudoku):
     '''
     # print(sudoku)
     for i in sudoku:
-        for j in len(sudoku[i]):
+        for j in sudoku[len(i)]:
             print(j)
 
 def main():
