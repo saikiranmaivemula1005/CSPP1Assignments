@@ -22,7 +22,7 @@ def main():
     for i in range(inp):
         i += 1
         string += input()
-        string += '\n'
+        # string += '\n'
     # print(string)
     tokenize(string)
 
