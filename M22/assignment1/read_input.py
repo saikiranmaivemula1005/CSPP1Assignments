@@ -7,8 +7,8 @@ def main():
     lines = int(input())
     for i in range(lines):
         documents.append(input().split(','))
-        print(documents)
         i += 1
+        print(documents)
         # print(''.join(documents),end='')
 if __name__ == '__main__':
     main()
