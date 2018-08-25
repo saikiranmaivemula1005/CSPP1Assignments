@@ -18,14 +18,14 @@ def check_sudoku(sudoku):
        # print(i)
        l1 = []
        l2 = []
-        for j in range(len(sudoku)):
-            if sudoku[i][j] in l1:
-                return False
-            l1.append(sudoku[i][j])
-        for k in range(len(sudoku)):
-            if sudoku[k][i] in l2:
-                return False
-            l2.append(sudoku[k][i])
+    for j in range(len(sudoku)):
+        if sudoku[i][j] in l1:
+            return False
+        l1.append(sudoku[i][j])
+    for k in range(len(sudoku)):
+        if sudoku[k][i] in l2:
+            return False
+        l2.append(sudoku[k][i])
     return True
             
 
