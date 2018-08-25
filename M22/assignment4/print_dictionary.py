@@ -7,7 +7,8 @@ l1 = []
 def print_dictionary(dictionary):
 	for i in dictionary.keys():
 		l1.append(i)
-	print(''.join(sorted(l1)),end='\n')
+	for i in l1:
+		print(''.join(sorted(l1)),end='\n')
 		# print(dictionary[i])
 
     
