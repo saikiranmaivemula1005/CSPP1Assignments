@@ -11,6 +11,8 @@ def print_dictionary(dictionary):
 		l2.append(dictionary[i])
 	print(sorted(l1))
 	print(l2)
+	for i in range(len(l1)):
+		print(str(l1[i])+' '+'-'+ ' '+ str(l2[i]))
 
 
 
