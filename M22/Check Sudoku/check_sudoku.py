@@ -15,9 +15,9 @@ def check_sudoku(sudoku):
     '''
     # print(sudoku)
     for i in range(len(sudoku)):
-       print(i)
+       # print(i)
        for j in range(len(sudoku[0])):
-        print(sudoku[i][j])
+            print(sudoku[i][j])
 
 def main():
     '''
