@@ -14,10 +14,10 @@ def check_sudoku(sudoku):
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     # print(sudoku)
-    for i in range(len(sudoku)):
-       # print(i)
     l1 = []
     l2 = []
+    for i in range(len(sudoku)):
+       # print(i)
     for j in range(len(sudoku)):
         if sudoku[i][j] in l1:
             return False
