@@ -6,7 +6,7 @@ def main():
     documents = []
     lines = int(input())
     for i in range(lines):
-        print(documents)
+        print(''.join(documents))
         documents.append(input())
         i += 1
         # print(''.join(documents),end='')
