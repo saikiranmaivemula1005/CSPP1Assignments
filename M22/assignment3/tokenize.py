@@ -7,12 +7,12 @@ def tokenize(string):
     dictionary = {}
     list1 = string.split(' ')
     print(list1)
-    for word in range(len(list1)):
+    for i in range(len(list1)):
         # print(word)
-        if list1[word] in dictionary:
-            dictionary([list1[word]]).append(list1.count(list1[word]))
+        if list1[i] in dictionary:
+            dictionary[i].append(list1.count(list1[i]))
         else:
-            dictionary[list1[word]] = list1.count(list1[word])
+            dictionary[i] = list1.count(list1[i])
     return dictionary
     
             
