@@ -11,7 +11,7 @@ def tokenize(string):
     for i in range(length):
         # print(word)
         if list1[i]  not in dictionary:
-            dictionary[list1[i]].append(list1.count(list1[i]))
+            dictionary[i].append(list1.count(list1[i]))
         else:
             dictionary[list1[i]] = list1.count(list1[i])
     # print(dictionary)
