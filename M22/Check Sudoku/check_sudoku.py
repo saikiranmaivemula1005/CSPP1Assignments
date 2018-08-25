@@ -16,7 +16,7 @@ def check_sudoku(sudoku):
     # print(sudoku)
     for i in range(len(sudoku)):
        # print(i)
-       for j in range(len(sudoku[0])):
+        for j in range(len(sudoku[0])):
             if sudoku[j] != sudoku[i]:
                 return False
 
@@ -24,8 +24,7 @@ def main():
     '''
         main function to read input sudoku from console
         call check_sudoku function and print the result to console
-    '''
-    
+    '''    
     # initialize empty list
     sudoku = []
 
@@ -39,3 +38,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
