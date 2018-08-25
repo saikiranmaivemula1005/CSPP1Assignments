@@ -10,10 +10,10 @@ def tokenize(string):
     length = len(list1)
     for i in range(length):
         # print(word)
-        if str(list1[i])  not in dictionary:
+        if list1[i]  not in dictionary:
             dictionary[list1[i]] = list1.count(list1[i])
         else:
-            dictionary[list1[i]][1].append(list1.count(list1[i]))           
+            dictionary[list1[i]][i].append(list1.count(list1[i]))           
     # print(dictionary)
     return dictionary
 def main():
