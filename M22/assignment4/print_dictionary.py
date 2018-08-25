@@ -13,8 +13,10 @@ def print_dictionary(dictionary):
     # print(sorted(l1))
     l3_ = sorted(LIST1)
     # print(l 2)
-    for i1_ in range(len(LIST1)):
-        print(str(l3_[i1_])+' '+'-'+ ' '+ str(LIST2[i1_]))
+    for i1_ in (LIST1):
+        print(i1_)
+
+        # print(str(l3_[i1_])+' '+'-'+ ' '+ str(LIST2[i1_]))
 def main():
     """kk"""
     dictionary = eval(input())
