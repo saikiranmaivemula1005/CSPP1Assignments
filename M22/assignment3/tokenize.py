@@ -6,7 +6,6 @@ list1 = []
 def tokenize(string):
     dictionary = {}
     for word in string:
-        list1.append(word) 
         if word in dictionary:
             dictionary[word].append(list1.count(word))
         else:
