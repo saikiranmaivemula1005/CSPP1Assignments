@@ -6,8 +6,9 @@ each word
 def tokenize(string):
     dictionary = {}
     list1 = string.split(' ')
-    print(list1)
+    # print(list1)
     for word in list1:
+        print(word)
         if word in dictionary:
             dictionary[word].append(list1.count(word))
         else:
@@ -22,7 +23,7 @@ def main():
         i += 1
         string += input()
         string += '\n'
-    print(string)
+    # print(string)
     tokenize(string)
 
 if __name__ == '__main__':
