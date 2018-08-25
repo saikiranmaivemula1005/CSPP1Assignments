@@ -7,28 +7,24 @@
     Complete the check_sudoku function to check if the given grid
     satisfies all the sudoku rules given in the statement above.
 '''
-
 def check_sudoku(sudoku):
     '''
         Your solution goes here. You may add other helper functions as needed.
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     # print(sudoku)
-
-    for i in range(len(sudoku)):
-        l1 = []
-        l2 = []
-        for j in range(len(sudoku)):
-            if sudoku[i][j] in l1:
+    for i1_ in range(len(sudoku)):
+        l1_ = []
+        l2_ = []
+        for j1_ in range(len(sudoku)):
+            if sudoku[i1_][j1_] in l1_:
                 return False
-            l1.append(sudoku[i][j])
-        for k in range(len(sudoku)):
-            if sudoku[k][i] in l2:
+            l1_.append(sudoku[i1_][j1_])
+        for k1_ in range(len(sudoku)):
+            if sudoku[k1_][i1_] in l2_:
                 return False
-            l2.append(sudoku[k][i])
+            l2_.append(sudoku[k1_][i1_])
     return True
-            
-
 def main():
     '''
         main function to read input sudoku from console
@@ -43,6 +39,5 @@ def main():
         sudoku.append(row)
     # call solution function and print result to console
     print(check_sudoku(sudoku))
-
 if __name__ == '__main__':
     main()
