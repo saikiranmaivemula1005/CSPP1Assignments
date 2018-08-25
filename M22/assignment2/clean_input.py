@@ -8,7 +8,7 @@ def clean_string(string):
     for i in string:
         if i not in '!@#$%^&*()':
             l1.append(i)
-    print(''.join(l1))
+    return(''.join(l1))
 
 
 def main():
