@@ -14,7 +14,7 @@ def tokenize(string):
             dictionary[list1[i]] = list1.count(list1[i])
         else:
             dictionary[list1[i]][i].append(list1.count(list1[i]))           
-    # print(dictionary)
+        print(dictionary)
     return dictionary
 def main():
     """kk"""
