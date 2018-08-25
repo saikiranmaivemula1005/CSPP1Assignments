@@ -13,10 +13,10 @@ def check_sudoku(sudoku):
         The function has to return True for a valid sudoku grid and false otherwise
     '''
     # print(sudoku)
-    for i1_ in range(len(sudoku)):
+    length = len(sudoku)
+    for i1_ in range(length):
         l1_ = []
         l2_ = []
-        length = len(sudoku)
         for j1_ in range(length):
             if sudoku[i1_][j1_] in l1_:
                 return False
@@ -38,6 +38,7 @@ def main():
         # read a line, split it on SPACE and append row to list
         row = input().split(' ')
         sudoku.append(row)
+        i += 1
     # call solution function and print result to console
     print(check_sudoku(sudoku))
 if __name__ == '__main__':
