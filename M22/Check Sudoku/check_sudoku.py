@@ -17,7 +17,7 @@ def check_sudoku(sudoku):
     for i in range(len(sudoku)):
        # print(i)
        for j in range(len(sudoku[0])):
-            print(sudoku[i]not in sudoku[j])
+            print(sudoku[i] in sudoku[j])
 
 def main():
     '''
