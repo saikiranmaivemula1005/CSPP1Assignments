@@ -7,7 +7,7 @@ def main():
     lines = int(input())
     for i in range(lines):
         # documents.append(input())
-        print(''.join(documents))
+        print(documents)
         i += 1
         # print(''.join(documents),end='')
 if __name__ == '__main__':
