@@ -8,6 +8,6 @@ def main():
     for i in range(lines):
         documents.append(input())
         i += 1
-    print(''.join(documents),end='')
+    print(''.join(documents),end='\n')
 if __name__ == '__main__':
     main()
