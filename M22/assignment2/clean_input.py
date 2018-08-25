@@ -6,7 +6,7 @@ l1 = []
 def clean_string(string):
     """kk"""
     for i in string:
-        if i not in '!@#$%^&*()':
+        if i not in '!@#$%^&*() ':
             l1.append(i)
     return(''.join(l1))
 
