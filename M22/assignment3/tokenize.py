@@ -8,7 +8,9 @@ def tokenize(string):
     list1 = []
     dictionary = {}
     for i in string:
-        list1.append(i.split(' '))
+        lis2 = i.split(' ')
+        for j in lis2:
+            list1.append(j)
         # print(list1)
     lis = []
     for i in list1:
