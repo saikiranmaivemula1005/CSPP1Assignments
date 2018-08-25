@@ -12,6 +12,8 @@ def print_dictionary(dictionary):
     l3_ = sorted(LIST1)
     for i in l3_:
         print(i)
+        for j in i:
+            print(j)
 def main():
     """kk"""
     dictionary = eval(input())
