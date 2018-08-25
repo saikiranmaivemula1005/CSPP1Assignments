@@ -2,7 +2,7 @@
 Write a function to tokenize a given string and return a dictionary with the frequency of
 each word
 '''
-
+list1 = []
 def tokenize(string):
     dictionary = {}
     for word in string:
