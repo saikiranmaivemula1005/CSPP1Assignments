@@ -265,7 +265,7 @@ def decrypt_story():
         shift value and decrypted string in a tuple.
     '''
     def __init__(self, text):
-        print(text)
+        print('k')
     
 
 ### DO NOT MODIFY THIS METHOD ###
