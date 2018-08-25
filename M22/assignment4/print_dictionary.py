@@ -10,10 +10,7 @@ def print_dictionary(dictionary):
 		l1.append(i)
 		l2.append(dictionary[i])
 	print(l2)
-	# for i in dictionary.keys():
-	# 	for i in sorted(l1):
-	# 		print(i+' '+'-'+' '+str(dictionary[i]))
-		# print(dictionary[i])
+	print(sorted(l1))
 
     
 
