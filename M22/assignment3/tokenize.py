@@ -12,15 +12,15 @@ def tokenize(string):
     for i in list1:
         lis.append(re.sub('[^a-zA-Z0-0]',"",i))
     print(lis)
-    length = len(list1)
-    for i in range(length):
-        # print(word)
-        if list1[i] in dictionary:
-            dictionary[list1[i]][1].append(list1.count(list1[i]))
-        else:
-            dictionary[list1[i]] = list1.count(list1[i])
-    # print(dictionary)
-    return dictionary
+    # length = len(list1)
+    # for i in range(length):
+    #     # print(word)
+    #     if list1[i] in dictionary:
+    #         dictionary[list1[i]][1].append(list1.count(list1[i]))
+    #     else:
+    #         dictionary[list1[i]] = list1.count(list1[i])
+    # # print(dictionary)
+    # return dictionary
 def main():
     """kk"""
     inp = int(input())
