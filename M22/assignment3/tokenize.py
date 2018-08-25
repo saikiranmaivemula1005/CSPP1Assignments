@@ -8,11 +8,11 @@ def tokenize(string):
     list1 = string.split(' ')
     # print(list1)
     for word in list1:
-        # print(word)
-        if word not in dictionary:
-            dictionary[word] = [word]
+        print(word)
+        if word in dictionary:
+            dictionary[word].append(list1.count(word))
         else:
-            dictionary[word] = [list1.count(word)]
+            dictionary[word] = list1.count(word)
     return dictionary
     
             
