@@ -7,14 +7,15 @@ def tokenize(string):
     dictionary = {}
     list1 = string.split(' ')
     # print(list1)
-    for i in range(len(list1)):
+    length = len(list1)
+    for i in range(length):
         # print(word)
         if list1[i] in dictionary:
             dictionary[list1[i]][1].append(list1.count(list1[i]))
         else:
             dictionary[list1[i]] = list1.count(list1[i])
     # print(dictionary)
-    return dictionary            
+    return dictionary
 def main():
     """kk"""
     inp = int(input())
