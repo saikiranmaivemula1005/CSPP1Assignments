@@ -10,9 +10,8 @@ def print_dictionary(dictionary):
 	for i in sorted(l1):
 		x = ''.join(str(i))
 		# print(x)
-		for j in x:
-			print(j)
-		
+	for j in x:
+		print(j)
 		
 
 
