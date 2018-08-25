@@ -17,6 +17,7 @@ def tokenize(string):
             
 def main():
     inp = int(input())
+    string = []
     for i in range(inp):
         string.append(input())
     print(tokenize(string))
