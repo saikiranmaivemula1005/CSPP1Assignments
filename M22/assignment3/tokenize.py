@@ -9,10 +9,10 @@ def tokenize(string):
     # print(list1)
     for word in list1:
         print(word)
-        if word in dictionary:
-            dictionary[word].append(list1.count(word))
-        else:
-            dictionary[word] = list1.count(word)
+        # if word in dictionary:
+        #     dictionary[word].append(list1.count(word))
+        # else:
+        #     dictionary[word] = list1.count(word)
     return dictionary
     
             
