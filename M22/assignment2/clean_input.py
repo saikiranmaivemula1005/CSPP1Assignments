@@ -4,15 +4,15 @@ alphabets in both upper and lower case and numbers.
 '''
 
 def clean_string(string):
-	"""kk"""
+    """kk"""
     for i in string:
-    	if i not in '!@#$%^&*()':
-    		l1.append(i)
+        if i not in '!@#$%^&*()':
+            l1.append(i)
     print(''.join(l1))
 
 
 def main():
-	"""kk"""
+    """kk"""
     string = input()
     print(clean_string(string))
 
