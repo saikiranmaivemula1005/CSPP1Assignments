@@ -9,7 +9,7 @@ def tokenize(string):
     # print(list1)
     for word in list1:
         # print(word)
-        if word not in dictionary.keys():
+        if word not in dictionary:
             dictionary[word] = word
         else:
             dictionary[word] = list1.count(word)
