@@ -13,7 +13,7 @@ def tokenize(string):
             dictionary[list1[i]][1].append(list1.count(list1[i]))
         else:
             dictionary[list1[i]] = list1.count(list1[i])
-    print(dictionary)
+    # print(dictionary)
     return dictionary
     
             
@@ -25,7 +25,7 @@ def main():
         string += input()
         # string += '\n'
     # print(string)
-    tokenize(string)
+    print(tokenize(string))
 
 if __name__ == '__main__':
     main()
