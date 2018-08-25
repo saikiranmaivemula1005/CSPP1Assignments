@@ -2,13 +2,13 @@
 Write a function to clean up a given string by removing the special characters and retain
 alphabets in both upper and lower case and numbers.
 '''
-lSt_ = []
+LIST = []
 def clean_string(string):
     """kk"""
     for i1_ in string:
         if i1_ not in '!@#$%^&*() .':
-            lSt_.append(i1_)
-    return ''.join(lSt_)
+            LIST.append(i1_)
+    return ''.join(LIST)
 
 
 def main():
