@@ -6,7 +6,7 @@ def main():
     documents = []
     lines = int(input())
     for i in range(lines):
-    	print(i)
+        print(i)
         documents.append(input())
         i += 1
     print_search_index(build_search_index(documents))
