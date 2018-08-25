@@ -9,7 +9,7 @@ def tokenize(string):
     dictionary = {}
     for i in string:
         list1.append(i.split(' '))
-        print(list1)
+        # print(list1)
     lis = []
     for i in list1:
         lis.append(re.sub('[^a-zA-Z0-9]','',i))
