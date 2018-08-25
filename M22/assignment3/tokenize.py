@@ -6,7 +6,7 @@ def tokenize(string):
     """kk"""
     dictionary = {}
     list1 = string.split(' ')
-    # print(list1)
+    print(list1)
     length = len(list1)
     for i in range(length):
         # print(word)
