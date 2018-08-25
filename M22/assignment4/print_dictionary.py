@@ -4,7 +4,7 @@ frequency of each word. Format of the printing should be one key per line and se
 the key and frequency with a SPACE - SPACE.
 '''
 
-def print_dictionary(dictionary):
+# def print_dictionary(dictionary):
     
 
 def main():
