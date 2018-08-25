@@ -10,7 +10,7 @@ def print_dictionary(dictionary):
 	for i in sorted(l1):
 		for j in i:
 			print(str(j))
-			print(+' '+ '-'+' ')	
+			print(' '+ '-'+' ')	
 
 
     
