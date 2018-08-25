@@ -11,7 +11,7 @@ def tokenize(string):
             dictionary[word].append(list1.count(word))
         else:
             dictionary[word] = [list1.count(word)]
-    return word
+    return dictionary
     
             
 def main():
