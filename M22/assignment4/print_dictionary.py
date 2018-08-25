@@ -11,7 +11,7 @@ def print_dictionary(dictionary):
         LIST1.append([i1_,dictionary[i1_]])
     l3_ = sorted(LIST1)
     for i in l3_:
-        print(i)
+        # print(i)
         for j in i:
             print(str(i[0]) + ' '+ '-'+' '+str(i[1]))
 def main():
