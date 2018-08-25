@@ -5,6 +5,7 @@ each word
 
 def tokenize(string):
     dictionary = {}
+    string = str(string)
     list1 = string.split(' ')
     print(list1)
     for word in list1:
