@@ -15,16 +15,6 @@ def tokenize(string):
     lis = []
     for i in list1:
         lis.append(re.sub('[^a-zA-Z0-9]', '', i))
-    # print(lis)
-    # length = len(list1)
-    # for i in range(length):
-    #     # print(word)
-    #     if list1[i] in dictionary:
-    #         dictionary[list1[i]][1].append(list1.count(list1[i]))
-    #     else:
-    #         dictionary[list1[i]] = list1.count(list1[i])
-    # # print(dictionary)
-    # dictionary = {}
     for i in lis:
         if i not in dictionary:
             dictionary[i] = lis.count(i)
