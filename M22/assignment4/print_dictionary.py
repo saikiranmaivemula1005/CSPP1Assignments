@@ -8,7 +8,7 @@ LIST2 = []
 def print_dictionary(dictionary):
     """kk"""
     for i1_ in dictionary.keys():
-        LIST1.append((i1_,dictionary[i1_]))
+        LIST1.append([i1_,dictionary[i1_]])
     l3_ = sorted(LIST1)
     for i in l3_:
         print(i)
