@@ -10,7 +10,7 @@ def tokenize(string):
     # print(list1)
     lis = []
     for i in list1:
-        lis.append(re.sub('[^a-zA-Z0-0]',"",i))
+        lis.append(re.sub('[^a-zA-Z0-0]','',i))
     # print(lis)
     # length = len(list1)
     # for i in range(length):
