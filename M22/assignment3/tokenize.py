@@ -23,6 +23,7 @@ def main():
     for i in range(inp):
         i += 1
         string += input()
+        string += " "
         # string += '\n'
     # print(string)
     print(tokenize(string))
