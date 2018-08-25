@@ -19,8 +19,7 @@ def check_sudoku(sudoku):
         for j in range(len(sudoku[0])):
             if sudoku[j] != sudoku[i]:
                 return False
-            else:
-                return True
+            
 
 def main():
     '''
