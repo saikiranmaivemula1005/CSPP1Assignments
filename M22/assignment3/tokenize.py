@@ -5,9 +5,10 @@ each word
 import re
 def tokenize(string):
     """kk"""
+
     dictionary = {}
-    list1 = string.split(' ')
-    # print(list1)
+    for i in string:
+        list1.append(i.split(' '))
     lis = []
     for i in list1:
         lis.append(re.sub('[^a-zA-Z0-0]','',i))
@@ -28,11 +29,10 @@ def tokenize(string):
 def main():
     """kk"""
     inp = int(input())
-    string = ''
+    string = []
     for i in range(inp):
         i += 1
-        string += input()
-        string += " "
+        string.append(input())
         # string += '\n'
     # print(string)
     print(tokenize(string))
