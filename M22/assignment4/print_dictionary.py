@@ -10,7 +10,7 @@ the key and frequency with a SPACE - SPACE.
 def main():
     dictionary = eval(input())
     print(dictionary)
-    print_dictionary(dictionary)
+    # print_dictionary(dictionary)
 
 if __name__ == '__main__':
     main()
