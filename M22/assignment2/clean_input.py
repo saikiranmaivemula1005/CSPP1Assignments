@@ -1,14 +1,14 @@
 '''
-Write a function to clean up a given string by removing the special characters and retain 
+Write a function to clean up a given string by removing the special characters and retain
 alphabets in both upper and lower case and numbers.
 '''
-l1 = []
+l1_ = []
 def clean_string(string):
     """kk"""
-    for i in string:
-        if i not in '!@#$%^&*() .':
-            l1.append(i)
-    return(''.join(l1))
+    for i1_ in string:
+        if i1_ not in '!@#$%^&*() .':
+            l1_.append(i1_)
+    return ''.join(l1_)
 
 
 def main():
