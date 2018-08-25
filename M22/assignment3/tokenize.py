@@ -8,7 +8,7 @@ def tokenize(string):
     list1 = string.split(' ')
     print(list1)
     length = len(list1)
-    for i in range(length):
+    for i in range(length+1):
         # print(word)
         if list1[i]  not in dictionary:
             dictionary[list1[i]] = list1.count(list1[i])
