@@ -8,15 +8,10 @@ LIST2 = []
 def print_dictionary(dictionary):
     """kk"""
     for i1_ in dictionary.keys():
-        LIST1.append(i1_)
-        LIST2.append(dictionary[i1_])
-    # print(sorted(l1))
+        LIST1.append(i1_,dictionary[i1_])
     l3_ = sorted(LIST1)
-    # print(l 2)
-    for i1_ in (LIST1):
-        print(i1_)
-
-        # print(str(l3_[i1_])+' '+'-'+ ' '+ str(LIST2[i1_]))
+   for i in l3_:
+        print(i)
 def main():
     """kk"""
     dictionary = eval(input())
