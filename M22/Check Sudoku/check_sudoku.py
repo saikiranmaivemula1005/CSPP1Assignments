@@ -16,9 +16,17 @@ def check_sudoku(sudoku):
     # print(sudoku)
     for i in range(len(sudoku)):
        # print(i)
-        for j in range(len(sudoku[0])):
-            if sudoku[j] != sudoku[i]:
+       l1 = []
+       l2 = []
+        for j in range(len(sudoku)):
+            if sudoku[i][j] in l1:
                 return False
+            l1.append(sudoku[i][j])
+        for k in range(len(sudoku)):
+            if sudoku[k][i] in l2:
+                return False
+            l2.append(sudoku[k][i])
+    return True
             
 
 def main():
