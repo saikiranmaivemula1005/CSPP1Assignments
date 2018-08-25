@@ -12,7 +12,7 @@ def print_dictionary(dictionary):
     l3_ = sorted(LIST1)
     for i in l3_:
         # print(i)
-        for j in i:
+        for j in range(1):
             print(str(i[0]) + ' '+ '-'+' '+str(i[1]))
 def main():
     """kk"""
