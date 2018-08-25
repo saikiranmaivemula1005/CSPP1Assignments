@@ -13,6 +13,7 @@ def tokenize(string):
             dictionary[i].append(list1.count(list1[i]))
         else:
             dictionary[i] = list1.count(list1[i])
+        print(dictionary)
     return dictionary
     
             
