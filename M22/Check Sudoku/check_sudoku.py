@@ -16,8 +16,8 @@ def check_sudoku(sudoku):
     # print(sudoku)
     for i in range(len(sudoku)):
        # print(i)
-       l1 = []
-       l2 = []
+    l1 = []
+    l2 = []
     for j in range(len(sudoku)):
         if sudoku[i][j] in l1:
             return False
