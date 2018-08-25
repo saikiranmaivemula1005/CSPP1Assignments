@@ -9,6 +9,6 @@ def main():
         print(i)
         documents.append(input())
         i += 1
-    print_search_index(build_search_index(documents))
+    print(documents)
 if __name__ == '__main__':
     main()
