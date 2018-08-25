@@ -7,7 +7,6 @@ def tokenize(string):
     dictionary = {}
     list1 = string.split(' ')
     print(list1)
-    list1.strip()
     for word in list1:
         print(word)
         if word in dictionary:
